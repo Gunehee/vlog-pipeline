@@ -17,6 +17,406 @@
       "norm_label": "vlog-pipeline"
     },
     {
+      "label": "test_croptrack_smoothing.py",
+      "file_type": "code",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_croptrack_smoothing",
+      "community": 8,
+      "norm_label": "test_croptrack_smoothing.py"
+    },
+    {
+      "label": "_t()",
+      "file_type": "code",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "tests_test_croptrack_smoothing_t",
+      "community": 8,
+      "norm_label": "_t()"
+    },
+    {
+      "label": "test_speaker_switch_reacquires_within_bound()",
+      "file_type": "code",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "tests_test_croptrack_smoothing_test_speaker_switch_reacquires_within_bound",
+      "community": 8,
+      "norm_label": "test_speaker_switch_reacquires_within_bound()"
+    },
+    {
+      "label": "test_scene_cut_with_face_snaps_immediately()",
+      "file_type": "code",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "tests_test_croptrack_smoothing_test_scene_cut_with_face_snaps_immediately",
+      "community": 8,
+      "norm_label": "test_scene_cut_with_face_snaps_immediately()"
+    },
+    {
+      "label": "test_absence_holds_last_position()",
+      "file_type": "code",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "tests_test_croptrack_smoothing_test_absence_holds_last_position",
+      "community": 8,
+      "norm_label": "test_absence_holds_last_position()"
+    },
+    {
+      "label": "test_jitter_is_smoothed()",
+      "file_type": "code",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "tests_test_croptrack_smoothing_test_jitter_is_smoothed",
+      "community": 8,
+      "norm_label": "test_jitter_is_smoothed()"
+    },
+    {
+      "label": "test_fast_pan_tracked_with_bounded_lag()",
+      "file_type": "code",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "tests_test_croptrack_smoothing_test_fast_pan_tracked_with_bounded_lag",
+      "community": 8,
+      "norm_label": "test_fast_pan_tracked_with_bounded_lag()"
+    },
+    {
+      "label": "test_single_outlier_detection_does_not_yank_track()",
+      "file_type": "code",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "tests_test_croptrack_smoothing_test_single_outlier_detection_does_not_yank_track",
+      "community": 8,
+      "norm_label": "test_single_outlier_detection_does_not_yank_track()"
+    },
+    {
+      "label": "Regression tests for croptrack smoothing (Fix C) \u2014 pure, no video needed.",
+      "file_type": "rationale",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_croptrack_smoothing_rationale_1",
+      "community": 8,
+      "norm_label": "regression tests for croptrack smoothing (fix c) \u2014 pure, no video needed."
+    },
+    {
+      "label": "Target jumps 540px (speaker switch, no scene-cut flag because Haar     missed th",
+      "file_type": "rationale",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "tests_test_croptrack_smoothing_rationale_19",
+      "community": 8,
+      "norm_label": "target jumps 540px (speaker switch, no scene-cut flag because haar     missed th"
+    },
+    {
+      "label": "200px/s ramp: error-proportional gain must keep lag < crop margin.",
+      "file_type": "rationale",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "tests_test_croptrack_smoothing_rationale_54",
+      "community": 8,
+      "norm_label": "200px/s ramp: error-proportional gain must keep lag < crop margin."
+    },
+    {
+      "label": "test_cutlist.py",
+      "file_type": "code",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_cutlist",
+      "community": 5,
+      "norm_label": "test_cutlist.py"
+    },
+    {
+      "label": "test_basic_silence_cut_with_padding()",
+      "file_type": "code",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "tests_test_cutlist_test_basic_silence_cut_with_padding",
+      "community": 5,
+      "norm_label": "test_basic_silence_cut_with_padding()"
+    },
+    {
+      "label": "test_leading_silence_cut_from_zero()",
+      "file_type": "code",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "tests_test_cutlist_test_leading_silence_cut_from_zero",
+      "community": 5,
+      "norm_label": "test_leading_silence_cut_from_zero()"
+    },
+    {
+      "label": "test_trailing_silence_cut_to_clip_end_despite_container_padding()",
+      "file_type": "code",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "tests_test_cutlist_test_trailing_silence_cut_to_clip_end_despite_container_padding",
+      "community": 5,
+      "norm_label": "test_trailing_silence_cut_to_clip_end_despite_container_padding()"
+    },
+    {
+      "label": "test_leading_silence_with_container_padding_at_start()",
+      "file_type": "code",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "tests_test_cutlist_test_leading_silence_with_container_padding_at_start",
+      "community": 5,
+      "norm_label": "test_leading_silence_with_container_padding_at_start()"
+    },
+    {
+      "label": "test_pacing_guard_restores_midclip_cut_for_short_segment()",
+      "file_type": "code",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "tests_test_cutlist_test_pacing_guard_restores_midclip_cut_for_short_segment",
+      "community": 5,
+      "norm_label": "test_pacing_guard_restores_midclip_cut_for_short_segment()"
+    },
+    {
+      "label": "test_open_ended_trailing_silence()",
+      "file_type": "code",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "tests_test_cutlist_test_open_ended_trailing_silence",
+      "community": 5,
+      "norm_label": "test_open_ended_trailing_silence()"
+    },
+    {
+      "label": "test_filler_cut_and_remap()",
+      "file_type": "code",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "tests_test_cutlist_test_filler_cut_and_remap",
+      "community": 5,
+      "norm_label": "test_filler_cut_and_remap()"
+    },
+    {
+      "label": "test_overlapping_removals_merge()",
+      "file_type": "code",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L85",
+      "_origin": "ast",
+      "id": "tests_test_cutlist_test_overlapping_removals_merge",
+      "community": 5,
+      "norm_label": "test_overlapping_removals_merge()"
+    },
+    {
+      "label": "Unit regression tests for cutlist assembly + pacing guard (no media needed).",
+      "file_type": "rationale",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_cutlist_rationale_1",
+      "community": 5,
+      "norm_label": "unit regression tests for cutlist assembly + pacing guard (no media needed)."
+    },
+    {
+      "label": "Regression: silencedetect's end sits a few ms short of the container     duratio",
+      "file_type": "rationale",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "tests_test_cutlist_rationale_33",
+      "community": 5,
+      "norm_label": "regression: silencedetect's end sits a few ms short of the container     duratio"
+    },
+    {
+      "label": "Mirror case: silence starts a few ms after 0 (decoder priming).",
+      "file_type": "rationale",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "tests_test_cutlist_rationale_46",
+      "community": 5,
+      "norm_label": "mirror case: silence starts a few ms after 0 (decoder priming)."
+    },
+    {
+      "label": "Two silences separated by a 0.25s sound burst: the kept island is     0.25 + 2*k",
+      "file_type": "rationale",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "tests_test_cutlist_rationale_54",
+      "community": 5,
+      "norm_label": "two silences separated by a 0.25s sound burst: the kept island is     0.25 + 2*k"
+    },
+    {
+      "label": "silencedetect start without end (file ends inside silence).",
+      "file_type": "rationale",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "tests_test_cutlist_rationale_66",
+      "community": 5,
+      "norm_label": "silencedetect start without end (file ends inside silence)."
+    },
+    {
+      "label": "test_silence_threshold.py",
+      "file_type": "code",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_silence_threshold",
+      "community": 14,
+      "norm_label": "test_silence_threshold.py"
+    },
+    {
+      "label": "_write()",
+      "file_type": "code",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "tests_test_silence_threshold_write",
+      "community": 14,
+      "norm_label": "_write()"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "tests_test_silence_threshold_py_path",
+      "community": 14,
+      "norm_label": "path"
+    },
+    {
+      "label": "ndarray",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "tests_test_silence_threshold_py_ndarray",
+      "community": 14,
+      "norm_label": "ndarray"
+    },
+    {
+      "label": "_speech_like()",
+      "file_type": "code",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "tests_test_silence_threshold_speech_like",
+      "community": 14,
+      "norm_label": "_speech_like()"
+    },
+    {
+      "label": "test_clean_floor_keeps_fixed_threshold()",
+      "file_type": "code",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "tests_test_silence_threshold_test_clean_floor_keeps_fixed_threshold",
+      "community": 14,
+      "norm_label": "test_clean_floor_keeps_fixed_threshold()"
+    },
+    {
+      "label": "test_raised_floor_engages_rescue()",
+      "file_type": "code",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "tests_test_silence_threshold_test_raised_floor_engages_rescue",
+      "community": 14,
+      "norm_label": "test_raised_floor_engages_rescue()"
+    },
+    {
+      "label": "test_hopeless_snr_disables_rather_than_misfires()",
+      "file_type": "code",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "tests_test_silence_threshold_test_hopeless_snr_disables_rather_than_misfires",
+      "community": 14,
+      "norm_label": "test_hopeless_snr_disables_rather_than_misfires()"
+    },
+    {
+      "label": "test_adaptive_disabled_flag()",
+      "file_type": "code",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "tests_test_silence_threshold_test_adaptive_disabled_flag",
+      "community": 14,
+      "norm_label": "test_adaptive_disabled_flag()"
+    },
+    {
+      "label": "Regression tests for the adaptive silence-threshold rescue (Fix B).",
+      "file_type": "rationale",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_silence_threshold_rationale_1",
+      "community": 14,
+      "norm_label": "regression tests for the adaptive silence-threshold rescue (fix b)."
+    },
+    {
+      "label": "Bed at -28dB, speech at -14dB: fixed -35 can never fire; the rescue     threshol",
+      "file_type": "rationale",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "tests_test_silence_threshold_rationale_42",
+      "community": 14,
+      "norm_label": "bed at -28db, speech at -14db: fixed -35 can never fire; the rescue     threshol"
+    },
+    {
+      "label": "Floor within 8dB of speech: rescue must decline (returns fixed) so     silence r",
+      "file_type": "rationale",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "tests_test_silence_threshold_rationale_62",
+      "community": 14,
+      "norm_label": "floor within 8db of speech: rescue must decline (returns fixed) so     silence r"
+    },
+    {
+      "label": "test_stress_scenarios.py",
+      "file_type": "code",
+      "source_file": "tests/test_stress_scenarios.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_stress_scenarios",
+      "community": 4,
+      "norm_label": "test_stress_scenarios.py"
+    },
+    {
+      "label": "test_scenario()",
+      "file_type": "code",
+      "source_file": "tests/test_stress_scenarios.py",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "tests_test_stress_scenarios_test_scenario",
+      "community": 4,
+      "norm_label": "test_scenario()"
+    },
+    {
+      "label": "Full-suite regression: every stress scenario must pass its metric gates.  Slow (",
+      "file_type": "rationale",
+      "source_file": "tests/test_stress_scenarios.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_stress_scenarios_rationale_1",
+      "community": 4,
+      "norm_label": "full-suite regression: every stress scenario must pass its metric gates.  slow ("
+    },
+    {
       "label": "make_test_clip.py",
       "file_type": "code",
       "source_file": "tools/make_test_clip.py",
@@ -27,14 +427,14 @@
       "norm_label": "make_test_clip.py"
     },
     {
-      "label": "synth_audio()",
+      "label": "read_wav_f32()",
       "file_type": "code",
       "source_file": "tools/make_test_clip.py",
-      "source_location": "L78",
+      "source_location": "L86",
       "_origin": "ast",
-      "id": "tools_make_test_clip_synth_audio",
+      "id": "tools_make_test_clip_read_wav_f32",
       "community": 7,
-      "norm_label": "synth_audio()"
+      "norm_label": "read_wav_f32()"
     },
     {
       "label": "Path",
@@ -47,16 +447,6 @@
       "norm_label": "path"
     },
     {
-      "label": "rms_per_frame()",
-      "file_type": "code",
-      "source_file": "tools/make_test_clip.py",
-      "source_location": "L97",
-      "_origin": "ast",
-      "id": "tools_make_test_clip_rms_per_frame",
-      "community": 7,
-      "norm_label": "rms_per_frame()"
-    },
-    {
       "label": "ndarray",
       "file_type": "code",
       "source_file": "",
@@ -67,34 +457,354 @@
       "norm_label": "ndarray"
     },
     {
-      "label": "draw_frame()",
+      "label": "write_wav_f32()",
       "file_type": "code",
       "source_file": "tools/make_test_clip.py",
-      "source_location": "L110",
+      "source_location": "L93",
       "_origin": "ast",
-      "id": "tools_make_test_clip_draw_frame",
+      "id": "tools_make_test_clip_write_wav_f32",
       "community": 7,
-      "norm_label": "draw_frame()"
+      "norm_label": "write_wav_f32()"
+    },
+    {
+      "label": "trim_edges()",
+      "file_type": "code",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L102",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_trim_edges",
+      "community": 7,
+      "norm_label": "trim_edges()"
+    },
+    {
+      "label": "say_chunk()",
+      "file_type": "code",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L112",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_say_chunk",
+      "community": 7,
+      "norm_label": "say_chunk()"
+    },
+    {
+      "label": "assemble()",
+      "file_type": "code",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L126",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_assemble",
+      "community": 7,
+      "norm_label": "assemble()"
+    },
+    {
+      "label": "noise_bed()",
+      "file_type": "code",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L151",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_noise_bed",
+      "community": 7,
+      "norm_label": "noise_bed()"
+    },
+    {
+      "label": "mix_at_snr()",
+      "file_type": "code",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L162",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_mix_at_snr",
+      "community": 7,
+      "norm_label": "mix_at_snr()"
+    },
+    {
+      "label": "_background()",
+      "file_type": "code",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L178",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_background",
+      "community": 7,
+      "norm_label": "_background()"
+    },
+    {
+      "label": "draw_scene()",
+      "file_type": "code",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L190",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_draw_scene",
+      "community": 7,
+      "norm_label": "draw_scene()"
+    },
+    {
+      "label": "rms_per_frame_arr()",
+      "file_type": "code",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L228",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_rms_per_frame_arr",
+      "community": 7,
+      "norm_label": "rms_per_frame_arr()"
+    },
+    {
+      "label": "render_clip()",
+      "file_type": "code",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L238",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_render_clip",
+      "community": 7,
+      "norm_label": "render_clip()"
+    },
+    {
+      "label": "_speech_mask()",
+      "file_type": "code",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L264",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_speech_mask",
+      "community": 7,
+      "norm_label": "_speech_mask()"
+    },
+    {
+      "label": "_write_gt()",
+      "file_type": "code",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L272",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_write_gt",
+      "community": 7,
+      "norm_label": "_write_gt()"
+    },
+    {
+      "label": "_pool_parts()",
+      "file_type": "code",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L289",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_pool_parts",
+      "community": 7,
+      "norm_label": "_pool_parts()"
+    },
+    {
+      "label": "scen_handheld()",
+      "file_type": "code",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L299",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_scen_handheld",
+      "community": 7,
+      "norm_label": "scen_handheld()"
+    },
+    {
+      "label": "scen_music()",
+      "file_type": "code",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L324",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_scen_music",
+      "community": 7,
+      "norm_label": "scen_music()"
+    },
+    {
+      "label": "scen_alternation()",
+      "file_type": "code",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L348",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_scen_alternation",
+      "community": 7,
+      "norm_label": "scen_alternation()"
+    },
+    {
+      "label": "scen_exit_reenter()",
+      "file_type": "code",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L386",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_scen_exit_reenter",
+      "community": 7,
+      "norm_label": "scen_exit_reenter()"
+    },
+    {
+      "label": "scen_low_contrast()",
+      "file_type": "code",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L424",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_scen_low_contrast",
+      "community": 7,
+      "norm_label": "scen_low_contrast()"
+    },
+    {
+      "label": "scen_dense_filler()",
+      "file_type": "code",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L445",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_scen_dense_filler",
+      "community": 7,
+      "norm_label": "scen_dense_filler()"
+    },
+    {
+      "label": "scen_boundary_silence()",
+      "file_type": "code",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L488",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_scen_boundary_silence",
+      "community": 7,
+      "norm_label": "scen_boundary_silence()"
+    },
+    {
+      "label": "synth_audio()",
+      "file_type": "code",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L529",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_synth_audio",
+      "community": 7,
+      "norm_label": "synth_audio()"
+    },
+    {
+      "label": "baseline()",
+      "file_type": "code",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L548",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_baseline",
+      "community": 7,
+      "norm_label": "baseline()"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "tools/make_test_clip.py",
-      "source_location": "L157",
+      "source_location": "L571",
       "_origin": "ast",
       "id": "tools_make_test_clip_main",
       "community": 7,
       "norm_label": "main()"
     },
     {
-      "label": "Synthesize a talking-head test clip for the pipeline.  Audio: macOS `say` TTS, s",
+      "label": "Synthesize talking-head test clips for the pipeline \u2014 baseline + stress scenario",
       "file_type": "rationale",
       "source_file": "tools/make_test_clip.py",
       "source_location": "L1",
       "_origin": "ast",
       "id": "tools_make_test_clip_rationale_1",
       "community": 7,
-      "norm_label": "synthesize a talking-head test clip for the pipeline.  audio: macos `say` tts, s"
+      "norm_label": "synthesize talking-head test clips for the pipeline \u2014 baseline + stress scenario"
+    },
+    {
+      "label": "Strip `say`'s leading/trailing padding so chunk timings are tight.",
+      "file_type": "rationale",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L103",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_rationale_103",
+      "community": 7,
+      "norm_label": "strip `say`'s leading/trailing padding so chunk timings are tight."
+    },
+    {
+      "label": "parts: {kind: 'speech'|'filler'|'pause', text?, dur?, voice?, rate?, gain?}",
+      "file_type": "rationale",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L127",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_rationale_127",
+      "community": 7,
+      "norm_label": "parts: {kind: 'speech'|'filler'|'pause', text?, dur?, voice?, rate?, gain?}"
+    },
+    {
+      "label": "Soft low-passed noise 'music bed' with slow amplitude movement.",
+      "file_type": "rationale",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L152",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_rationale_152",
+      "community": 7,
+      "norm_label": "soft low-passed noise 'music bed' with slow amplitude movement."
+    },
+    {
+      "label": "frame_fn(i, mouth) -> BGR frame. Mouth is real per-frame audio RMS.",
+      "file_type": "rationale",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L239",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_rationale_239",
+      "community": 7,
+      "norm_label": "frame_fn(i, mouth) -> bgr frame. mouth is real per-frame audio rms."
+    },
+    {
+      "label": "Camera pan/drift + presenter movement. GT: subject center per frame.",
+      "file_type": "rationale",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L300",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_rationale_300",
+      "community": 7,
+      "norm_label": "camera pan/drift + presenter movement. gt: subject center per frame."
+    },
+    {
+      "label": "Speech over a noise/music bed at two SNRs. GT: exact pause intervals.",
+      "file_type": "rationale",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L325",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_rationale_325",
+      "community": 7,
+      "norm_label": "speech over a noise/music bed at two snrs. gt: exact pause intervals."
+    },
+    {
+      "label": "Two presenters (voice+position+style) alternating with hard cuts.     GT: switch",
+      "file_type": "rationale",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L349",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_rationale_349",
+      "community": 7,
+      "norm_label": "two presenters (voice+position+style) alternating with hard cuts.     gt: switch"
+    },
+    {
+      "label": "Presenter leaves frame completely, then returns. GT: cx + visibility.",
+      "file_type": "rationale",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L387",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_rationale_387",
+      "community": 7,
+      "norm_label": "presenter leaves frame completely, then returns. gt: cx + visibility."
+    },
+    {
+      "label": "Dark, noisy footage so Haar hit rate drops. GT: cx per frame.",
+      "file_type": "rationale",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L425",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_rationale_425",
+      "community": 7,
+      "norm_label": "dark, noisy footage so haar hit rate drops. gt: cx per frame."
+    },
+    {
+      "label": "Densely packed fillers with acoustic traps (umbrella/summer/likely) and     legi",
+      "file_type": "rationale",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L446",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_rationale_446",
+      "community": 7,
+      "norm_label": "densely packed fillers with acoustic traps (umbrella/summer/likely) and     legi"
+    },
+    {
+      "label": "Silence at clip start and end + one very long mid silence.     GT: exact pause i",
+      "file_type": "rationale",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L489",
+      "_origin": "ast",
+      "id": "tools_make_test_clip_rationale_489",
+      "community": 7,
+      "norm_label": "silence at clip start and end + one very long mid silence.     gt: exact pause i"
     },
     {
       "label": "__init__.py",
@@ -137,10 +847,20 @@
       "norm_label": "cmd_run()"
     },
     {
-      "label": "cmd_status()",
+      "label": "cmd_stress()",
       "file_type": "code",
       "source_file": "vlog_pipeline/cli.py",
       "source_location": "L111",
+      "_origin": "ast",
+      "id": "vlog_pipeline_cli_cmd_stress",
+      "community": 1,
+      "norm_label": "cmd_stress()"
+    },
+    {
+      "label": "cmd_status()",
+      "file_type": "code",
+      "source_file": "vlog_pipeline/cli.py",
+      "source_location": "L116",
       "_origin": "ast",
       "id": "vlog_pipeline_cli_cmd_status",
       "community": 1,
@@ -150,7 +870,7 @@
       "label": "main()",
       "file_type": "code",
       "source_file": "vlog_pipeline/cli.py",
-      "source_location": "L135",
+      "source_location": "L140",
       "_origin": "ast",
       "id": "vlog_pipeline_cli_main",
       "community": 1,
@@ -173,7 +893,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vlog_pipeline_config",
-      "community": 0,
+      "community": 4,
       "norm_label": "config.py"
     },
     {
@@ -183,17 +903,17 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "vlog_pipeline_config_config",
-      "community": 0,
+      "community": 4,
       "norm_label": "config"
     },
     {
       "label": ".to_dict()",
       "file_type": "code",
       "source_file": "vlog_pipeline/config.py",
-      "source_location": "L35",
+      "source_location": "L36",
       "_origin": "ast",
       "id": "vlog_pipeline_config_config_to_dict",
-      "community": 0,
+      "community": 4,
       "norm_label": ".to_dict()"
     },
     {
@@ -203,7 +923,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vlog_pipeline_config_rationale_1",
-      "community": 0,
+      "community": 4,
       "norm_label": "pipeline configuration with editing thresholds and model routing."
     },
     {
@@ -337,14 +1057,24 @@
       "norm_label": "croptrack.py"
     },
     {
-      "label": "track_crop()",
+      "label": "_flow_track()",
       "file_type": "code",
       "source_file": "vlog_pipeline/engine/croptrack.py",
-      "source_location": "L11",
+      "source_location": "L34",
       "_origin": "ast",
-      "id": "vlog_pipeline_engine_croptrack_track_crop",
+      "id": "vlog_pipeline_engine_croptrack_flow_track",
       "community": 8,
-      "norm_label": "track_crop()"
+      "norm_label": "_flow_track()"
+    },
+    {
+      "label": "detect_centers()",
+      "file_type": "code",
+      "source_file": "vlog_pipeline/engine/croptrack.py",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "vlog_pipeline_engine_croptrack_detect_centers",
+      "community": 8,
+      "norm_label": "detect_centers()"
     },
     {
       "label": "Path",
@@ -357,10 +1087,30 @@
       "norm_label": "path"
     },
     {
+      "label": "smooth_centers()",
+      "file_type": "code",
+      "source_file": "vlog_pipeline/engine/croptrack.py",
+      "source_location": "L126",
+      "_origin": "ast",
+      "id": "vlog_pipeline_engine_croptrack_smooth_centers",
+      "community": 8,
+      "norm_label": "smooth_centers()"
+    },
+    {
+      "label": "track_crop()",
+      "file_type": "code",
+      "source_file": "vlog_pipeline/engine/croptrack.py",
+      "source_location": "L169",
+      "_origin": "ast",
+      "id": "vlog_pipeline_engine_croptrack_track_crop",
+      "community": 8,
+      "norm_label": "track_crop()"
+    },
+    {
       "label": "write_sendcmd()",
       "file_type": "code",
       "source_file": "vlog_pipeline/engine/croptrack.py",
-      "source_location": "L92",
+      "source_location": "L200",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_croptrack_write_sendcmd",
       "community": 8,
@@ -370,7 +1120,7 @@
       "label": "validate()",
       "file_type": "code",
       "source_file": "vlog_pipeline/engine/croptrack.py",
-      "source_location": "L103",
+      "source_location": "L211",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_croptrack_validate",
       "community": 8,
@@ -387,22 +1137,52 @@
       "norm_label": "subject-tracking vertical crop: haar face detection with a motion-centroid fallb"
     },
     {
-      "label": "Track subject center-x across the highlight window of the edited cut.      Retur",
+      "label": "LK optical flow on features inside the subject band around x_est.     Returns th",
       "file_type": "rationale",
       "source_file": "vlog_pipeline/engine/croptrack.py",
-      "source_location": "L13",
+      "source_location": "L36",
       "_origin": "ast",
-      "id": "vlog_pipeline_engine_croptrack_rationale_13",
+      "id": "vlog_pipeline_engine_croptrack_rationale_36",
       "community": 8,
-      "norm_label": "track subject center-x across the highlight window of the edited cut.      retur"
+      "norm_label": "lk optical flow on features inside the subject band around x_est.     returns th"
+    },
+    {
+      "label": "Sample raw subject detections. Returns dict with 'samples':     [(t_rel, cx_or_N",
+      "file_type": "rationale",
+      "source_file": "vlog_pipeline/engine/croptrack.py",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "vlog_pipeline_engine_croptrack_rationale_61",
+      "community": 8,
+      "norm_label": "sample raw subject detections. returns dict with 'samples':     [(t_rel, cx_or_n"
+    },
+    {
+      "label": "Pure smoothing pass over raw detection samples (unit-testable).      samples: [(",
+      "file_type": "rationale",
+      "source_file": "vlog_pipeline/engine/croptrack.py",
+      "source_location": "L129",
+      "_origin": "ast",
+      "id": "vlog_pipeline_engine_croptrack_rationale_129",
+      "community": 8,
+      "norm_label": "pure smoothing pass over raw detection samples (unit-testable).      samples: [("
+    },
+    {
+      "label": "Track subject center-x across a window of the given video.      Returns {'keyfra",
+      "file_type": "rationale",
+      "source_file": "vlog_pipeline/engine/croptrack.py",
+      "source_location": "L171",
+      "_origin": "ast",
+      "id": "vlog_pipeline_engine_croptrack_rationale_171",
+      "community": 8,
+      "norm_label": "track subject center-x across a window of the given video.      returns {'keyfra"
     },
     {
       "label": "Emit `t crop x N;` commands, deduping consecutive identical x values.",
       "file_type": "rationale",
       "source_file": "vlog_pipeline/engine/croptrack.py",
-      "source_location": "L93",
+      "source_location": "L201",
       "_origin": "ast",
-      "id": "vlog_pipeline_engine_croptrack_rationale_93",
+      "id": "vlog_pipeline_engine_croptrack_rationale_201",
       "community": 8,
       "norm_label": "emit `t crop x n;` commands, deduping consecutive identical x values."
     },
@@ -413,7 +1193,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_cutlist",
-      "community": 0,
+      "community": 5,
       "norm_label": "cutlist.py"
     },
     {
@@ -423,47 +1203,47 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_cutlist_build_cutlist",
-      "community": 0,
+      "community": 5,
       "norm_label": "build_cutlist()"
     },
     {
       "label": "_complement()",
       "file_type": "code",
       "source_file": "vlog_pipeline/engine/cutlist.py",
-      "source_location": "L83",
+      "source_location": "L98",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_cutlist_complement",
-      "community": 0,
+      "community": 5,
       "norm_label": "_complement()"
     },
     {
       "label": "map_time()",
       "file_type": "code",
       "source_file": "vlog_pipeline/engine/cutlist.py",
-      "source_location": "L94",
+      "source_location": "L109",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_cutlist_map_time",
-      "community": 0,
+      "community": 5,
       "norm_label": "map_time()"
     },
     {
       "label": "remap_words()",
       "file_type": "code",
       "source_file": "vlog_pipeline/engine/cutlist.py",
-      "source_location": "L104",
+      "source_location": "L119",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_cutlist_remap_words",
-      "community": 0,
+      "community": 5,
       "norm_label": "remap_words()"
     },
     {
       "label": "validate()",
       "file_type": "code",
       "source_file": "vlog_pipeline/engine/cutlist.py",
-      "source_location": "L121",
+      "source_location": "L136",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_cutlist_validate",
-      "community": 0,
+      "community": 5,
       "norm_label": "validate()"
     },
     {
@@ -473,7 +1253,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_cutlist_rationale_1",
-      "community": 0,
+      "community": 5,
       "norm_label": "cutlist assembly: merge silence + filler removals into a paced jump-cut edl."
     },
     {
@@ -483,27 +1263,27 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_cutlist_rationale_9",
-      "community": 0,
+      "community": 5,
       "norm_label": "compose removals into kept segments with pacing rules applied.      returns {'ke"
     },
     {
       "label": "Original-timeline t -> edited-timeline t, or None if t was cut.",
       "file_type": "rationale",
       "source_file": "vlog_pipeline/engine/cutlist.py",
-      "source_location": "L95",
+      "source_location": "L110",
       "_origin": "ast",
-      "id": "vlog_pipeline_engine_cutlist_rationale_95",
-      "community": 0,
+      "id": "vlog_pipeline_engine_cutlist_rationale_110",
+      "community": 5,
       "norm_label": "original-timeline t -> edited-timeline t, or none if t was cut."
     },
     {
       "label": "Project word timestamps onto the edited timeline; drop cut words.",
       "file_type": "rationale",
       "source_file": "vlog_pipeline/engine/cutlist.py",
-      "source_location": "L105",
+      "source_location": "L120",
       "_origin": "ast",
-      "id": "vlog_pipeline_engine_cutlist_rationale_105",
-      "community": 0,
+      "id": "vlog_pipeline_engine_cutlist_rationale_120",
+      "community": 5,
       "norm_label": "project word timestamps onto the edited timeline; drop cut words."
     },
     {
@@ -663,7 +1443,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_render",
-      "community": 5,
+      "community": 2,
       "norm_label": "render.py"
     },
     {
@@ -673,7 +1453,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_render_render_cut",
-      "community": 5,
+      "community": 2,
       "norm_label": "render_cut()"
     },
     {
@@ -683,7 +1463,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_render_py_path",
-      "community": 5,
+      "community": 2,
       "norm_label": "path"
     },
     {
@@ -693,7 +1473,7 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_render_render_chunk",
-      "community": 5,
+      "community": 2,
       "norm_label": "_render_chunk()"
     },
     {
@@ -703,7 +1483,7 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_render_overlay_chain",
-      "community": 5,
+      "community": 2,
       "norm_label": "_overlay_chain()"
     },
     {
@@ -713,7 +1493,7 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_render_burn_captions",
-      "community": 5,
+      "community": 2,
       "norm_label": "burn_captions()"
     },
     {
@@ -723,7 +1503,7 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_render_render_short",
-      "community": 5,
+      "community": 2,
       "norm_label": "render_short()"
     },
     {
@@ -733,7 +1513,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_render_rationale_1",
-      "community": 5,
+      "community": 2,
       "norm_label": "ffmpeg rendering: jump-cut assembly with click-free audio joins."
     },
     {
@@ -743,7 +1523,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_render_rationale_12",
-      "community": 5,
+      "community": 2,
       "norm_label": "re-assemble kept segments. frame-accurate trim + 10 ms audio fades at     every"
     },
     {
@@ -753,7 +1533,7 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_render_rationale_57",
-      "community": 5,
+      "community": 2,
       "norm_label": "chain of timed caption overlays. returns (filter_lines, out_label)."
     },
     {
@@ -763,7 +1543,7 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_render_rationale_70",
-      "community": 5,
+      "community": 2,
       "norm_label": "burn pil-rendered caption pngs (ffmpeg here has no libass; overlay     with enab"
     },
     {
@@ -773,7 +1553,7 @@
       "source_location": "L91",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_render_rationale_91",
-      "community": 5,
+      "community": 2,
       "norm_label": "one-pass 9:16 export: trim highlight window from the edited master,     apply th"
     },
     {
@@ -787,14 +1567,14 @@
       "norm_label": "silence.py"
     },
     {
-      "label": "detect_silences()",
+      "label": "measure_levels()",
       "file_type": "code",
       "source_file": "vlog_pipeline/engine/silence.py",
-      "source_location": "L9",
+      "source_location": "L18",
       "_origin": "ast",
-      "id": "vlog_pipeline_engine_silence_detect_silences",
+      "id": "vlog_pipeline_engine_silence_measure_levels",
       "community": 14,
-      "norm_label": "detect_silences()"
+      "norm_label": "measure_levels()"
     },
     {
       "label": "Path",
@@ -807,32 +1587,72 @@
       "norm_label": "path"
     },
     {
+      "label": "pick_threshold()",
+      "file_type": "code",
+      "source_file": "vlog_pipeline/engine/silence.py",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "vlog_pipeline_engine_silence_pick_threshold",
+      "community": 14,
+      "norm_label": "pick_threshold()"
+    },
+    {
+      "label": "detect_silences()",
+      "file_type": "code",
+      "source_file": "vlog_pipeline/engine/silence.py",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "vlog_pipeline_engine_silence_detect_silences",
+      "community": 14,
+      "norm_label": "detect_silences()"
+    },
+    {
       "label": "validate()",
       "file_type": "code",
       "source_file": "vlog_pipeline/engine/silence.py",
-      "source_location": "L29",
+      "source_location": "L81",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_silence_validate",
       "community": 14,
       "norm_label": "validate()"
     },
     {
-      "label": "Silence/dead-air detection via ffmpeg silencedetect.",
+      "label": "Silence/dead-air detection via ffmpeg silencedetect.  When footage has a raised",
       "file_type": "rationale",
       "source_file": "vlog_pipeline/engine/silence.py",
       "source_location": "L1",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_silence_rationale_1",
       "community": 14,
-      "norm_label": "silence/dead-air detection via ffmpeg silencedetect."
+      "norm_label": "silence/dead-air detection via ffmpeg silencedetect.  when footage has a raised"
+    },
+    {
+      "label": "(noise_floor_db, speech_db) from 50 ms frame-PEAK levels.      Peak, not RMS, de",
+      "file_type": "rationale",
+      "source_file": "vlog_pipeline/engine/silence.py",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "vlog_pipeline_engine_silence_rationale_19",
+      "community": 14,
+      "norm_label": "(noise_floor_db, speech_db) from 50 ms frame-peak levels.      peak, not rms, de"
+    },
+    {
+      "label": "Return (threshold_db, mode_note). Rescue mode only: the adaptive     threshold e",
+      "file_type": "rationale",
+      "source_file": "vlog_pipeline/engine/silence.py",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "vlog_pipeline_engine_silence_rationale_40",
+      "community": 14,
+      "norm_label": "return (threshold_db, mode_note). rescue mode only: the adaptive     threshold e"
     },
     {
       "label": "Return [{'start': s, 'end': e, 'dur': d}] silence intervals.",
       "file_type": "rationale",
       "source_file": "vlog_pipeline/engine/silence.py",
-      "source_location": "L10",
+      "source_location": "L62",
       "_origin": "ast",
-      "id": "vlog_pipeline_engine_silence_rationale_10",
+      "id": "vlog_pipeline_engine_silence_rationale_62",
       "community": 14,
       "norm_label": "return [{'start': s, 'end': e, 'dur': d}] silence intervals."
     },
@@ -913,7 +1733,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "vlog_pipeline_ffmpeg_ffmpegerror",
-      "community": 1,
+      "community": 2,
       "norm_label": "ffmpegerror"
     },
     {
@@ -923,7 +1743,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "runtimeerror",
-      "community": 1,
+      "community": 2,
       "norm_label": "runtimeerror"
     },
     {
@@ -933,7 +1753,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "vlog_pipeline_ffmpeg_run",
-      "community": 5,
+      "community": 2,
       "norm_label": "run()"
     },
     {
@@ -943,7 +1763,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "completedprocess",
-      "community": 5,
+      "community": 2,
       "norm_label": "completedprocess"
     },
     {
@@ -1073,7 +1893,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "vlog_pipeline_llm_llmerror",
-      "community": 1,
+      "community": 2,
       "norm_label": "llmerror"
     },
     {
@@ -1373,7 +2193,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vlog_pipeline_stages_ingest",
-      "community": 0,
+      "community": 2,
       "norm_label": "ingest.py"
     },
     {
@@ -1383,7 +2203,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "vlog_pipeline_stages_ingest_run",
-      "community": 0,
+      "community": 2,
       "norm_label": "run()"
     },
     {
@@ -1393,7 +2213,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vlog_pipeline_stages_ingest_rationale_1",
-      "community": 0,
+      "community": 2,
       "norm_label": "stage 2 \u2014 ingest (local): ffprobe + silence map."
     },
     {
@@ -1493,7 +2313,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vlog_pipeline_state",
-      "community": 4,
+      "community": 1,
       "norm_label": "state.py"
     },
     {
@@ -1503,7 +2323,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "vlog_pipeline_state_runstate",
-      "community": 4,
+      "community": 1,
       "norm_label": "runstate"
     },
     {
@@ -1513,7 +2333,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "vlog_pipeline_state_runstate_init",
-      "community": 4,
+      "community": 1,
       "norm_label": ".__init__()"
     },
     {
@@ -1523,7 +2343,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "vlog_pipeline_state_py_path",
-      "community": 4,
+      "community": 1,
       "norm_label": "path"
     },
     {
@@ -1533,7 +2353,7 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "vlog_pipeline_state_runstate_save",
-      "community": 4,
+      "community": 1,
       "norm_label": ".save()"
     },
     {
@@ -1543,7 +2363,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "vlog_pipeline_state_runstate_stage",
-      "community": 4,
+      "community": 1,
       "norm_label": ".stage()"
     },
     {
@@ -1553,7 +2373,7 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "vlog_pipeline_state_runstate_start",
-      "community": 4,
+      "community": 1,
       "norm_label": ".start()"
     },
     {
@@ -1563,7 +2383,7 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "vlog_pipeline_state_runstate_finish",
-      "community": 4,
+      "community": 1,
       "norm_label": ".finish()"
     },
     {
@@ -1573,7 +2393,7 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "vlog_pipeline_state_runstate_fail",
-      "community": 4,
+      "community": 1,
       "norm_label": ".fail()"
     },
     {
@@ -1583,7 +2403,7 @@
       "source_location": "L60",
       "_origin": "ast",
       "id": "vlog_pipeline_state_runstate_total_cost",
-      "community": 4,
+      "community": 1,
       "norm_label": ".total_cost()"
     },
     {
@@ -1593,8 +2413,218 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vlog_pipeline_state_rationale_1",
-      "community": 4,
+      "community": 1,
       "norm_label": "run state persisted to runs/<name>/state.json \u2014 the stage-gate ledger."
+    },
+    {
+      "label": "stress.py",
+      "file_type": "code",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "vlog_pipeline_stress",
+      "community": 4,
+      "norm_label": "stress.py"
+    },
+    {
+      "label": "Metric",
+      "file_type": "code",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "vlog_pipeline_stress_metric",
+      "community": 4,
+      "norm_label": "metric"
+    },
+    {
+      "label": "ScenarioResult",
+      "file_type": "code",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "vlog_pipeline_stress_scenarioresult",
+      "community": 4,
+      "norm_label": "scenarioresult"
+    },
+    {
+      "label": ".add()",
+      "file_type": "code",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "vlog_pipeline_stress_scenarioresult_add",
+      "community": 4,
+      "norm_label": ".add()"
+    },
+    {
+      "label": "ensure_scenario()",
+      "file_type": "code",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "vlog_pipeline_stress_ensure_scenario",
+      "community": 4,
+      "norm_label": "ensure_scenario()"
+    },
+    {
+      "label": "run_engine()",
+      "file_type": "code",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "vlog_pipeline_stress_run_engine",
+      "community": 4,
+      "norm_label": "run_engine()"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "vlog_pipeline_stress_py_path",
+      "community": 4,
+      "norm_label": "path"
+    },
+    {
+      "label": "track_arrays()",
+      "file_type": "code",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L92",
+      "_origin": "ast",
+      "id": "vlog_pipeline_stress_track_arrays",
+      "community": 4,
+      "norm_label": "track_arrays()"
+    },
+    {
+      "label": "_overlap()",
+      "file_type": "code",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L107",
+      "_origin": "ast",
+      "id": "vlog_pipeline_stress_overlap",
+      "community": 4,
+      "norm_label": "_overlap()"
+    },
+    {
+      "label": "check_handheld()",
+      "file_type": "code",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L112",
+      "_origin": "ast",
+      "id": "vlog_pipeline_stress_check_handheld",
+      "community": 4,
+      "norm_label": "check_handheld()"
+    },
+    {
+      "label": "check_music()",
+      "file_type": "code",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L136",
+      "_origin": "ast",
+      "id": "vlog_pipeline_stress_check_music",
+      "community": 4,
+      "norm_label": "check_music()"
+    },
+    {
+      "label": "check_alternation()",
+      "file_type": "code",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L169",
+      "_origin": "ast",
+      "id": "vlog_pipeline_stress_check_alternation",
+      "community": 4,
+      "norm_label": "check_alternation()"
+    },
+    {
+      "label": "check_exit_reenter()",
+      "file_type": "code",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L200",
+      "_origin": "ast",
+      "id": "vlog_pipeline_stress_check_exit_reenter",
+      "community": 4,
+      "norm_label": "check_exit_reenter()"
+    },
+    {
+      "label": "check_low_contrast()",
+      "file_type": "code",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L231",
+      "_origin": "ast",
+      "id": "vlog_pipeline_stress_check_low_contrast",
+      "community": 4,
+      "norm_label": "check_low_contrast()"
+    },
+    {
+      "label": "check_dense_filler()",
+      "file_type": "code",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L255",
+      "_origin": "ast",
+      "id": "vlog_pipeline_stress_check_dense_filler",
+      "community": 4,
+      "norm_label": "check_dense_filler()"
+    },
+    {
+      "label": "check_boundary_silence()",
+      "file_type": "code",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L284",
+      "_origin": "ast",
+      "id": "vlog_pipeline_stress_check_boundary_silence",
+      "community": 4,
+      "norm_label": "check_boundary_silence()"
+    },
+    {
+      "label": "write_matrix()",
+      "file_type": "code",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L342",
+      "_origin": "ast",
+      "id": "vlog_pipeline_stress_write_matrix",
+      "community": 4,
+      "norm_label": "write_matrix()"
+    },
+    {
+      "label": "run_stress()",
+      "file_type": "code",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L357",
+      "_origin": "ast",
+      "id": "vlog_pipeline_stress_run_stress",
+      "community": 4,
+      "norm_label": "run_stress()"
+    },
+    {
+      "label": "Engine stress-test harness: scenario x metric matrix vs generator ground truth.",
+      "file_type": "rationale",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "vlog_pipeline_stress_rationale_1",
+      "community": 4,
+      "norm_label": "engine stress-test harness: scenario x metric matrix vs generator ground truth."
+    },
+    {
+      "label": "ingest + edit stages (the local engine path), stage-gated.",
+      "file_type": "rationale",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "vlog_pipeline_stress_rationale_73",
+      "community": 4,
+      "norm_label": "ingest + edit stages (the local engine path), stage-gated."
+    },
+    {
+      "label": "Run croptrack over the whole raw clip; align with GT per-frame centers.",
+      "file_type": "rationale",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L93",
+      "_origin": "ast",
+      "id": "vlog_pipeline_stress_rationale_93",
+      "community": 4,
+      "norm_label": "run croptrack over the whole raw clip; align with gt per-frame centers."
     },
     {
       "label": "README.md",
@@ -1667,14 +2697,24 @@
       "norm_label": "proof: real end-to-end run"
     },
     {
-      "label": "Current limitations",
+      "label": "Engine hardening (stress suite)",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L108",
       "_origin": "ast",
-      "id": "readme_current_limitations",
+      "id": "readme_engine_hardening_stress_suite",
       "community": 6,
-      "norm_label": "current limitations"
+      "norm_label": "engine hardening (stress suite)"
+    },
+    {
+      "label": "Current limitations (post-hardening, measured)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L124",
+      "_origin": "ast",
+      "id": "readme_current_limitations_post_hardening_measured",
+      "community": 6,
+      "norm_label": "current limitations (post-hardening, measured)"
     },
     {
       "label": "review-report.md",
@@ -1985,24 +3025,1259 @@
       "id": "runs_day30_vlog_review_report_risks_notes_for_the_human",
       "community": 10,
       "norm_label": "risks / notes for the human"
+    },
+    {
+      "label": "edit-report.md",
+      "file_type": "document",
+      "source_file": "runs/stress/alternation/edit-report.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "runs_stress_alternation_edit_report",
+      "community": 22,
+      "norm_label": "edit-report.md"
+    },
+    {
+      "label": "Edit report",
+      "file_type": "document",
+      "source_file": "runs/stress/alternation/edit-report.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "runs_stress_alternation_edit_report_edit_report",
+      "community": 22,
+      "norm_label": "edit report"
+    },
+    {
+      "label": "What was cut and why",
+      "file_type": "document",
+      "source_file": "runs/stress/alternation/edit-report.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "runs_stress_alternation_edit_report_what_was_cut_and_why",
+      "community": 22,
+      "norm_label": "what was cut and why"
+    },
+    {
+      "label": "Kept segments",
+      "file_type": "document",
+      "source_file": "runs/stress/alternation/edit-report.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "runs_stress_alternation_edit_report_kept_segments",
+      "community": 22,
+      "norm_label": "kept segments"
+    },
+    {
+      "label": "edit-report.md",
+      "file_type": "document",
+      "source_file": "runs/stress/boundary_silence/edit-report.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "runs_stress_boundary_silence_edit_report",
+      "community": 23,
+      "norm_label": "edit-report.md"
+    },
+    {
+      "label": "Edit report",
+      "file_type": "document",
+      "source_file": "runs/stress/boundary_silence/edit-report.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "runs_stress_boundary_silence_edit_report_edit_report",
+      "community": 23,
+      "norm_label": "edit report"
+    },
+    {
+      "label": "What was cut and why",
+      "file_type": "document",
+      "source_file": "runs/stress/boundary_silence/edit-report.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "runs_stress_boundary_silence_edit_report_what_was_cut_and_why",
+      "community": 23,
+      "norm_label": "what was cut and why"
+    },
+    {
+      "label": "Kept segments",
+      "file_type": "document",
+      "source_file": "runs/stress/boundary_silence/edit-report.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "runs_stress_boundary_silence_edit_report_kept_segments",
+      "community": 23,
+      "norm_label": "kept segments"
+    },
+    {
+      "label": "edit-report.md",
+      "file_type": "document",
+      "source_file": "runs/stress/dense_filler/edit-report.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "runs_stress_dense_filler_edit_report",
+      "community": 21,
+      "norm_label": "edit-report.md"
+    },
+    {
+      "label": "Edit report",
+      "file_type": "document",
+      "source_file": "runs/stress/dense_filler/edit-report.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "runs_stress_dense_filler_edit_report_edit_report",
+      "community": 21,
+      "norm_label": "edit report"
+    },
+    {
+      "label": "What was cut and why",
+      "file_type": "document",
+      "source_file": "runs/stress/dense_filler/edit-report.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "runs_stress_dense_filler_edit_report_what_was_cut_and_why",
+      "community": 21,
+      "norm_label": "what was cut and why"
+    },
+    {
+      "label": "Cuts cancelled to protect pacing",
+      "file_type": "document",
+      "source_file": "runs/stress/dense_filler/edit-report.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "runs_stress_dense_filler_edit_report_cuts_cancelled_to_protect_pacing",
+      "community": 21,
+      "norm_label": "cuts cancelled to protect pacing"
+    },
+    {
+      "label": "Kept segments",
+      "file_type": "document",
+      "source_file": "runs/stress/dense_filler/edit-report.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "runs_stress_dense_filler_edit_report_kept_segments",
+      "community": 21,
+      "norm_label": "kept segments"
+    },
+    {
+      "label": "edit-report.md",
+      "file_type": "document",
+      "source_file": "runs/stress/exit_reenter/edit-report.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "runs_stress_exit_reenter_edit_report",
+      "community": 24,
+      "norm_label": "edit-report.md"
+    },
+    {
+      "label": "Edit report",
+      "file_type": "document",
+      "source_file": "runs/stress/exit_reenter/edit-report.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "runs_stress_exit_reenter_edit_report_edit_report",
+      "community": 24,
+      "norm_label": "edit report"
+    },
+    {
+      "label": "What was cut and why",
+      "file_type": "document",
+      "source_file": "runs/stress/exit_reenter/edit-report.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "runs_stress_exit_reenter_edit_report_what_was_cut_and_why",
+      "community": 24,
+      "norm_label": "what was cut and why"
+    },
+    {
+      "label": "Kept segments",
+      "file_type": "document",
+      "source_file": "runs/stress/exit_reenter/edit-report.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "runs_stress_exit_reenter_edit_report_kept_segments",
+      "community": 24,
+      "norm_label": "kept segments"
+    },
+    {
+      "label": "edit-report.md",
+      "file_type": "document",
+      "source_file": "runs/stress/handheld/edit-report.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "runs_stress_handheld_edit_report",
+      "community": 25,
+      "norm_label": "edit-report.md"
+    },
+    {
+      "label": "Edit report",
+      "file_type": "document",
+      "source_file": "runs/stress/handheld/edit-report.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "runs_stress_handheld_edit_report_edit_report",
+      "community": 25,
+      "norm_label": "edit report"
+    },
+    {
+      "label": "What was cut and why",
+      "file_type": "document",
+      "source_file": "runs/stress/handheld/edit-report.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "runs_stress_handheld_edit_report_what_was_cut_and_why",
+      "community": 25,
+      "norm_label": "what was cut and why"
+    },
+    {
+      "label": "Kept segments",
+      "file_type": "document",
+      "source_file": "runs/stress/handheld/edit-report.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "runs_stress_handheld_edit_report_kept_segments",
+      "community": 25,
+      "norm_label": "kept segments"
+    },
+    {
+      "label": "edit-report.md",
+      "file_type": "document",
+      "source_file": "runs/stress/low_contrast/edit-report.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "runs_stress_low_contrast_edit_report",
+      "community": 26,
+      "norm_label": "edit-report.md"
+    },
+    {
+      "label": "Edit report",
+      "file_type": "document",
+      "source_file": "runs/stress/low_contrast/edit-report.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "runs_stress_low_contrast_edit_report_edit_report",
+      "community": 26,
+      "norm_label": "edit report"
+    },
+    {
+      "label": "What was cut and why",
+      "file_type": "document",
+      "source_file": "runs/stress/low_contrast/edit-report.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "runs_stress_low_contrast_edit_report_what_was_cut_and_why",
+      "community": 26,
+      "norm_label": "what was cut and why"
+    },
+    {
+      "label": "Kept segments",
+      "file_type": "document",
+      "source_file": "runs/stress/low_contrast/edit-report.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "runs_stress_low_contrast_edit_report_kept_segments",
+      "community": 26,
+      "norm_label": "kept segments"
+    },
+    {
+      "label": "edit-report.md",
+      "file_type": "document",
+      "source_file": "runs/stress/music_snr08/edit-report.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "runs_stress_music_snr08_edit_report",
+      "community": 27,
+      "norm_label": "edit-report.md"
+    },
+    {
+      "label": "Edit report",
+      "file_type": "document",
+      "source_file": "runs/stress/music_snr08/edit-report.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "runs_stress_music_snr08_edit_report_edit_report",
+      "community": 27,
+      "norm_label": "edit report"
+    },
+    {
+      "label": "What was cut and why",
+      "file_type": "document",
+      "source_file": "runs/stress/music_snr08/edit-report.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "runs_stress_music_snr08_edit_report_what_was_cut_and_why",
+      "community": 27,
+      "norm_label": "what was cut and why"
+    },
+    {
+      "label": "Kept segments",
+      "file_type": "document",
+      "source_file": "runs/stress/music_snr08/edit-report.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "runs_stress_music_snr08_edit_report_kept_segments",
+      "community": 27,
+      "norm_label": "kept segments"
+    },
+    {
+      "label": "edit-report.md",
+      "file_type": "document",
+      "source_file": "runs/stress/music_snr18/edit-report.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "runs_stress_music_snr18_edit_report",
+      "community": 28,
+      "norm_label": "edit-report.md"
+    },
+    {
+      "label": "Edit report",
+      "file_type": "document",
+      "source_file": "runs/stress/music_snr18/edit-report.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "runs_stress_music_snr18_edit_report_edit_report",
+      "community": 28,
+      "norm_label": "edit report"
+    },
+    {
+      "label": "What was cut and why",
+      "file_type": "document",
+      "source_file": "runs/stress/music_snr18/edit-report.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "runs_stress_music_snr18_edit_report_what_was_cut_and_why",
+      "community": 28,
+      "norm_label": "what was cut and why"
+    },
+    {
+      "label": "Kept segments",
+      "file_type": "document",
+      "source_file": "runs/stress/music_snr18/edit-report.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "runs_stress_music_snr18_edit_report_kept_segments",
+      "community": 28,
+      "norm_label": "kept segments"
+    },
+    {
+      "label": "stress-results-v1-prefix.md",
+      "file_type": "document",
+      "source_file": "runs/stress/stress-results-v1-prefix.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "runs_stress_stress_results_v1_prefix",
+      "community": 30,
+      "norm_label": "stress-results-v1-prefix.md"
+    },
+    {
+      "label": "Stress-test results matrix",
+      "file_type": "document",
+      "source_file": "runs/stress/stress-results-v1-prefix.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "runs_stress_stress_results_v1_prefix_stress_test_results_matrix",
+      "community": 30,
+      "norm_label": "stress-test results matrix"
+    },
+    {
+      "label": "stress-results.md",
+      "file_type": "document",
+      "source_file": "runs/stress/stress-results.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "runs_stress_stress_results",
+      "community": 29,
+      "norm_label": "stress-results.md"
+    },
+    {
+      "label": "Stress-test results matrix",
+      "file_type": "document",
+      "source_file": "runs/stress/stress-results.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "runs_stress_stress_results_stress_test_results_matrix",
+      "community": 29,
+      "norm_label": "stress-test results matrix"
+    },
+    {
+      "label": "stress-report.md",
+      "file_type": "document",
+      "source_file": "stress-report.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "stress_report",
+      "community": 20,
+      "norm_label": "stress-report.md"
+    },
+    {
+      "label": "Engine stress-test report",
+      "file_type": "document",
+      "source_file": "stress-report.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "stress_report_engine_stress_test_report",
+      "community": 20,
+      "norm_label": "engine stress-test report"
+    },
+    {
+      "label": "Results after hardening (all 28 metrics pass)",
+      "file_type": "document",
+      "source_file": "stress-report.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "stress_report_results_after_hardening_all_28_metrics_pass",
+      "community": 20,
+      "norm_label": "results after hardening (all 28 metrics pass)"
+    },
+    {
+      "label": "What failed initially and what was fixed",
+      "file_type": "document",
+      "source_file": "stress-report.md",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "stress_report_what_failed_initially_and_what_was_fixed",
+      "community": 20,
+      "norm_label": "what failed initially and what was fixed"
+    },
+    {
+      "label": "1. Trailing/leading dead air survived edits (boundary_silence \u2014 genuine bug)",
+      "file_type": "document",
+      "source_file": "stress-report.md",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "stress_report_1_trailing_leading_dead_air_survived_edits_boundary_silence_genuine_bug",
+      "community": 20,
+      "norm_label": "1. trailing/leading dead air survived edits (boundary_silence \u2014 genuine bug)"
+    },
+    {
+      "label": "2. Silence detection blind under music beds (music \u2014 genuine bug, two layers)",
+      "file_type": "document",
+      "source_file": "stress-report.md",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "stress_report_2_silence_detection_blind_under_music_beds_music_genuine_bug_two_layers",
+      "community": 20,
+      "norm_label": "2. silence detection blind under music beds (music \u2014 genuine bug, two layers)"
+    },
+    {
+      "label": "3. Slow re-acquire after hard cuts (alternation \u2014 genuine bug)",
+      "file_type": "document",
+      "source_file": "stress-report.md",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "stress_report_3_slow_re_acquire_after_hard_cuts_alternation_genuine_bug",
+      "community": 20,
+      "norm_label": "3. slow re-acquire after hard cuts (alternation \u2014 genuine bug)"
+    },
+    {
+      "label": "4. Motion centroid chased camera motion (handheld \u2014 genuine bug, one dead end)",
+      "file_type": "document",
+      "source_file": "stress-report.md",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "stress_report_4_motion_centroid_chased_camera_motion_handheld_genuine_bug_one_dead_end",
+      "community": 20,
+      "norm_label": "4. motion centroid chased camera motion (handheld \u2014 genuine bug, one dead end)"
+    },
+    {
+      "label": "What was NOT chased (generator artifacts / non-bugs)",
+      "file_type": "document",
+      "source_file": "stress-report.md",
+      "source_location": "L109",
+      "_origin": "ast",
+      "id": "stress_report_what_was_not_chased_generator_artifacts_non_bugs",
+      "community": 20,
+      "norm_label": "what was not chased (generator artifacts / non-bugs)"
+    },
+    {
+      "label": "Documented fallback behaviors (now tested, not just intended)",
+      "file_type": "document",
+      "source_file": "stress-report.md",
+      "source_location": "L126",
+      "_origin": "ast",
+      "id": "stress_report_documented_fallback_behaviors_now_tested_not_just_intended",
+      "community": 20,
+      "norm_label": "documented fallback behaviors (now tested, not just intended)"
+    },
+    {
+      "label": "Remaining known limitations",
+      "file_type": "document",
+      "source_file": "stress-report.md",
+      "source_location": "L136",
+      "_origin": "ast",
+      "id": "stress_report_remaining_known_limitations",
+      "community": 20,
+      "norm_label": "remaining known limitations"
     }
   ],
   "links": [
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "tests_test_croptrack_smoothing",
+      "target": "tests_test_croptrack_smoothing_t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "tests_test_croptrack_smoothing",
+      "target": "tests_test_croptrack_smoothing_test_absence_holds_last_position",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "tests_test_croptrack_smoothing",
+      "target": "tests_test_croptrack_smoothing_test_fast_pan_tracked_with_bounded_lag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "tests_test_croptrack_smoothing",
+      "target": "tests_test_croptrack_smoothing_test_jitter_is_smoothed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "tests_test_croptrack_smoothing",
+      "target": "tests_test_croptrack_smoothing_test_scene_cut_with_face_snaps_immediately",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "tests_test_croptrack_smoothing",
+      "target": "tests_test_croptrack_smoothing_test_single_outlier_detection_does_not_yank_track",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "tests_test_croptrack_smoothing",
+      "target": "tests_test_croptrack_smoothing_test_speaker_switch_reacquires_within_bound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "tests_test_croptrack_smoothing",
+      "target": "vlog_pipeline_engine_croptrack",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "tests_test_croptrack_smoothing",
+      "target": "vlog_pipeline_engine_croptrack_smooth_centers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "tests_test_croptrack_smoothing_rationale_1",
+      "target": "tests_test_croptrack_smoothing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "tests_test_croptrack_smoothing_test_absence_holds_last_position",
+      "target": "tests_test_croptrack_smoothing_t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "tests_test_croptrack_smoothing_test_fast_pan_tracked_with_bounded_lag",
+      "target": "tests_test_croptrack_smoothing_t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "tests_test_croptrack_smoothing_test_jitter_is_smoothed",
+      "target": "tests_test_croptrack_smoothing_t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "tests_test_croptrack_smoothing_test_scene_cut_with_face_snaps_immediately",
+      "target": "tests_test_croptrack_smoothing_t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "tests_test_croptrack_smoothing_test_single_outlier_detection_does_not_yank_track",
+      "target": "tests_test_croptrack_smoothing_t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "tests_test_croptrack_smoothing_test_speaker_switch_reacquires_within_bound",
+      "target": "tests_test_croptrack_smoothing_t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "tests_test_croptrack_smoothing_rationale_19",
+      "target": "tests_test_croptrack_smoothing_test_speaker_switch_reacquires_within_bound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "tests_test_croptrack_smoothing_test_speaker_switch_reacquires_within_bound",
+      "target": "vlog_pipeline_engine_croptrack_smooth_centers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "tests_test_croptrack_smoothing_test_scene_cut_with_face_snaps_immediately",
+      "target": "vlog_pipeline_engine_croptrack_smooth_centers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "tests_test_croptrack_smoothing_test_absence_holds_last_position",
+      "target": "vlog_pipeline_engine_croptrack_smooth_centers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "tests_test_croptrack_smoothing_test_jitter_is_smoothed",
+      "target": "vlog_pipeline_engine_croptrack_smooth_centers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "tests_test_croptrack_smoothing_rationale_54",
+      "target": "tests_test_croptrack_smoothing_test_fast_pan_tracked_with_bounded_lag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "tests_test_croptrack_smoothing_test_fast_pan_tracked_with_bounded_lag",
+      "target": "vlog_pipeline_engine_croptrack_smooth_centers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_croptrack_smoothing.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "tests_test_croptrack_smoothing_test_single_outlier_detection_does_not_yank_track",
+      "target": "vlog_pipeline_engine_croptrack_smooth_centers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "tests_test_cutlist",
+      "target": "tests_test_cutlist_test_basic_silence_cut_with_padding",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "tests_test_cutlist",
+      "target": "tests_test_cutlist_test_filler_cut_and_remap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "tests_test_cutlist",
+      "target": "tests_test_cutlist_test_leading_silence_cut_from_zero",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "tests_test_cutlist",
+      "target": "tests_test_cutlist_test_leading_silence_with_container_padding_at_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "tests_test_cutlist",
+      "target": "tests_test_cutlist_test_open_ended_trailing_silence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "tests_test_cutlist",
+      "target": "tests_test_cutlist_test_overlapping_removals_merge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "tests_test_cutlist",
+      "target": "tests_test_cutlist_test_pacing_guard_restores_midclip_cut_for_short_segment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "tests_test_cutlist",
+      "target": "tests_test_cutlist_test_trailing_silence_cut_to_clip_end_despite_container_padding",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "tests_test_cutlist",
+      "target": "vlog_pipeline_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "tests_test_cutlist",
+      "target": "vlog_pipeline_config_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "submodule_import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "tests_test_cutlist",
+      "target": "vlog_pipeline_engine_cutlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "tests_test_cutlist_rationale_1",
+      "target": "tests_test_cutlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "tests_test_cutlist_rationale_33",
+      "target": "tests_test_cutlist_test_trailing_silence_cut_to_clip_end_despite_container_padding",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "tests_test_cutlist_rationale_46",
+      "target": "tests_test_cutlist_test_leading_silence_with_container_padding_at_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "tests_test_cutlist_rationale_54",
+      "target": "tests_test_cutlist_test_pacing_guard_restores_midclip_cut_for_short_segment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cutlist.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "tests_test_cutlist_rationale_66",
+      "target": "tests_test_cutlist_test_open_ended_trailing_silence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "tests_test_silence_threshold",
+      "target": "tests_test_silence_threshold_speech_like",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "tests_test_silence_threshold",
+      "target": "tests_test_silence_threshold_test_adaptive_disabled_flag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "tests_test_silence_threshold",
+      "target": "tests_test_silence_threshold_test_clean_floor_keeps_fixed_threshold",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "tests_test_silence_threshold",
+      "target": "tests_test_silence_threshold_test_hopeless_snr_disables_rather_than_misfires",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "tests_test_silence_threshold",
+      "target": "tests_test_silence_threshold_test_raised_floor_engages_rescue",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "tests_test_silence_threshold",
+      "target": "tests_test_silence_threshold_write",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "submodule_import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "tests_test_silence_threshold",
+      "target": "vlog_pipeline_engine_silence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "tests_test_silence_threshold_rationale_1",
+      "target": "tests_test_silence_threshold",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "tests_test_silence_threshold_test_adaptive_disabled_flag",
+      "target": "tests_test_silence_threshold_write",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "tests_test_silence_threshold_test_clean_floor_keeps_fixed_threshold",
+      "target": "tests_test_silence_threshold_write",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "tests_test_silence_threshold_test_hopeless_snr_disables_rather_than_misfires",
+      "target": "tests_test_silence_threshold_write",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "tests_test_silence_threshold_test_raised_floor_engages_rescue",
+      "target": "tests_test_silence_threshold_write",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "tests_test_silence_threshold_write",
+      "target": "tests_test_silence_threshold_py_ndarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "tests_test_silence_threshold_write",
+      "target": "tests_test_silence_threshold_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "tests_test_silence_threshold_speech_like",
+      "target": "tests_test_silence_threshold_py_ndarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "tests_test_silence_threshold_test_adaptive_disabled_flag",
+      "target": "tests_test_silence_threshold_speech_like",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "tests_test_silence_threshold_test_clean_floor_keeps_fixed_threshold",
+      "target": "tests_test_silence_threshold_speech_like",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "tests_test_silence_threshold_test_hopeless_snr_disables_rather_than_misfires",
+      "target": "tests_test_silence_threshold_speech_like",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "tests_test_silence_threshold_test_raised_floor_engages_rescue",
+      "target": "tests_test_silence_threshold_speech_like",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "tests_test_silence_threshold_rationale_42",
+      "target": "tests_test_silence_threshold_test_raised_floor_engages_rescue",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_silence_threshold.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "tests_test_silence_threshold_rationale_62",
+      "target": "tests_test_silence_threshold_test_hopeless_snr_disables_rather_than_misfires",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_stress_scenarios.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "tests_test_stress_scenarios",
+      "target": "tests_test_stress_scenarios_test_scenario",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_stress_scenarios.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "tests_test_stress_scenarios",
+      "target": "vlog_pipeline_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_stress_scenarios.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "tests_test_stress_scenarios",
+      "target": "vlog_pipeline_config_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_stress_scenarios.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "tests_test_stress_scenarios",
+      "target": "vlog_pipeline_stress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_stress_scenarios.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "tests_test_stress_scenarios",
+      "target": "vlog_pipeline_stress_ensure_scenario",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_stress_scenarios.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "tests_test_stress_scenarios_rationale_1",
+      "target": "tests_test_stress_scenarios",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_stress_scenarios.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "tests_test_stress_scenarios_test_scenario",
+      "target": "vlog_pipeline_config_config"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_stress_scenarios.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "tests_test_stress_scenarios_test_scenario",
+      "target": "vlog_pipeline_stress_ensure_scenario"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "tools/make_test_clip.py",
-      "source_location": "L110",
+      "source_location": "L126",
       "weight": 1.0,
       "source": "tools_make_test_clip",
-      "target": "tools_make_test_clip_draw_frame",
+      "target": "tools_make_test_clip_assemble",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "tools/make_test_clip.py",
-      "source_location": "L157",
+      "source_location": "L178",
+      "weight": 1.0,
+      "source": "tools_make_test_clip",
+      "target": "tools_make_test_clip_background",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L548",
+      "weight": 1.0,
+      "source": "tools_make_test_clip",
+      "target": "tools_make_test_clip_baseline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L190",
+      "weight": 1.0,
+      "source": "tools_make_test_clip",
+      "target": "tools_make_test_clip_draw_scene",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L571",
       "weight": 1.0,
       "source": "tools_make_test_clip",
       "target": "tools_make_test_clip_main",
@@ -2012,20 +4287,197 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "tools/make_test_clip.py",
-      "source_location": "L97",
+      "source_location": "L162",
       "weight": 1.0,
       "source": "tools_make_test_clip",
-      "target": "tools_make_test_clip_rms_per_frame",
+      "target": "tools_make_test_clip_mix_at_snr",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "tools/make_test_clip.py",
-      "source_location": "L78",
+      "source_location": "L151",
+      "weight": 1.0,
+      "source": "tools_make_test_clip",
+      "target": "tools_make_test_clip_noise_bed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L289",
+      "weight": 1.0,
+      "source": "tools_make_test_clip",
+      "target": "tools_make_test_clip_pool_parts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "tools_make_test_clip",
+      "target": "tools_make_test_clip_read_wav_f32",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L238",
+      "weight": 1.0,
+      "source": "tools_make_test_clip",
+      "target": "tools_make_test_clip_render_clip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L228",
+      "weight": 1.0,
+      "source": "tools_make_test_clip",
+      "target": "tools_make_test_clip_rms_per_frame_arr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "tools_make_test_clip",
+      "target": "tools_make_test_clip_say_chunk",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L520",
+      "weight": 1.0,
+      "context": "collection",
+      "source": "tools_make_test_clip",
+      "target": "tools_make_test_clip_scen_alternation",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L524",
+      "weight": 1.0,
+      "context": "collection",
+      "source": "tools_make_test_clip",
+      "target": "tools_make_test_clip_scen_boundary_silence",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L523",
+      "weight": 1.0,
+      "context": "collection",
+      "source": "tools_make_test_clip",
+      "target": "tools_make_test_clip_scen_dense_filler",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L521",
+      "weight": 1.0,
+      "context": "collection",
+      "source": "tools_make_test_clip",
+      "target": "tools_make_test_clip_scen_exit_reenter",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L518",
+      "weight": 1.0,
+      "context": "collection",
+      "source": "tools_make_test_clip",
+      "target": "tools_make_test_clip_scen_handheld",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L522",
+      "weight": 1.0,
+      "context": "collection",
+      "source": "tools_make_test_clip",
+      "target": "tools_make_test_clip_scen_low_contrast",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L519",
+      "weight": 1.0,
+      "context": "collection",
+      "source": "tools_make_test_clip",
+      "target": "tools_make_test_clip_scen_music",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L264",
+      "weight": 1.0,
+      "source": "tools_make_test_clip",
+      "target": "tools_make_test_clip_speech_mask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L529",
       "weight": 1.0,
       "source": "tools_make_test_clip",
       "target": "tools_make_test_clip_synth_audio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "tools_make_test_clip",
+      "target": "tools_make_test_clip_trim_edges",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L272",
+      "weight": 1.0,
+      "source": "tools_make_test_clip",
+      "target": "tools_make_test_clip_write_gt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "tools_make_test_clip",
+      "target": "tools_make_test_clip_write_wav_f32",
       "confidence_score": 1.0
     },
     {
@@ -2043,10 +4495,10 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tools/make_test_clip.py",
-      "source_location": "L163",
+      "source_location": "L552",
       "weight": 1.0,
-      "source": "tools_make_test_clip_main",
-      "target": "tools_make_test_clip_synth_audio",
+      "source": "tools_make_test_clip_baseline",
+      "target": "tools_make_test_clip_read_wav_f32",
       "confidence_score": 1.0
     },
     {
@@ -2054,9 +4506,20 @@
       "context": "return_type",
       "confidence": "EXTRACTED",
       "source_file": "tools/make_test_clip.py",
-      "source_location": "L78",
+      "source_location": "L86",
       "weight": 1.0,
-      "source": "tools_make_test_clip_synth_audio",
+      "source": "tools_make_test_clip_read_wav_f32",
+      "target": "tools_make_test_clip_py_ndarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_read_wav_f32",
       "target": "tools_make_test_clip_py_path",
       "confidence_score": 1.0
     },
@@ -2065,7 +4528,40 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tools/make_test_clip.py",
-      "source_location": "L158",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_say_chunk",
+      "target": "tools_make_test_clip_read_wav_f32",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L126",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_assemble",
+      "target": "tools_make_test_clip_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L548",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_baseline",
+      "target": "tools_make_test_clip_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L581",
       "weight": 1.0,
       "source": "tools_make_test_clip_main",
       "target": "tools_make_test_clip_py_path",
@@ -2076,21 +4572,98 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "tools/make_test_clip.py",
-      "source_location": "L97",
+      "source_location": "L238",
       "weight": 1.0,
-      "source": "tools_make_test_clip_rms_per_frame",
+      "source": "tools_make_test_clip_render_clip",
       "target": "tools_make_test_clip_py_path",
       "confidence_score": 1.0
     },
     {
-      "relation": "calls",
-      "context": "call",
+      "relation": "references",
+      "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "tools/make_test_clip.py",
-      "source_location": "L164",
+      "source_location": "L112",
       "weight": 1.0,
-      "source": "tools_make_test_clip_main",
-      "target": "tools_make_test_clip_rms_per_frame",
+      "source": "tools_make_test_clip_say_chunk",
+      "target": "tools_make_test_clip_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L348",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_alternation",
+      "target": "tools_make_test_clip_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L488",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_boundary_silence",
+      "target": "tools_make_test_clip_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L445",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_dense_filler",
+      "target": "tools_make_test_clip_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L386",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_exit_reenter",
+      "target": "tools_make_test_clip_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L299",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_handheld",
+      "target": "tools_make_test_clip_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L424",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_low_contrast",
+      "target": "tools_make_test_clip_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L324",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_music",
+      "target": "tools_make_test_clip_py_path",
       "confidence_score": 1.0
     },
     {
@@ -2098,32 +4671,670 @@
       "context": "return_type",
       "confidence": "EXTRACTED",
       "source_file": "tools/make_test_clip.py",
-      "source_location": "L97",
+      "source_location": "L529",
       "weight": 1.0,
-      "source": "tools_make_test_clip_rms_per_frame",
+      "source": "tools_make_test_clip_synth_audio",
+      "target": "tools_make_test_clip_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L272",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_write_gt",
+      "target": "tools_make_test_clip_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_write_wav_f32",
+      "target": "tools_make_test_clip_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L126",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_assemble",
       "target": "tools_make_test_clip_py_ndarray",
       "confidence_score": 1.0
     },
     {
       "relation": "references",
-      "context": "return_type",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/make_test_clip.py",
-      "source_location": "L110",
-      "weight": 1.0,
-      "source": "tools_make_test_clip_draw_frame",
-      "target": "tools_make_test_clip_py_ndarray",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
+      "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "tools/make_test_clip.py",
       "source_location": "L178",
       "weight": 1.0,
+      "source": "tools_make_test_clip_background",
+      "target": "tools_make_test_clip_py_ndarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L190",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_draw_scene",
+      "target": "tools_make_test_clip_py_ndarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_mix_at_snr",
+      "target": "tools_make_test_clip_py_ndarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L151",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_noise_bed",
+      "target": "tools_make_test_clip_py_ndarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L238",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_render_clip",
+      "target": "tools_make_test_clip_py_ndarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L228",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_rms_per_frame_arr",
+      "target": "tools_make_test_clip_py_ndarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_say_chunk",
+      "target": "tools_make_test_clip_py_ndarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L264",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_speech_mask",
+      "target": "tools_make_test_clip_py_ndarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_trim_edges",
+      "target": "tools_make_test_clip_py_ndarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_write_wav_f32",
+      "target": "tools_make_test_clip_py_ndarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L245",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_render_clip",
+      "target": "tools_make_test_clip_write_wav_f32",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_rationale_103",
+      "target": "tools_make_test_clip_trim_edges",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_say_chunk",
+      "target": "tools_make_test_clip_trim_edges",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_assemble",
+      "target": "tools_make_test_clip_say_chunk",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L127",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_rationale_127",
+      "target": "tools_make_test_clip_assemble",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L358",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_alternation",
+      "target": "tools_make_test_clip_assemble",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L500",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_boundary_silence",
+      "target": "tools_make_test_clip_assemble",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L471",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_dense_filler",
+      "target": "tools_make_test_clip_assemble",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L388",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_exit_reenter",
+      "target": "tools_make_test_clip_assemble",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L302",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_handheld",
+      "target": "tools_make_test_clip_assemble",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L426",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_low_contrast",
+      "target": "tools_make_test_clip_assemble",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L326",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_music",
+      "target": "tools_make_test_clip_assemble",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L152",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_rationale_152",
+      "target": "tools_make_test_clip_noise_bed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L328",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_music",
+      "target": "tools_make_test_clip_noise_bed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L336",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_music",
+      "target": "tools_make_test_clip_mix_at_snr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L195",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_draw_scene",
+      "target": "tools_make_test_clip_background",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L553",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_baseline",
+      "target": "tools_make_test_clip_rms_per_frame_arr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L240",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_render_clip",
+      "target": "tools_make_test_clip_rms_per_frame_arr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L567",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_baseline",
+      "target": "tools_make_test_clip_render_clip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L239",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_rationale_239",
+      "target": "tools_make_test_clip_render_clip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L379",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_alternation",
+      "target": "tools_make_test_clip_render_clip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L510",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_boundary_silence",
+      "target": "tools_make_test_clip_render_clip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L481",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_dense_filler",
+      "target": "tools_make_test_clip_render_clip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L415",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_exit_reenter",
+      "target": "tools_make_test_clip_render_clip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L317",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_handheld",
+      "target": "tools_make_test_clip_render_clip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L438",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_low_contrast",
+      "target": "tools_make_test_clip_render_clip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L341",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_music",
+      "target": "tools_make_test_clip_render_clip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L327",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_music",
+      "target": "tools_make_test_clip_speech_mask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L382",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_alternation",
+      "target": "tools_make_test_clip_write_gt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L513",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_boundary_silence",
+      "target": "tools_make_test_clip_write_gt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L484",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_dense_filler",
+      "target": "tools_make_test_clip_write_gt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L420",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_exit_reenter",
+      "target": "tools_make_test_clip_write_gt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L320",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_handheld",
+      "target": "tools_make_test_clip_write_gt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L441",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_low_contrast",
+      "target": "tools_make_test_clip_write_gt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L344",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_music",
+      "target": "tools_make_test_clip_write_gt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L389",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_exit_reenter",
+      "target": "tools_make_test_clip_pool_parts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L302",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_handheld",
+      "target": "tools_make_test_clip_pool_parts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L426",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_low_contrast",
+      "target": "tools_make_test_clip_pool_parts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L326",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_scen_music",
+      "target": "tools_make_test_clip_pool_parts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L300",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_rationale_300",
+      "target": "tools_make_test_clip_scen_handheld",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L325",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_rationale_325",
+      "target": "tools_make_test_clip_scen_music",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L349",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_rationale_349",
+      "target": "tools_make_test_clip_scen_alternation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L387",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_rationale_387",
+      "target": "tools_make_test_clip_scen_exit_reenter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L425",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_rationale_425",
+      "target": "tools_make_test_clip_scen_low_contrast",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L446",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_rationale_446",
+      "target": "tools_make_test_clip_scen_dense_filler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L489",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_rationale_489",
+      "target": "tools_make_test_clip_scen_boundary_silence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L552",
+      "weight": 1.0,
+      "source": "tools_make_test_clip_baseline",
+      "target": "tools_make_test_clip_synth_audio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_test_clip.py",
+      "source_location": "L588",
+      "weight": 1.0,
       "source": "tools_make_test_clip_main",
-      "target": "tools_make_test_clip_draw_frame",
+      "target": "tools_make_test_clip_baseline",
       "confidence_score": 1.0
     },
     {
@@ -2172,7 +5383,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/cli.py",
-      "source_location": "L111",
+      "source_location": "L116",
       "weight": 1.0,
       "source": "vlog_pipeline_cli",
       "target": "vlog_pipeline_cli_cmd_status",
@@ -2182,7 +5393,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/cli.py",
-      "source_location": "L135",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "vlog_pipeline_cli",
+      "target": "vlog_pipeline_cli_cmd_stress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/cli.py",
+      "source_location": "L140",
       "weight": 1.0,
       "source": "vlog_pipeline_cli",
       "target": "vlog_pipeline_cli_main",
@@ -2332,6 +5553,17 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/cli.py",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "vlog_pipeline_cli",
+      "target": "vlog_pipeline_stress_run_stress",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/cli.py",
@@ -2390,7 +5622,7 @@
       "context": "argument",
       "confidence": "INFERRED",
       "source_file": "vlog_pipeline/cli.py",
-      "source_location": "L153",
+      "source_location": "L158",
       "weight": 1.0,
       "source": "vlog_pipeline_cli_main",
       "target": "vlog_pipeline_cli_cmd_run",
@@ -2401,7 +5633,29 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/cli.py",
-      "source_location": "L124",
+      "source_location": "L113",
+      "weight": 1.0,
+      "source": "vlog_pipeline_cli_cmd_stress",
+      "target": "vlog_pipeline_stress_run_stress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "source_file": "vlog_pipeline/cli.py",
+      "source_location": "L171",
+      "weight": 1.0,
+      "source": "vlog_pipeline_cli_main",
+      "target": "vlog_pipeline_cli_cmd_stress",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/cli.py",
+      "source_location": "L129",
       "weight": 1.0,
       "source": "vlog_pipeline_cli_cmd_status",
       "target": "vlog_pipeline_state_runstate",
@@ -2412,7 +5666,7 @@
       "context": "argument",
       "confidence": "INFERRED",
       "source_file": "vlog_pipeline/cli.py",
-      "source_location": "L157",
+      "source_location": "L162",
       "weight": 1.0,
       "source": "vlog_pipeline_cli_main",
       "target": "vlog_pipeline_cli_cmd_status",
@@ -2538,10 +5792,21 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress",
+      "target": "vlog_pipeline_config",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/config.py",
-      "source_location": "L35",
+      "source_location": "L36",
       "weight": 1.0,
       "source": "vlog_pipeline_config_config",
       "target": "vlog_pipeline_config_config_to_dict",
@@ -2574,7 +5839,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/engine/cutlist.py",
-      "source_location": "L121",
+      "source_location": "L136",
       "weight": 1.0,
       "source": "vlog_pipeline_engine_cutlist_validate",
       "target": "vlog_pipeline_config_config",
@@ -2700,6 +5965,136 @@
       "source": "vlog_pipeline_stages_ingest",
       "target": "vlog_pipeline_config_config",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress",
+      "target": "vlog_pipeline_config_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L169",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_alternation",
+      "target": "vlog_pipeline_config_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L284",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_boundary_silence",
+      "target": "vlog_pipeline_config_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L255",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_dense_filler",
+      "target": "vlog_pipeline_config_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L200",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_exit_reenter",
+      "target": "vlog_pipeline_config_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_handheld",
+      "target": "vlog_pipeline_config_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L231",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_low_contrast",
+      "target": "vlog_pipeline_config_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L136",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_music",
+      "target": "vlog_pipeline_config_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L19",
+      "weight": 0.8,
+      "source": "vlog_pipeline_stress_metric",
+      "target": "vlog_pipeline_config_config",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_run_engine",
+      "target": "vlog_pipeline_config_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L358",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_run_stress",
+      "target": "vlog_pipeline_config_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L19",
+      "weight": 0.8,
+      "source": "vlog_pipeline_stress_scenarioresult",
+      "target": "vlog_pipeline_config_config",
+      "confidence_score": 0.5
     },
     {
       "relation": "contains",
@@ -2850,7 +6245,37 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/engine/croptrack.py",
-      "source_location": "L11",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "vlog_pipeline_engine_croptrack",
+      "target": "vlog_pipeline_engine_croptrack_detect_centers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/engine/croptrack.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "vlog_pipeline_engine_croptrack",
+      "target": "vlog_pipeline_engine_croptrack_flow_track",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/engine/croptrack.py",
+      "source_location": "L126",
+      "weight": 1.0,
+      "source": "vlog_pipeline_engine_croptrack",
+      "target": "vlog_pipeline_engine_croptrack_smooth_centers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/engine/croptrack.py",
+      "source_location": "L169",
       "weight": 1.0,
       "source": "vlog_pipeline_engine_croptrack",
       "target": "vlog_pipeline_engine_croptrack_track_crop",
@@ -2860,7 +6285,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/engine/croptrack.py",
-      "source_location": "L103",
+      "source_location": "L211",
       "weight": 1.0,
       "source": "vlog_pipeline_engine_croptrack",
       "target": "vlog_pipeline_engine_croptrack_validate",
@@ -2870,7 +6295,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/engine/croptrack.py",
-      "source_location": "L92",
+      "source_location": "L200",
       "weight": 1.0,
       "source": "vlog_pipeline_engine_croptrack",
       "target": "vlog_pipeline_engine_croptrack_write_sendcmd",
@@ -2898,13 +6323,35 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "context": "submodule_import",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress",
+      "target": "vlog_pipeline_engine_croptrack",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/engine/croptrack.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "vlog_pipeline_engine_croptrack_detect_centers",
+      "target": "vlog_pipeline_engine_croptrack_flow_track",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/engine/croptrack.py",
-      "source_location": "L13",
+      "source_location": "L36",
       "weight": 1.0,
-      "source": "vlog_pipeline_engine_croptrack_rationale_13",
-      "target": "vlog_pipeline_engine_croptrack_track_crop",
+      "source": "vlog_pipeline_engine_croptrack_rationale_36",
+      "target": "vlog_pipeline_engine_croptrack_flow_track",
       "confidence_score": 1.0
     },
     {
@@ -2912,7 +6359,39 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/engine/croptrack.py",
-      "source_location": "L11",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "vlog_pipeline_engine_croptrack_detect_centers",
+      "target": "vlog_pipeline_engine_croptrack_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/engine/croptrack.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "vlog_pipeline_engine_croptrack_rationale_61",
+      "target": "vlog_pipeline_engine_croptrack_detect_centers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/engine/croptrack.py",
+      "source_location": "L176",
+      "weight": 1.0,
+      "source": "vlog_pipeline_engine_croptrack_track_crop",
+      "target": "vlog_pipeline_engine_croptrack_detect_centers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/engine/croptrack.py",
+      "source_location": "L169",
       "weight": 1.0,
       "source": "vlog_pipeline_engine_croptrack_track_crop",
       "target": "vlog_pipeline_engine_croptrack_py_path",
@@ -2923,7 +6402,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/engine/croptrack.py",
-      "source_location": "L92",
+      "source_location": "L200",
       "weight": 1.0,
       "source": "vlog_pipeline_engine_croptrack_write_sendcmd",
       "target": "vlog_pipeline_engine_croptrack_py_path",
@@ -2933,9 +6412,40 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/engine/croptrack.py",
-      "source_location": "L93",
+      "source_location": "L129",
       "weight": 1.0,
-      "source": "vlog_pipeline_engine_croptrack_rationale_93",
+      "source": "vlog_pipeline_engine_croptrack_rationale_129",
+      "target": "vlog_pipeline_engine_croptrack_smooth_centers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/engine/croptrack.py",
+      "source_location": "L179",
+      "weight": 1.0,
+      "source": "vlog_pipeline_engine_croptrack_track_crop",
+      "target": "vlog_pipeline_engine_croptrack_smooth_centers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/engine/croptrack.py",
+      "source_location": "L171",
+      "weight": 1.0,
+      "source": "vlog_pipeline_engine_croptrack_rationale_171",
+      "target": "vlog_pipeline_engine_croptrack_track_crop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/engine/croptrack.py",
+      "source_location": "L201",
+      "weight": 1.0,
+      "source": "vlog_pipeline_engine_croptrack_rationale_201",
       "target": "vlog_pipeline_engine_croptrack_write_sendcmd",
       "confidence_score": 1.0
     },
@@ -2953,7 +6463,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/engine/cutlist.py",
-      "source_location": "L83",
+      "source_location": "L98",
       "weight": 1.0,
       "source": "vlog_pipeline_engine_cutlist",
       "target": "vlog_pipeline_engine_cutlist_complement",
@@ -2963,7 +6473,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/engine/cutlist.py",
-      "source_location": "L94",
+      "source_location": "L109",
       "weight": 1.0,
       "source": "vlog_pipeline_engine_cutlist",
       "target": "vlog_pipeline_engine_cutlist_map_time",
@@ -2973,7 +6483,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/engine/cutlist.py",
-      "source_location": "L104",
+      "source_location": "L119",
       "weight": 1.0,
       "source": "vlog_pipeline_engine_cutlist",
       "target": "vlog_pipeline_engine_cutlist_remap_words",
@@ -2983,7 +6493,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/engine/cutlist.py",
-      "source_location": "L121",
+      "source_location": "L136",
       "weight": 1.0,
       "source": "vlog_pipeline_engine_cutlist",
       "target": "vlog_pipeline_engine_cutlist_validate",
@@ -3015,7 +6525,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/engine/cutlist.py",
-      "source_location": "L49",
+      "source_location": "L52",
       "weight": 1.0,
       "source": "vlog_pipeline_engine_cutlist_build_cutlist",
       "target": "vlog_pipeline_engine_cutlist_complement",
@@ -3035,9 +6545,9 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/engine/cutlist.py",
-      "source_location": "L95",
+      "source_location": "L110",
       "weight": 1.0,
-      "source": "vlog_pipeline_engine_cutlist_rationale_95",
+      "source": "vlog_pipeline_engine_cutlist_rationale_110",
       "target": "vlog_pipeline_engine_cutlist_map_time",
       "confidence_score": 1.0
     },
@@ -3046,7 +6556,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/engine/cutlist.py",
-      "source_location": "L114",
+      "source_location": "L129",
       "weight": 1.0,
       "source": "vlog_pipeline_engine_cutlist_remap_words",
       "target": "vlog_pipeline_engine_cutlist_map_time",
@@ -3056,9 +6566,9 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/engine/cutlist.py",
-      "source_location": "L105",
+      "source_location": "L120",
       "weight": 1.0,
-      "source": "vlog_pipeline_engine_cutlist_rationale_105",
+      "source": "vlog_pipeline_engine_cutlist_rationale_120",
       "target": "vlog_pipeline_engine_cutlist_remap_words",
       "confidence_score": 1.0
     },
@@ -3596,7 +7106,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/stages/caption.py",
-      "source_location": "L89",
+      "source_location": "L90",
       "weight": 1.0,
       "source": "vlog_pipeline_stages_caption_run",
       "target": "vlog_pipeline_engine_render_render_short",
@@ -3606,7 +7116,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/engine/silence.py",
-      "source_location": "L9",
+      "source_location": "L61",
       "weight": 1.0,
       "source": "vlog_pipeline_engine_silence",
       "target": "vlog_pipeline_engine_silence_detect_silences",
@@ -3616,7 +7126,27 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/engine/silence.py",
-      "source_location": "L29",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "vlog_pipeline_engine_silence",
+      "target": "vlog_pipeline_engine_silence_measure_levels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/engine/silence.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "vlog_pipeline_engine_silence",
+      "target": "vlog_pipeline_engine_silence_pick_threshold",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/engine/silence.py",
+      "source_location": "L81",
       "weight": 1.0,
       "source": "vlog_pipeline_engine_silence",
       "target": "vlog_pipeline_engine_silence_validate",
@@ -3648,9 +7178,52 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/engine/silence.py",
-      "source_location": "L9",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "vlog_pipeline_engine_silence_measure_levels",
+      "target": "vlog_pipeline_engine_silence_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/engine/silence.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "vlog_pipeline_engine_silence_pick_threshold",
+      "target": "vlog_pipeline_engine_silence_measure_levels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/engine/silence.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "vlog_pipeline_engine_silence_rationale_19",
+      "target": "vlog_pipeline_engine_silence_measure_levels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/engine/silence.py",
+      "source_location": "L61",
       "weight": 1.0,
       "source": "vlog_pipeline_engine_silence_detect_silences",
+      "target": "vlog_pipeline_engine_silence_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/engine/silence.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "vlog_pipeline_engine_silence_pick_threshold",
       "target": "vlog_pipeline_engine_silence_py_path",
       "confidence_score": 1.0
     },
@@ -3658,9 +7231,19 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/engine/silence.py",
-      "source_location": "L10",
+      "source_location": "L40",
       "weight": 1.0,
-      "source": "vlog_pipeline_engine_silence_rationale_10",
+      "source": "vlog_pipeline_engine_silence_rationale_40",
+      "target": "vlog_pipeline_engine_silence_pick_threshold",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/engine/silence.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "vlog_pipeline_engine_silence_rationale_62",
       "target": "vlog_pipeline_engine_silence_detect_silences",
       "confidence_score": 1.0
     },
@@ -4211,7 +7794,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/stages/caption.py",
-      "source_location": "L98",
+      "source_location": "L99",
       "weight": 1.0,
       "source": "vlog_pipeline_stages_caption_run",
       "target": "vlog_pipeline_ffmpeg_extract_thumbnails",
@@ -4747,7 +8330,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/stages/caption.py",
-      "source_location": "L94",
+      "source_location": "L95",
       "weight": 1.0,
       "source": "vlog_pipeline_stages_caption_run",
       "target": "vlog_pipeline_stages_init_stageerror",
@@ -4885,6 +8468,28 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress",
+      "target": "vlog_pipeline_stages_init_stageerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "indirect_call",
+      "context": "collection",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_run_engine",
+      "target": "vlog_pipeline_stages_init_stageerror"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/stages/caption.py",
@@ -4998,6 +8603,17 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "context": "submodule_import",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress",
+      "target": "vlog_pipeline_stages_edit",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -5047,6 +8663,17 @@
       "source_location": "L1",
       "weight": 1.0,
       "source": "vlog_pipeline_stages_ingest_rationale_1",
+      "target": "vlog_pipeline_stages_ingest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "submodule_import",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress",
       "target": "vlog_pipeline_stages_ingest",
       "confidence_score": 1.0
     },
@@ -5289,6 +8916,566 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L333",
+      "weight": 1.0,
+      "context": "collection",
+      "source": "vlog_pipeline_stress",
+      "target": "vlog_pipeline_stress_check_alternation",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L337",
+      "weight": 1.0,
+      "context": "collection",
+      "source": "vlog_pipeline_stress",
+      "target": "vlog_pipeline_stress_check_boundary_silence",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L336",
+      "weight": 1.0,
+      "context": "collection",
+      "source": "vlog_pipeline_stress",
+      "target": "vlog_pipeline_stress_check_dense_filler",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L334",
+      "weight": 1.0,
+      "context": "collection",
+      "source": "vlog_pipeline_stress",
+      "target": "vlog_pipeline_stress_check_exit_reenter",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L331",
+      "weight": 1.0,
+      "context": "collection",
+      "source": "vlog_pipeline_stress",
+      "target": "vlog_pipeline_stress_check_handheld",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L335",
+      "weight": 1.0,
+      "context": "collection",
+      "source": "vlog_pipeline_stress",
+      "target": "vlog_pipeline_stress_check_low_contrast",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L332",
+      "weight": 1.0,
+      "context": "collection",
+      "source": "vlog_pipeline_stress",
+      "target": "vlog_pipeline_stress_check_music",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress",
+      "target": "vlog_pipeline_stress_ensure_scenario",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress",
+      "target": "vlog_pipeline_stress_metric",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress",
+      "target": "vlog_pipeline_stress_overlap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress",
+      "target": "vlog_pipeline_stress_run_engine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L357",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress",
+      "target": "vlog_pipeline_stress_run_stress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress",
+      "target": "vlog_pipeline_stress_scenarioresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress",
+      "target": "vlog_pipeline_stress_track_arrays",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L342",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress",
+      "target": "vlog_pipeline_stress_write_matrix",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_rationale_1",
+      "target": "vlog_pipeline_stress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_scenarioresult_add",
+      "target": "vlog_pipeline_stress_metric",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L169",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_alternation",
+      "target": "vlog_pipeline_stress_scenarioresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L284",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_boundary_silence",
+      "target": "vlog_pipeline_stress_scenarioresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L255",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_dense_filler",
+      "target": "vlog_pipeline_stress_scenarioresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L200",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_exit_reenter",
+      "target": "vlog_pipeline_stress_scenarioresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_handheld",
+      "target": "vlog_pipeline_stress_scenarioresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L231",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_low_contrast",
+      "target": "vlog_pipeline_stress_scenarioresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L136",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_music",
+      "target": "vlog_pipeline_stress_scenarioresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_scenarioresult",
+      "target": "vlog_pipeline_stress_scenarioresult_add",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L342",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_write_matrix",
+      "target": "vlog_pipeline_stress_scenarioresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L173",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_alternation",
+      "target": "vlog_pipeline_stress_scenarioresult_add",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L288",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_boundary_silence",
+      "target": "vlog_pipeline_stress_scenarioresult_add",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L259",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_dense_filler",
+      "target": "vlog_pipeline_stress_scenarioresult_add",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L204",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_exit_reenter",
+      "target": "vlog_pipeline_stress_scenarioresult_add",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_handheld",
+      "target": "vlog_pipeline_stress_scenarioresult_add",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L235",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_low_contrast",
+      "target": "vlog_pipeline_stress_scenarioresult_add",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L143",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_music",
+      "target": "vlog_pipeline_stress_scenarioresult_add",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L363",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_run_stress",
+      "target": "vlog_pipeline_stress_ensure_scenario",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L172",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_alternation",
+      "target": "vlog_pipeline_stress_run_engine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L287",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_boundary_silence",
+      "target": "vlog_pipeline_stress_run_engine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L258",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_dense_filler",
+      "target": "vlog_pipeline_stress_run_engine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L203",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_exit_reenter",
+      "target": "vlog_pipeline_stress_run_engine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_handheld",
+      "target": "vlog_pipeline_stress_run_engine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L234",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_low_contrast",
+      "target": "vlog_pipeline_stress_run_engine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L142",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_music",
+      "target": "vlog_pipeline_stress_run_engine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_rationale_73",
+      "target": "vlog_pipeline_stress_run_engine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_run_engine",
+      "target": "vlog_pipeline_stress_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_track_arrays",
+      "target": "vlog_pipeline_stress_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L342",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_write_matrix",
+      "target": "vlog_pipeline_stress_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L176",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_alternation",
+      "target": "vlog_pipeline_stress_track_arrays",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L207",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_exit_reenter",
+      "target": "vlog_pipeline_stress_track_arrays",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_handheld",
+      "target": "vlog_pipeline_stress_track_arrays",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L238",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_low_contrast",
+      "target": "vlog_pipeline_stress_track_arrays",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_rationale_93",
+      "target": "vlog_pipeline_stress_track_arrays",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L151",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_check_music",
+      "target": "vlog_pipeline_stress_overlap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "vlog_pipeline/stress.py",
+      "source_location": "L370",
+      "weight": 1.0,
+      "source": "vlog_pipeline_stress_run_stress",
+      "target": "vlog_pipeline_stress_write_matrix",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
@@ -5302,10 +9489,20 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "readme_vlog_pipeline",
+      "target": "readme_current_limitations_post_hardening_measured",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
       "source_location": "L108",
       "weight": 1.0,
       "source": "readme_vlog_pipeline",
-      "target": "readme_current_limitations",
+      "target": "readme_engine_hardening_stress_suite",
       "confidence_score": 1.0
     },
     {
@@ -5617,8 +9814,378 @@
       "source": "runs_day30_vlog_review_report_review_report",
       "target": "runs_day30_vlog_review_report_verdict",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/alternation/edit-report.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "runs_stress_alternation_edit_report",
+      "target": "runs_stress_alternation_edit_report_edit_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/alternation/edit-report.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "runs_stress_alternation_edit_report_edit_report",
+      "target": "runs_stress_alternation_edit_report_kept_segments",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/alternation/edit-report.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "runs_stress_alternation_edit_report_edit_report",
+      "target": "runs_stress_alternation_edit_report_what_was_cut_and_why",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/boundary_silence/edit-report.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "runs_stress_boundary_silence_edit_report",
+      "target": "runs_stress_boundary_silence_edit_report_edit_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/boundary_silence/edit-report.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "runs_stress_boundary_silence_edit_report_edit_report",
+      "target": "runs_stress_boundary_silence_edit_report_kept_segments",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/boundary_silence/edit-report.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "runs_stress_boundary_silence_edit_report_edit_report",
+      "target": "runs_stress_boundary_silence_edit_report_what_was_cut_and_why",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/dense_filler/edit-report.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "runs_stress_dense_filler_edit_report",
+      "target": "runs_stress_dense_filler_edit_report_edit_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/dense_filler/edit-report.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "runs_stress_dense_filler_edit_report_edit_report",
+      "target": "runs_stress_dense_filler_edit_report_cuts_cancelled_to_protect_pacing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/dense_filler/edit-report.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "runs_stress_dense_filler_edit_report_edit_report",
+      "target": "runs_stress_dense_filler_edit_report_kept_segments",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/dense_filler/edit-report.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "runs_stress_dense_filler_edit_report_edit_report",
+      "target": "runs_stress_dense_filler_edit_report_what_was_cut_and_why",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/exit_reenter/edit-report.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "runs_stress_exit_reenter_edit_report",
+      "target": "runs_stress_exit_reenter_edit_report_edit_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/exit_reenter/edit-report.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "runs_stress_exit_reenter_edit_report_edit_report",
+      "target": "runs_stress_exit_reenter_edit_report_kept_segments",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/exit_reenter/edit-report.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "runs_stress_exit_reenter_edit_report_edit_report",
+      "target": "runs_stress_exit_reenter_edit_report_what_was_cut_and_why",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/handheld/edit-report.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "runs_stress_handheld_edit_report",
+      "target": "runs_stress_handheld_edit_report_edit_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/handheld/edit-report.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "runs_stress_handheld_edit_report_edit_report",
+      "target": "runs_stress_handheld_edit_report_kept_segments",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/handheld/edit-report.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "runs_stress_handheld_edit_report_edit_report",
+      "target": "runs_stress_handheld_edit_report_what_was_cut_and_why",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/low_contrast/edit-report.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "runs_stress_low_contrast_edit_report",
+      "target": "runs_stress_low_contrast_edit_report_edit_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/low_contrast/edit-report.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "runs_stress_low_contrast_edit_report_edit_report",
+      "target": "runs_stress_low_contrast_edit_report_kept_segments",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/low_contrast/edit-report.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "runs_stress_low_contrast_edit_report_edit_report",
+      "target": "runs_stress_low_contrast_edit_report_what_was_cut_and_why",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/music_snr08/edit-report.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "runs_stress_music_snr08_edit_report",
+      "target": "runs_stress_music_snr08_edit_report_edit_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/music_snr08/edit-report.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "runs_stress_music_snr08_edit_report_edit_report",
+      "target": "runs_stress_music_snr08_edit_report_kept_segments",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/music_snr08/edit-report.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "runs_stress_music_snr08_edit_report_edit_report",
+      "target": "runs_stress_music_snr08_edit_report_what_was_cut_and_why",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/music_snr18/edit-report.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "runs_stress_music_snr18_edit_report",
+      "target": "runs_stress_music_snr18_edit_report_edit_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/music_snr18/edit-report.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "runs_stress_music_snr18_edit_report_edit_report",
+      "target": "runs_stress_music_snr18_edit_report_kept_segments",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/music_snr18/edit-report.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "runs_stress_music_snr18_edit_report_edit_report",
+      "target": "runs_stress_music_snr18_edit_report_what_was_cut_and_why",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/stress-results-v1-prefix.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "runs_stress_stress_results_v1_prefix",
+      "target": "runs_stress_stress_results_v1_prefix_stress_test_results_matrix",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runs/stress/stress-results.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "runs_stress_stress_results",
+      "target": "runs_stress_stress_results_stress_test_results_matrix",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "stress-report.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "stress_report",
+      "target": "stress_report_engine_stress_test_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "stress-report.md",
+      "source_location": "L126",
+      "weight": 1.0,
+      "source": "stress_report_engine_stress_test_report",
+      "target": "stress_report_documented_fallback_behaviors_now_tested_not_just_intended",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "stress-report.md",
+      "source_location": "L136",
+      "weight": 1.0,
+      "source": "stress_report_engine_stress_test_report",
+      "target": "stress_report_remaining_known_limitations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "stress-report.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "stress_report_engine_stress_test_report",
+      "target": "stress_report_results_after_hardening_all_28_metrics_pass",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "stress-report.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "stress_report_engine_stress_test_report",
+      "target": "stress_report_what_failed_initially_and_what_was_fixed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "stress-report.md",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "stress_report_engine_stress_test_report",
+      "target": "stress_report_what_was_not_chased_generator_artifacts_non_bugs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "stress-report.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "stress_report_what_failed_initially_and_what_was_fixed",
+      "target": "stress_report_1_trailing_leading_dead_air_survived_edits_boundary_silence_genuine_bug",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "stress-report.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "stress_report_what_failed_initially_and_what_was_fixed",
+      "target": "stress_report_2_silence_detection_blind_under_music_beds_music_genuine_bug_two_layers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "stress-report.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "stress_report_what_failed_initially_and_what_was_fixed",
+      "target": "stress_report_3_slow_re_acquire_after_hard_cuts_alternation_genuine_bug",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "stress-report.md",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "stress_report_what_failed_initially_and_what_was_fixed",
+      "target": "stress_report_4_motion_centroid_chased_camera_motion_handheld_genuine_bug_one_dead_end",
+      "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "cf1727a6ec7811294977bf028419115ef576c073"
+  "built_at_commit": "67e86673254197819f3de364231d97170c2c34cf"
 }

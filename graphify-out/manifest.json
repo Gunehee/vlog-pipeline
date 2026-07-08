@@ -20,8 +20,8 @@
     "semantic_hash": ""
   },
   "tools/make_test_clip.py": {
-    "mtime": 1783478520.8077536,
-    "ast_hash": "deca61d9db22607e549ca8f5f73390e4",
+    "mtime": 1783484986.0566113,
+    "ast_hash": "a5cbcc57015277ba861763a3081008fd",
     "semantic_hash": ""
   },
   "vlog_pipeline/__init__.py": {
@@ -30,13 +30,13 @@
     "semantic_hash": ""
   },
   "vlog_pipeline/cli.py": {
-    "mtime": 1783481603.1670375,
-    "ast_hash": "d5a78a603c6faf4148b60928a447b31d",
+    "mtime": 1783485095.4869978,
+    "ast_hash": "d3597bc8d2af9911b38ed3996748cccf",
     "semantic_hash": ""
   },
   "vlog_pipeline/config.py": {
-    "mtime": 1783448268.195576,
-    "ast_hash": "09c4f05b605b0c8c6afb899aadccf58b",
+    "mtime": 1783496505.8936284,
+    "ast_hash": "80b4f56f21c2cb814cf4c2d7bdd31227",
     "semantic_hash": ""
   },
   "vlog_pipeline/engine/__init__.py": {
@@ -50,13 +50,13 @@
     "semantic_hash": ""
   },
   "vlog_pipeline/engine/croptrack.py": {
-    "mtime": 1783478653.0429146,
-    "ast_hash": "8833484b0764d36de9438587be6263b0",
+    "mtime": 1783498638.1600823,
+    "ast_hash": "fae49f66fcd046daa481599e643b1dbd",
     "semantic_hash": ""
   },
   "vlog_pipeline/engine/cutlist.py": {
-    "mtime": 1783448423.8197234,
-    "ast_hash": "055d734d944c3c16e581dc9a8964b153",
+    "mtime": 1783496422.1190977,
+    "ast_hash": "331e6242ba8efa4492ef3b6136a1a259",
     "semantic_hash": ""
   },
   "vlog_pipeline/engine/fillers.py": {
@@ -75,8 +75,8 @@
     "semantic_hash": ""
   },
   "vlog_pipeline/engine/silence.py": {
-    "mtime": 1783448313.3041356,
-    "ast_hash": "eac86d07110fa303dd8381eebdea62c5",
+    "mtime": 1783496694.294619,
+    "ast_hash": "c71e5014d25d12568cf57070f9b1f6f6",
     "semantic_hash": ""
   },
   "vlog_pipeline/engine/transcribe.py": {
@@ -100,8 +100,8 @@
     "semantic_hash": ""
   },
   "vlog_pipeline/stages/caption.py": {
-    "mtime": 1783478883.1386783,
-    "ast_hash": "0302dcac0ff005e6364e46e595051f8d",
+    "mtime": 1783498640.4319556,
+    "ast_hash": "45f076b24e7c01804466f3d8ce94ace2",
     "semantic_hash": ""
   },
   "vlog_pipeline/stages/edit.py": {
@@ -110,8 +110,8 @@
     "semantic_hash": ""
   },
   "vlog_pipeline/stages/ingest.py": {
-    "mtime": 1783477892.9711924,
-    "ast_hash": "491a1c0f9c1de0aaa428ed54d6cc8949",
+    "mtime": 1783496512.6373715,
+    "ast_hash": "5ce18d9daf8e315e9f94ce28aeccbe0e",
     "semantic_hash": ""
   },
   "vlog_pipeline/stages/optimize.py": {
@@ -135,8 +135,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1783481829.4328506,
-    "ast_hash": "97777e59180c2c3ed6cada2b84d9e5ba",
+    "mtime": 1783498834.1606162,
+    "ast_hash": "26a351b86db816b8517e49ef597cd0a0",
     "semantic_hash": ""
   },
   "review-report.md": {
@@ -237,6 +237,201 @@
   "runs/day30-vlog/report.html": {
     "mtime": 1783481775.2821445,
     "ast_hash": "85a2136a681b54a1d8278c64d63eec0a",
+    "semantic_hash": ""
+  },
+  "runs/stress/alternation/edit-decisions.json": {
+    "mtime": 1783498742.207609,
+    "ast_hash": "356daa403f3051ade10155cadc267e9a",
+    "semantic_hash": ""
+  },
+  "runs/stress/alternation/ingest-report.json": {
+    "mtime": 1783498735.5167074,
+    "ast_hash": "da18dd1624b21f694734148abde9f87a",
+    "semantic_hash": ""
+  },
+  "runs/stress/boundary_silence/edit-decisions.json": {
+    "mtime": 1783498776.323785,
+    "ast_hash": "0c3bb2f4865d710d5f7cdf92281f32b5",
+    "semantic_hash": ""
+  },
+  "runs/stress/boundary_silence/ingest-report.json": {
+    "mtime": 1783498769.4652662,
+    "ast_hash": "5d30674701a1ca3bb69322ddc3f86543",
+    "semantic_hash": ""
+  },
+  "runs/stress/dense_filler/edit-decisions.json": {
+    "mtime": 1783498769.3014185,
+    "ast_hash": "7c4a292b974efd246aaa8169fa066595",
+    "semantic_hash": ""
+  },
+  "runs/stress/dense_filler/ingest-report.json": {
+    "mtime": 1783498760.6121607,
+    "ast_hash": "37d21c27163407927332213e49965de6",
+    "semantic_hash": ""
+  },
+  "runs/stress/exit_reenter/edit-decisions.json": {
+    "mtime": 1783498749.0943117,
+    "ast_hash": "fa6c9a57d72f6f7221f7c5d4a61f18aa",
+    "semantic_hash": ""
+  },
+  "runs/stress/exit_reenter/ingest-report.json": {
+    "mtime": 1783498744.0233696,
+    "ast_hash": "37197a59dac0cead67bced7359804195",
+    "semantic_hash": ""
+  },
+  "runs/stress/handheld/edit-decisions.json": {
+    "mtime": 1783498723.5681434,
+    "ast_hash": "b9b8223046ec6ab8c0fd0b575ac8e92e",
+    "semantic_hash": ""
+  },
+  "runs/stress/handheld/ingest-report.json": {
+    "mtime": 1783498714.772858,
+    "ast_hash": "7239f8bb50db068530edac83918ce11d",
+    "semantic_hash": ""
+  },
+  "runs/stress/low_contrast/edit-decisions.json": {
+    "mtime": 1783498758.8665335,
+    "ast_hash": "9de39ec1e9766fce8582a35e042799f9",
+    "semantic_hash": ""
+  },
+  "runs/stress/low_contrast/ingest-report.json": {
+    "mtime": 1783498750.852424,
+    "ast_hash": "1feab908aedfc1ff0e7e359cceaa9305",
+    "semantic_hash": ""
+  },
+  "runs/stress/music_snr08/edit-decisions.json": {
+    "mtime": 1783498735.364496,
+    "ast_hash": "e4c9744d6f5a5b985cc880f42ab3116a",
+    "semantic_hash": ""
+  },
+  "runs/stress/music_snr08/ingest-report.json": {
+    "mtime": 1783498730.5785408,
+    "ast_hash": "32902609e80920e6232ab9526a0a1150",
+    "semantic_hash": ""
+  },
+  "runs/stress/music_snr18/edit-decisions.json": {
+    "mtime": 1783498730.4221358,
+    "ast_hash": "018cab758dc4b427904e02b07e640608",
+    "semantic_hash": ""
+  },
+  "runs/stress/music_snr18/ingest-report.json": {
+    "mtime": 1783498725.5082755,
+    "ast_hash": "88c7dc059a38b51c767efec8f90e65c0",
+    "semantic_hash": ""
+  },
+  "testdata/stress/alternation.gt.json": {
+    "mtime": 1783485292.1760745,
+    "ast_hash": "24c27715365cd06fa1a175c2974bc0ee",
+    "semantic_hash": ""
+  },
+  "testdata/stress/boundary_silence.gt.json": {
+    "mtime": 1783485406.023412,
+    "ast_hash": "c61db2bf9a8b03e485c27fdd8f669953",
+    "semantic_hash": ""
+  },
+  "testdata/stress/dense_filler.gt.json": {
+    "mtime": 1783485385.039396,
+    "ast_hash": "88276a797dd2f6145090a8d67b3a653c",
+    "semantic_hash": ""
+  },
+  "testdata/stress/exit_reenter.gt.json": {
+    "mtime": 1783485308.4350846,
+    "ast_hash": "7ec2dda751abcbe8e071ac79b8a3db9a",
+    "semantic_hash": ""
+  },
+  "testdata/stress/handheld.gt.json": {
+    "mtime": 1783485246.4196627,
+    "ast_hash": "3e65cf478d0917baead9bc41fec740e6",
+    "semantic_hash": ""
+  },
+  "testdata/stress/low_contrast.gt.json": {
+    "mtime": 1783485347.510082,
+    "ast_hash": "e9a8cfe2832b1e82eaa444b0a0ff9464",
+    "semantic_hash": ""
+  },
+  "testdata/stress/music.gt.json": {
+    "mtime": 1783485273.0838351,
+    "ast_hash": "97a57018db028ac4e382964ca6428f8c",
+    "semantic_hash": ""
+  },
+  "tests/test_croptrack_smoothing.py": {
+    "mtime": 1783496810.7472384,
+    "ast_hash": "368c866868c3bee8ad2db2c4a3b6ec38",
+    "semantic_hash": ""
+  },
+  "tests/test_cutlist.py": {
+    "mtime": 1783496318.1442542,
+    "ast_hash": "4b3ebe9bb57f48923c726a022923c12b",
+    "semantic_hash": ""
+  },
+  "tests/test_silence_threshold.py": {
+    "mtime": 1783496613.9150655,
+    "ast_hash": "a1f67eb38d8b8a7230e3ef7dc21b6262",
+    "semantic_hash": ""
+  },
+  "tests/test_stress_scenarios.py": {
+    "mtime": 1783496838.6913087,
+    "ast_hash": "d66d7387260c6fd14a28d950648dfcae",
+    "semantic_hash": ""
+  },
+  "vlog_pipeline/stress.py": {
+    "mtime": 1783485085.8075867,
+    "ast_hash": "985bbf194a5189542dc1bfcf6ce96105",
+    "semantic_hash": ""
+  },
+  "runs/stress/alternation/edit-report.md": {
+    "mtime": 1783498742.2077403,
+    "ast_hash": "b2017b042c4cf5d7ca46282a76555285",
+    "semantic_hash": ""
+  },
+  "runs/stress/boundary_silence/edit-report.md": {
+    "mtime": 1783498776.3239124,
+    "ast_hash": "514a469ec9e9ad0037d972ea2209d133",
+    "semantic_hash": ""
+  },
+  "runs/stress/dense_filler/edit-report.md": {
+    "mtime": 1783498769.301572,
+    "ast_hash": "5bfbc1c5a31339cf2476c4fd760d50df",
+    "semantic_hash": ""
+  },
+  "runs/stress/exit_reenter/edit-report.md": {
+    "mtime": 1783498749.0944636,
+    "ast_hash": "d14acb0e0f39f8f5a2b39e4e819481b4",
+    "semantic_hash": ""
+  },
+  "runs/stress/handheld/edit-report.md": {
+    "mtime": 1783498723.5682867,
+    "ast_hash": "af4177666ba1490325888406f4492ef9",
+    "semantic_hash": ""
+  },
+  "runs/stress/low_contrast/edit-report.md": {
+    "mtime": 1783498758.8666594,
+    "ast_hash": "d438211d729544d3b0a6cff0f4857489",
+    "semantic_hash": ""
+  },
+  "runs/stress/music_snr08/edit-report.md": {
+    "mtime": 1783498735.3646147,
+    "ast_hash": "3839aa52e3b8d3061674023164177288",
+    "semantic_hash": ""
+  },
+  "runs/stress/music_snr18/edit-report.md": {
+    "mtime": 1783498730.4222512,
+    "ast_hash": "88853e2a8bdcaaf5252886bb14dbf5c8",
+    "semantic_hash": ""
+  },
+  "runs/stress/stress-results-v1-prefix.md": {
+    "mtime": 1783496352.744759,
+    "ast_hash": "071e912dbd63f1eb206ca6819fe943e1",
+    "semantic_hash": ""
+  },
+  "runs/stress/stress-results.md": {
+    "mtime": 1783498776.3268611,
+    "ast_hash": "0ea8005e8a9d3dee8270560d817cdf11",
+    "semantic_hash": ""
+  },
+  "stress-report.md": {
+    "mtime": 1783498805.3420253,
+    "ast_hash": "b55a405e51b716366a4091c316b444e2",
     "semantic_hash": ""
   }
 }
