@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 
 from . import StageError
+from .. import report
 from ..llm import run_claude, api_key_present
 
 PROMPT = """You are reviewing an automated vlog edit. Compare the final cut against the original plan and write a quality review.
@@ -35,8 +36,14 @@ def run(ctx: dict) -> tuple[list[str], list[str], float]:
     run_dir: Path = ctx["run_dir"]
     out = run_dir / "review-report.md"
     if not api_key_present() or ctx.get("skip_llm"):
-        out.write_text("# Review report\n\n_LLM stage skipped._\n")
-        return [str(out)], ["skipped (no API key or --skip-llm)"], 0.0
+        if out.exists() and "_LLM stage skipped._" not in out.read_text():
+            note = "LLM review skipped — kept existing review-report.md"
+            cost = ctx.get("prev_cost", 0.0)  # keep the original run's real cost
+        else:
+            out.write_text("# Review report\n\n_LLM stage skipped._\n")
+            note, cost = "skipped (no API key or --skip-llm)", 0.0
+        report_path = report.generate(run_dir)
+        return [str(out), str(report_path)], [note, f"report: {report_path}"], cost
 
     plan = (run_dir / "plan.md").read_text()[:3000]
     edit_report = (run_dir / "edit-report.md").read_text()[:4000]
@@ -61,4 +68,7 @@ def run(ctx: dict) -> tuple[list[str], list[str], float]:
     out.write_text(text.strip() + "\n")
     verdict = next((l for l in text.splitlines()
                     if l.strip() and not l.startswith("#")), "?")
-    return [str(out)], [f"review written; verdict: {verdict.strip()[:80]}"], cost
+    report_path = report.generate(run_dir)
+    return ([str(out), str(report_path)],
+            [f"review written; verdict: {verdict.strip()[:80]}",
+             f"report: {report_path}"], cost)

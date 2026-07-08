@@ -31,6 +31,10 @@ def run(ctx: dict) -> tuple[list[str], list[str], float]:
     run_dir: Path = ctx["run_dir"]
     out = run_dir / "optimize.md"
     if not api_key_present() or ctx.get("skip_llm"):
+        if out.exists() and "_LLM stage skipped._" not in out.read_text():
+            return ([str(out)],
+                    ["LLM optimize skipped — kept existing optimize.md"],
+                    ctx.get("prev_cost", 0.0))
         out.write_text("# Upload kit\n\n_LLM stage skipped._\n")
         return [str(out)], ["skipped (no API key or --skip-llm)"], 0.0
 

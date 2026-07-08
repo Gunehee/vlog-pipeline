@@ -140,7 +140,7 @@
       "label": "cmd_status()",
       "file_type": "code",
       "source_file": "vlog_pipeline/cli.py",
-      "source_location": "L111",
+      "source_location": "L99",
       "_origin": "ast",
       "id": "vlog_pipeline_cli_cmd_status",
       "community": 1,
@@ -150,7 +150,7 @@
       "label": "main()",
       "file_type": "code",
       "source_file": "vlog_pipeline/cli.py",
-      "source_location": "L135",
+      "source_location": "L123",
       "_origin": "ast",
       "id": "vlog_pipeline_cli_main",
       "community": 1,
@@ -573,7 +573,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_highlights",
-      "community": 0,
+      "community": 5,
       "norm_label": "highlights.py"
     },
     {
@@ -583,7 +583,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_highlights_rms_curve",
-      "community": 0,
+      "community": 5,
       "norm_label": "_rms_curve()"
     },
     {
@@ -593,7 +593,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_highlights_py_path",
-      "community": 0,
+      "community": 5,
       "norm_label": "path"
     },
     {
@@ -603,7 +603,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_highlights_py_ndarray",
-      "community": 0,
+      "community": 5,
       "norm_label": "ndarray"
     },
     {
@@ -613,7 +613,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_highlights_norm",
-      "community": 0,
+      "community": 5,
       "norm_label": "_norm()"
     },
     {
@@ -623,7 +623,7 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_highlights_score_highlights",
-      "community": 0,
+      "community": 5,
       "norm_label": "score_highlights()"
     },
     {
@@ -633,7 +633,7 @@
       "source_location": "L85",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_highlights_validate",
-      "community": 0,
+      "community": 5,
       "norm_label": "validate()"
     },
     {
@@ -643,7 +643,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_highlights_rationale_1",
-      "community": 0,
+      "community": 5,
       "norm_label": "highlight scoring: audio energy + speech rate on the edited timeline."
     },
     {
@@ -653,7 +653,7 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_highlights_rationale_37",
-      "community": 0,
+      "community": 5,
       "norm_label": "score the edited cut and choose the best short-form window."
     },
     {
@@ -663,7 +663,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_render",
-      "community": 5,
+      "community": 0,
       "norm_label": "render.py"
     },
     {
@@ -673,7 +673,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_render_render_cut",
-      "community": 5,
+      "community": 0,
       "norm_label": "render_cut()"
     },
     {
@@ -683,7 +683,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_render_py_path",
-      "community": 5,
+      "community": 0,
       "norm_label": "path"
     },
     {
@@ -693,7 +693,7 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_render_render_chunk",
-      "community": 5,
+      "community": 0,
       "norm_label": "_render_chunk()"
     },
     {
@@ -703,7 +703,7 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_render_overlay_chain",
-      "community": 5,
+      "community": 0,
       "norm_label": "_overlay_chain()"
     },
     {
@@ -713,7 +713,7 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_render_burn_captions",
-      "community": 5,
+      "community": 0,
       "norm_label": "burn_captions()"
     },
     {
@@ -723,7 +723,7 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_render_render_short",
-      "community": 5,
+      "community": 0,
       "norm_label": "render_short()"
     },
     {
@@ -733,7 +733,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_render_rationale_1",
-      "community": 5,
+      "community": 0,
       "norm_label": "ffmpeg rendering: jump-cut assembly with click-free audio joins."
     },
     {
@@ -743,7 +743,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_render_rationale_12",
-      "community": 5,
+      "community": 0,
       "norm_label": "re-assemble kept segments. frame-accurate trim + 10 ms audio fades at     every"
     },
     {
@@ -753,7 +753,7 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_render_rationale_57",
-      "community": 5,
+      "community": 0,
       "norm_label": "chain of timed caption overlays. returns (filter_lines, out_label)."
     },
     {
@@ -763,7 +763,7 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_render_rationale_70",
-      "community": 5,
+      "community": 0,
       "norm_label": "burn pil-rendered caption pngs (ffmpeg here has no libass; overlay     with enab"
     },
     {
@@ -773,7 +773,7 @@
       "source_location": "L91",
       "_origin": "ast",
       "id": "vlog_pipeline_engine_render_rationale_91",
-      "community": 5,
+      "community": 0,
       "norm_label": "one-pass 9:16 export: trim highlight window from the edited master,     apply th"
     },
     {
@@ -913,7 +913,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "vlog_pipeline_ffmpeg_ffmpegerror",
-      "community": 1,
+      "community": 0,
       "norm_label": "ffmpegerror"
     },
     {
@@ -933,7 +933,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "vlog_pipeline_ffmpeg_run",
-      "community": 5,
+      "community": 0,
       "norm_label": "run()"
     },
     {
@@ -943,7 +943,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "completedprocess",
-      "community": 5,
+      "community": 0,
       "norm_label": "completedprocess"
     },
     {
@@ -1117,113 +1117,13 @@
       "norm_label": "run one headless prompt. returns (text, cost_usd)."
     },
     {
-      "label": "report.py",
-      "file_type": "code",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "vlog_pipeline_report",
-      "community": 19,
-      "norm_label": "report.py"
-    },
-    {
-      "label": "_esc()",
-      "file_type": "code",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L112",
-      "_origin": "ast",
-      "id": "vlog_pipeline_report_esc",
-      "community": 19,
-      "norm_label": "_esc()"
-    },
-    {
-      "label": "_fmt_t()",
-      "file_type": "code",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L116",
-      "_origin": "ast",
-      "id": "vlog_pipeline_report_fmt_t",
-      "community": 19,
-      "norm_label": "_fmt_t()"
-    },
-    {
-      "label": "_parse_srt()",
-      "file_type": "code",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L121",
-      "_origin": "ast",
-      "id": "vlog_pipeline_report_parse_srt",
-      "community": 19,
-      "norm_label": "_parse_srt()"
-    },
-    {
-      "label": "_md_to_html()",
-      "file_type": "code",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L134",
-      "_origin": "ast",
-      "id": "vlog_pipeline_report_md_to_html",
-      "community": 19,
-      "norm_label": "_md_to_html()"
-    },
-    {
-      "label": "_inline()",
-      "file_type": "code",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L155",
-      "_origin": "ast",
-      "id": "vlog_pipeline_report_inline",
-      "community": 19,
-      "norm_label": "_inline()"
-    },
-    {
-      "label": "_timeline()",
-      "file_type": "code",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L162",
-      "_origin": "ast",
-      "id": "vlog_pipeline_report_timeline",
-      "community": 19,
-      "norm_label": "_timeline()"
-    },
-    {
-      "label": "generate()",
-      "file_type": "code",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L214",
-      "_origin": "ast",
-      "id": "vlog_pipeline_report_generate",
-      "community": 19,
-      "norm_label": "generate()"
-    },
-    {
-      "label": "Path",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "vlog_pipeline_report_py_path",
-      "community": 19,
-      "norm_label": "path"
-    },
-    {
-      "label": "Self-contained run report: runs/<name>/report.html.  Single offline HTML file (i",
-      "file_type": "rationale",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "vlog_pipeline_report_rationale_1",
-      "community": 19,
-      "norm_label": "self-contained run report: runs/<name>/report.html.  single offline html file (i"
-    },
-    {
       "label": "__init__.py",
       "file_type": "code",
       "source_file": "vlog_pipeline/stages/__init__.py",
       "source_location": "L1",
       "_origin": "ast",
       "id": "vlog_pipeline_stages_init",
-      "community": 2,
+      "community": 1,
       "norm_label": "__init__.py"
     },
     {
@@ -1233,7 +1133,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vlog_pipeline_stages_init_stageerror",
-      "community": 2,
+      "community": 1,
       "norm_label": "stageerror"
     },
     {
@@ -1243,7 +1143,7 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "vlog_pipeline_stages_init_rationale_2",
-      "community": 2,
+      "community": 1,
       "norm_label": "a stage failed its validation gate; the coordinator must not proceed."
     },
     {
@@ -1373,7 +1273,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vlog_pipeline_stages_ingest",
-      "community": 0,
+      "community": 1,
       "norm_label": "ingest.py"
     },
     {
@@ -1383,7 +1283,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "vlog_pipeline_stages_ingest_run",
-      "community": 0,
+      "community": 1,
       "norm_label": "run()"
     },
     {
@@ -1393,7 +1293,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vlog_pipeline_stages_ingest_rationale_1",
-      "community": 0,
+      "community": 1,
       "norm_label": "stage 2 \u2014 ingest (local): ffprobe + silence map."
     },
     {
@@ -1440,7 +1340,7 @@
       "label": "run()",
       "file_type": "code",
       "source_file": "vlog_pipeline/stages/package.py",
-      "source_location": "L35",
+      "source_location": "L34",
       "_origin": "ast",
       "id": "vlog_pipeline_stages_package_run",
       "community": 1,
@@ -1630,7 +1530,7 @@
       "label": "Model routing",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L28",
+      "source_location": "L27",
       "_origin": "ast",
       "id": "readme_model_routing",
       "community": 6,
@@ -1640,7 +1540,7 @@
       "label": "The edit engine (stage 3\u20134, all local signal analysis)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L48",
+      "source_location": "L47",
       "_origin": "ast",
       "id": "readme_the_edit_engine_stage_3_4_all_local_signal_analysis",
       "community": 6,
@@ -1650,7 +1550,7 @@
       "label": "Install",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L72",
+      "source_location": "L71",
       "_origin": "ast",
       "id": "readme_install",
       "community": 6,
@@ -1660,7 +1560,7 @@
       "label": "Proof: real end-to-end run",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L83",
+      "source_location": "L82",
       "_origin": "ast",
       "id": "readme_proof_real_end_to_end_run",
       "community": 6,
@@ -1670,7 +1570,7 @@
       "label": "Current limitations",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L108",
+      "source_location": "L107",
       "_origin": "ast",
       "id": "readme_current_limitations",
       "community": 6,
@@ -2138,17 +2038,6 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "vlog_pipeline/stages/package.py",
-      "source_location": "L8",
-      "weight": 1.0,
-      "source": "vlog_pipeline_stages_package",
-      "target": "vlog_pipeline_init",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/cli.py",
@@ -2172,7 +2061,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/cli.py",
-      "source_location": "L111",
+      "source_location": "L99",
       "weight": 1.0,
       "source": "vlog_pipeline_cli",
       "target": "vlog_pipeline_cli_cmd_status",
@@ -2182,7 +2071,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/cli.py",
-      "source_location": "L135",
+      "source_location": "L123",
       "weight": 1.0,
       "source": "vlog_pipeline_cli",
       "target": "vlog_pipeline_cli_main",
@@ -2390,7 +2279,7 @@
       "context": "argument",
       "confidence": "INFERRED",
       "source_file": "vlog_pipeline/cli.py",
-      "source_location": "L153",
+      "source_location": "L139",
       "weight": 1.0,
       "source": "vlog_pipeline_cli_main",
       "target": "vlog_pipeline_cli_cmd_run",
@@ -2401,7 +2290,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/cli.py",
-      "source_location": "L124",
+      "source_location": "L112",
       "weight": 1.0,
       "source": "vlog_pipeline_cli_cmd_status",
       "target": "vlog_pipeline_state_runstate",
@@ -2412,7 +2301,7 @@
       "context": "argument",
       "confidence": "INFERRED",
       "source_file": "vlog_pipeline/cli.py",
-      "source_location": "L157",
+      "source_location": "L143",
       "weight": 1.0,
       "source": "vlog_pipeline_cli_main",
       "target": "vlog_pipeline_cli_cmd_status",
@@ -2479,17 +2368,6 @@
       "source_location": "L6",
       "weight": 1.0,
       "source": "vlog_pipeline_engine_render",
-      "target": "vlog_pipeline_config",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L14",
-      "weight": 1.0,
-      "source": "vlog_pipeline_report",
       "target": "vlog_pipeline_config",
       "confidence_score": 1.0
     },
@@ -4273,7 +4151,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/stages/package.py",
-      "source_location": "L9",
+      "source_location": "L8",
       "weight": 1.0,
       "source": "vlog_pipeline_stages_package",
       "target": "vlog_pipeline_llm",
@@ -4328,7 +4206,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/stages/package.py",
-      "source_location": "L9",
+      "source_location": "L8",
       "weight": 1.0,
       "source": "vlog_pipeline_stages_package",
       "target": "vlog_pipeline_llm_api_key_present",
@@ -4339,7 +4217,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/stages/package.py",
-      "source_location": "L38",
+      "source_location": "L37",
       "weight": 1.0,
       "source": "vlog_pipeline_stages_package_run",
       "target": "vlog_pipeline_llm_api_key_present",
@@ -4393,7 +4271,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/stages/optimize.py",
-      "source_location": "L46",
+      "source_location": "L42",
       "weight": 1.0,
       "source": "vlog_pipeline_stages_optimize_run",
       "target": "vlog_pipeline_llm_run_claude",
@@ -4404,7 +4282,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/stages/package.py",
-      "source_location": "L9",
+      "source_location": "L8",
       "weight": 1.0,
       "source": "vlog_pipeline_stages_package",
       "target": "vlog_pipeline_llm_run_claude",
@@ -4415,7 +4293,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/stages/package.py",
-      "source_location": "L62",
+      "source_location": "L55",
       "weight": 1.0,
       "source": "vlog_pipeline_stages_package_run",
       "target": "vlog_pipeline_llm_run_claude",
@@ -4437,200 +4315,10 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/stages/plan.py",
-      "source_location": "L40",
+      "source_location": "L37",
       "weight": 1.0,
       "source": "vlog_pipeline_stages_plan_run",
       "target": "vlog_pipeline_llm_run_claude",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L112",
-      "weight": 1.0,
-      "source": "vlog_pipeline_report",
-      "target": "vlog_pipeline_report_esc",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L116",
-      "weight": 1.0,
-      "source": "vlog_pipeline_report",
-      "target": "vlog_pipeline_report_fmt_t",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L214",
-      "weight": 1.0,
-      "source": "vlog_pipeline_report",
-      "target": "vlog_pipeline_report_generate",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L155",
-      "weight": 1.0,
-      "source": "vlog_pipeline_report",
-      "target": "vlog_pipeline_report_inline",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L134",
-      "weight": 1.0,
-      "source": "vlog_pipeline_report",
-      "target": "vlog_pipeline_report_md_to_html",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L121",
-      "weight": 1.0,
-      "source": "vlog_pipeline_report",
-      "target": "vlog_pipeline_report_parse_srt",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L162",
-      "weight": 1.0,
-      "source": "vlog_pipeline_report",
-      "target": "vlog_pipeline_report_timeline",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "vlog_pipeline_report_rationale_1",
-      "target": "vlog_pipeline_report",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "submodule_import",
-      "confidence": "EXTRACTED",
-      "source_file": "vlog_pipeline/stages/package.py",
-      "source_location": "L8",
-      "weight": 1.0,
-      "source": "vlog_pipeline_stages_package",
-      "target": "vlog_pipeline_report",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L239",
-      "weight": 1.0,
-      "source": "vlog_pipeline_report_generate",
-      "target": "vlog_pipeline_report_esc",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L156",
-      "weight": 1.0,
-      "source": "vlog_pipeline_report_inline",
-      "target": "vlog_pipeline_report_esc",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L176",
-      "weight": 1.0,
-      "source": "vlog_pipeline_report_timeline",
-      "target": "vlog_pipeline_report_esc",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L172",
-      "weight": 1.0,
-      "source": "vlog_pipeline_report_timeline",
-      "target": "vlog_pipeline_report_fmt_t",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L237",
-      "weight": 1.0,
-      "source": "vlog_pipeline_report_generate",
-      "target": "vlog_pipeline_report_parse_srt",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L274",
-      "weight": 1.0,
-      "source": "vlog_pipeline_report_generate",
-      "target": "vlog_pipeline_report_md_to_html",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L140",
-      "weight": 1.0,
-      "source": "vlog_pipeline_report_md_to_html",
-      "target": "vlog_pipeline_report_inline",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L294",
-      "weight": 1.0,
-      "source": "vlog_pipeline_report_generate",
-      "target": "vlog_pipeline_report_timeline",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "context": "return_type",
-      "confidence": "EXTRACTED",
-      "source_file": "vlog_pipeline/report.py",
-      "source_location": "L214",
-      "weight": 1.0,
-      "source": "vlog_pipeline_report_generate",
-      "target": "vlog_pipeline_report_py_path",
       "confidence_score": 1.0
     },
     {
@@ -4834,7 +4522,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/stages/optimize.py",
-      "source_location": "L49",
+      "source_location": "L45",
       "weight": 1.0,
       "source": "vlog_pipeline_stages_optimize_run",
       "target": "vlog_pipeline_stages_init_stageerror",
@@ -4856,7 +4544,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/stages/package.py",
-      "source_location": "L67",
+      "source_location": "L60",
       "weight": 1.0,
       "source": "vlog_pipeline_stages_package_run",
       "target": "vlog_pipeline_stages_init_stageerror",
@@ -4878,7 +4566,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/stages/plan.py",
-      "source_location": "L42",
+      "source_location": "L39",
       "weight": 1.0,
       "source": "vlog_pipeline_stages_plan_run",
       "target": "vlog_pipeline_stages_init_stageerror",
@@ -5074,7 +4762,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "vlog_pipeline/stages/package.py",
-      "source_location": "L35",
+      "source_location": "L34",
       "weight": 1.0,
       "source": "vlog_pipeline_stages_package",
       "target": "vlog_pipeline_stages_package_run",
@@ -5302,7 +4990,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L108",
+      "source_location": "L107",
       "weight": 1.0,
       "source": "readme_vlog_pipeline",
       "target": "readme_current_limitations",
@@ -5312,7 +5000,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L72",
+      "source_location": "L71",
       "weight": 1.0,
       "source": "readme_vlog_pipeline",
       "target": "readme_install",
@@ -5322,7 +5010,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L28",
+      "source_location": "L27",
       "weight": 1.0,
       "source": "readme_vlog_pipeline",
       "target": "readme_model_routing",
@@ -5332,7 +5020,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L83",
+      "source_location": "L82",
       "weight": 1.0,
       "source": "readme_vlog_pipeline",
       "target": "readme_proof_real_end_to_end_run",
@@ -5342,7 +5030,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L48",
+      "source_location": "L47",
       "weight": 1.0,
       "source": "readme_vlog_pipeline",
       "target": "readme_the_edit_engine_stage_3_4_all_local_signal_analysis",
@@ -5620,5 +5308,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "cf1727a6ec7811294977bf028419115ef576c073"
+  "built_at_commit": "6b14fbb4e4ae117c5bafb1f7303117e375a7e55a"
 }

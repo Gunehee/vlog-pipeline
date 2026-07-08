@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>vlog-pipeline report — day30-vlog</title>
+<style>
+:root {
+  --surface: #fcfcfb; --panel: #f3f2ef; --border: #e0dfda;
+  --ink: #0b0b0b; --ink-2: #52514e; --ink-3: #8a887f;
+  --c-silence: #2a78d6; --c-filler: #1baf7a; --c-mixed: #eda100;
+  --c-restored: #008300; --c-kept: #d4d2cb;
+  --s-good: #0ca30c; --s-warn: #fab219; --s-crit: #d03b3b;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #1a1a19; --panel: #232322; --border: #3a3936;
+    --ink: #ffffff; --ink-2: #c3c2b7; --ink-3: #8a887f;
+    --c-silence: #3987e5; --c-filler: #199e70; --c-mixed: #c98500;
+    --c-restored: #008300; --c-kept: #45443f;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--surface); color: var(--ink);
+       font: 15px/1.55 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+.wrap { max-width: 1060px; margin: 0 auto; padding: 32px 24px 64px; }
+h1 { font-size: 26px; margin: 0 0 4px; }
+h2 { font-size: 17px; margin: 40px 0 12px; }
+.sub { color: var(--ink-2); margin: 0 0 10px; }
+.meta { display: flex; gap: 28px; flex-wrap: wrap; margin: 18px 0 6px;
+        padding: 14px 18px; background: var(--panel);
+        border: 1px solid var(--border); border-radius: 10px; }
+.meta div { min-width: 110px; }
+.meta .k { font-size: 12px; color: var(--ink-3); text-transform: uppercase;
+           letter-spacing: .04em; }
+.meta .v { font-size: 18px; font-weight: 600; }
+.videos { display: flex; gap: 16px; align-items: flex-start; flex-wrap: wrap; }
+.vcard { background: var(--panel); border: 1px solid var(--border);
+         border-radius: 10px; padding: 12px; }
+.vcard p { margin: 8px 2px 0; font-size: 13px; color: var(--ink-2); }
+video { display: block; border-radius: 6px; background: #000; }
+.v169 { flex: 1 1 560px; } .v169 video { width: 100%; }
+.v916 { flex: 0 0 240px; } .v916 video { width: 216px; }
+.bar-label { font-size: 13px; color: var(--ink-2); margin: 14px 0 4px; }
+.bar { position: relative; height: 34px; border-radius: 6px; overflow: hidden;
+       background: var(--c-kept); }
+.bar .cut { position: absolute; top: 0; height: 100%; min-width: 3px; }
+.bar .cut.silence { background: var(--c-silence); }
+.bar .cut.filler  { background: var(--c-filler); }
+.bar .cut.mixed   { background: var(--c-mixed); }
+.bar .cut.restored { background:
+  repeating-linear-gradient(135deg, var(--c-restored) 0 4px, transparent 4px 8px); }
+.bar .cut:hover { outline: 2px solid var(--ink); outline-offset: -2px; }
+.bar2 { height: 34px; border-radius: 6px; background: var(--c-kept); }
+.legend { display: flex; gap: 18px; flex-wrap: wrap; margin: 12px 0 4px;
+          font-size: 13px; color: var(--ink-2); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.chip { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+.chip.restored { background:
+  repeating-linear-gradient(135deg, var(--c-restored) 0 3px, transparent 3px 6px);
+  border: 1px solid var(--c-restored); }
+details { margin-top: 10px; }
+summary { cursor: pointer; color: var(--ink-2); font-size: 14px; }
+table { border-collapse: collapse; width: 100%; margin-top: 10px; font-size: 14px; }
+th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--border); }
+th { font-size: 12px; color: var(--ink-3); text-transform: uppercase;
+     letter-spacing: .04em; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+.cap-line { display: flex; gap: 12px; padding: 7px 10px; border-radius: 6px;
+            align-items: baseline; }
+.cap-line:nth-child(odd) { background: var(--panel); }
+.cap-t { flex: 0 0 150px; font: 12px/1.6 ui-monospace, Menlo, monospace;
+         color: var(--ink-3); }
+.cap-x { font-weight: 600; }
+.thumbs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.thumbs figure { margin: 0; }
+.thumbs img { width: 100%; border-radius: 6px; border: 1px solid var(--border);
+              display: block; }
+.thumbs figcaption { font-size: 12px; color: var(--ink-3); margin-top: 3px; }
+.banner { border-radius: 10px; padding: 16px 18px; margin: 12px 0;
+          border: 1px solid var(--border); border-left: 6px solid var(--ink-3);
+          background: var(--panel); }
+.banner.good { border-left-color: var(--s-good); }
+.banner.warn { border-left-color: var(--s-warn); }
+.banner.crit { border-left-color: var(--s-crit); }
+.banner .verdict { font-size: 16px; font-weight: 700; }
+.banner .verdict .icon { margin-right: 8px; }
+.review h3 { font-size: 14px; margin: 16px 0 4px; }
+.review p, .review li { font-size: 14px; color: var(--ink-2); }
+.footer { margin-top: 48px; font-size: 12px; color: var(--ink-3); }
+</style></head><body><div class="wrap">
+
+<h1>day30-vlog</h1>
+<p class="sub">Three lessons from my first 30 days of daily vlogging</p>
+<div class="meta">
+  <div><div class="k">run date</div><div class="v">2026-07-08 12:00:22</div></div>
+  <div><div class="k">metered LLM cost</div><div class="v">$0.1180</div></div>
+  <div><div class="k">pipeline time (sum of stages)</div><div class="v">1m24s</div></div>
+</div>
+
+<h2>Exports</h2>
+<div class="videos"><div class="vcard v169"><video controls preload="metadata" src="final/long-169.mp4"></video><p>16:9 long-form — <code>final/long-169.mp4</code></p></div><div class="vcard v916"><video controls preload="metadata" src="final/short-916.mp4"></video><p>9:16 short — <code>final/short-916.mp4</code></p></div></div>
+
+<h2>Before / after cut timeline</h2>
+
+<div class="bar-label">Original — 161.3s (2:41.3). Hover any cut for
+timestamp + reason; cut widths have a 3px minimum for visibility.</div>
+<div class="bar"><div class="cut filler" style="left:0.967%;width:0.062%" title="0:01.6–0:01.7 · 0.10s · cut: filler &#x27;um&#x27;"></div><div class="cut silence" style="left:2.629%;width:0.528%" title="0:04.2–0:05.1 · 0.85s · cut: silence (1.151s dead air)"></div><div class="cut silence" style="left:5.658%;width:0.383%" title="0:09.1–0:09.7 · 0.62s · cut: silence (0.918s dead air)"></div><div class="cut filler" style="left:6.449%;width:0.223%" title="0:10.4–0:10.8 · 0.36s · cut: filler &#x27;uh&#x27;"></div><div class="cut silence" style="left:8.696%;width:0.704%" title="0:14.0–0:15.2 · 1.14s · cut: silence (1.435s dead air)"></div><div class="cut filler" style="left:12.042%;width:0.211%" title="0:19.4–0:19.8 · 0.34s · cut: filler &#x27;um&#x27;"></div><div class="cut silence" style="left:14.017%;width:0.874%" title="0:22.6–0:24.0 · 1.41s · cut: silence (1.711s dead air)"></div><div class="cut filler" style="left:16.023%;width:0.223%" title="0:25.8–0:26.2 · 0.36s · cut: filler &#x27;um&#x27;"></div><div class="cut silence" style="left:17.935%;width:0.446%" title="0:28.9–0:29.6 · 0.72s · cut: silence (1.019s dead air)"></div><div class="cut silence" style="left:19.897%;width:0.353%" title="0:32.1–0:32.7 · 0.57s · cut: silence (0.869s dead air)"></div><div class="cut filler" style="left:21.368%;width:0.186%" title="0:34.5–0:34.8 · 0.30s · cut: filler &#x27;ah&#x27;"></div><div class="cut silence" style="left:24.809%;width:0.435%" title="0:40.0–0:40.7 · 0.70s · cut: silence (1.0s dead air)"></div><div class="cut silence" style="left:25.904%;width:0.641%" title="0:41.8–0:42.8 · 1.03s · cut: silence (1.333s dead air)"></div><div class="cut filler" style="left:27.619%;width:0.174%" title="0:44.5–0:44.8 · 0.28s · cut: filler &#x27;um&#x27;"></div><div class="cut silence" style="left:30.870%;width:0.812%" title="0:49.8–0:51.1 · 1.31s · cut: silence (1.609s dead air)"></div><div class="cut silence" style="left:34.478%;width:0.964%" title="0:55.6–0:57.2 · 1.55s · cut: silence (1.855s dead air)"></div><div class="cut silence" style="left:38.999%;width:0.204%" title="1:02.9–1:03.2 · 0.33s · cut: silence (0.629s dead air)"></div><div class="cut silence" style="left:51.505%;width:0.928%" title="1:23.1–1:24.6 · 1.50s · cut: silence (1.796s dead air)"></div><div class="cut filler" style="left:52.999%;width:0.174%" title="1:25.5–1:25.8 · 0.28s · cut: filler &#x27;uh&#x27;"></div><div class="cut silence" style="left:54.619%;width:0.382%" title="1:28.1–1:28.7 · 0.62s · cut: silence (0.915s dead air)"></div><div class="cut filler" style="left:58.214%;width:0.087%" title="1:33.9–1:34.0 · 0.14s · cut: filler &#x27;um&#x27;"></div><div class="cut silence" style="left:60.097%;width:0.456%" title="1:36.9–1:37.7 · 0.73s · cut: silence (1.035s dead air)"></div><div class="cut silence" style="left:63.732%;width:0.313%" title="1:42.8–1:43.3 · 0.50s · cut: silence (0.804s dead air)"></div><div class="cut filler" style="left:65.531%;width:0.211%" title="1:45.7–1:46.0 · 0.34s · cut: filler &#x27;ah&#x27;"></div><div class="cut silence" style="left:67.825%;width:0.523%" title="1:49.4–1:50.2 · 0.84s · cut: silence (1.145s dead air)"></div><div class="cut silence" style="left:70.785%;width:0.809%" title="1:54.2–1:55.5 · 1.30s · cut: silence (1.605s dead air)"></div><div class="cut filler" style="left:72.377%;width:0.186%" title="1:56.7–1:57.0 · 0.30s · cut: filler &#x27;um&#x27;"></div><div class="cut silence" style="left:74.525%;width:0.516%" title="2:00.2–2:01.0 · 0.83s · cut: silence (1.132s dead air)"></div><div class="cut silence" style="left:76.221%;width:0.442%" title="2:02.9–2:03.6 · 0.71s · cut: silence (1.013s dead air)"></div><div class="cut filler" style="left:78.590%;width:0.198%" title="2:06.7–2:07.1 · 0.32s · cut: filler &#x27;ah&#x27;"></div><div class="cut silence" style="left:79.997%;width:0.380%" title="2:09.0–2:09.6 · 0.61s · cut: silence (0.913s dead air)"></div><div class="cut silence" style="left:82.712%;width:0.322%" title="2:13.4–2:13.9 · 0.52s · cut: silence (0.82s dead air)"></div><div class="cut silence" style="left:85.021%;width:0.522%" title="2:17.1–2:18.0 · 0.84s · cut: silence (1.142s dead air)"></div><div class="cut silence" style="left:88.589%;width:0.756%" title="2:22.9–2:24.1 · 1.22s · cut: silence (1.518s dead air)"></div><div class="cut filler" style="left:89.870%;width:0.099%" title="2:24.9–2:25.1 · 0.16s · cut: filler &#x27;um&#x27;"></div><div class="cut silence" style="left:93.118%;width:0.356%" title="2:30.2–2:30.7 · 0.57s · cut: silence (0.873s dead air)"></div><div class="cut filler" style="left:95.506%;width:0.198%" title="2:34.0–2:34.3 · 0.32s · cut: filler &#x27;ah&#x27;"></div><div class="cut silence" style="left:98.236%;width:0.241%" title="2:38.4–2:38.8 · 0.39s · cut: silence (0.689s dead air)"></div><div class="cut restored" style="left:20.744%;width:0.540%" title="0:33.5–0:34.3 · KEPT — pacing guard cancelled this cut (silence (1.17s dead air)): kept segment 34.32-34.46s would be 0.14s &lt; min 0.6s"></div><div class="cut restored" style="left:99.502%;width:0.493%" title="2:40.5–2:41.3 · KEPT — pacing guard cancelled this cut (silence (0.945s dead air)): kept segment 161.26-161.27s would be 0.01s &lt; min 0.6s"></div></div>
+<div class="bar-label">Final — 136.2s (2:16.2) ·
+&minus;25.0s removed (15.5%)</div>
+<div class="bar2" style="width:84.48%"></div>
+<div class="legend">
+  <span><span class="chip" style="background:var(--c-silence)"></span>silence cut (25)</span>
+  <span><span class="chip" style="background:var(--c-filler)"></span>filler-word cut (13)</span>
+  <span><span class="chip" style="background:var(--c-mixed)"></span>mixed cut (0)</span>
+  <span><span class="chip restored"></span>pacing-guard kept (2)</span>
+  <span><span class="chip" style="background:var(--c-kept)"></span>kept footage</span>
+</div>
+<details><summary>All 38 cuts (table view)</summary>
+<table><tr><th class="num">#</th><th class="num">start</th><th class="num">end</th>
+<th class="num">dur</th><th>reason</th></tr><tr><td class="num">1</td><td class="num">0:01.6</td><td class="num">0:01.7</td><td class="num">0.10s</td><td>filler &#x27;um&#x27;</td></tr><tr><td class="num">2</td><td class="num">0:04.2</td><td class="num">0:05.1</td><td class="num">0.85s</td><td>silence (1.151s dead air)</td></tr><tr><td class="num">3</td><td class="num">0:09.1</td><td class="num">0:09.7</td><td class="num">0.62s</td><td>silence (0.918s dead air)</td></tr><tr><td class="num">4</td><td class="num">0:10.4</td><td class="num">0:10.8</td><td class="num">0.36s</td><td>filler &#x27;uh&#x27;</td></tr><tr><td class="num">5</td><td class="num">0:14.0</td><td class="num">0:15.2</td><td class="num">1.14s</td><td>silence (1.435s dead air)</td></tr><tr><td class="num">6</td><td class="num">0:19.4</td><td class="num">0:19.8</td><td class="num">0.34s</td><td>filler &#x27;um&#x27;</td></tr><tr><td class="num">7</td><td class="num">0:22.6</td><td class="num">0:24.0</td><td class="num">1.41s</td><td>silence (1.711s dead air)</td></tr><tr><td class="num">8</td><td class="num">0:25.8</td><td class="num">0:26.2</td><td class="num">0.36s</td><td>filler &#x27;um&#x27;</td></tr><tr><td class="num">9</td><td class="num">0:28.9</td><td class="num">0:29.6</td><td class="num">0.72s</td><td>silence (1.019s dead air)</td></tr><tr><td class="num">10</td><td class="num">0:32.1</td><td class="num">0:32.7</td><td class="num">0.57s</td><td>silence (0.869s dead air)</td></tr><tr><td class="num">11</td><td class="num">0:34.5</td><td class="num">0:34.8</td><td class="num">0.30s</td><td>filler &#x27;ah&#x27;</td></tr><tr><td class="num">12</td><td class="num">0:40.0</td><td class="num">0:40.7</td><td class="num">0.70s</td><td>silence (1.0s dead air)</td></tr><tr><td class="num">13</td><td class="num">0:41.8</td><td class="num">0:42.8</td><td class="num">1.03s</td><td>silence (1.333s dead air)</td></tr><tr><td class="num">14</td><td class="num">0:44.5</td><td class="num">0:44.8</td><td class="num">0.28s</td><td>filler &#x27;um&#x27;</td></tr><tr><td class="num">15</td><td class="num">0:49.8</td><td class="num">0:51.1</td><td class="num">1.31s</td><td>silence (1.609s dead air)</td></tr><tr><td class="num">16</td><td class="num">0:55.6</td><td class="num">0:57.2</td><td class="num">1.55s</td><td>silence (1.855s dead air)</td></tr><tr><td class="num">17</td><td class="num">1:02.9</td><td class="num">1:03.2</td><td class="num">0.33s</td><td>silence (0.629s dead air)</td></tr><tr><td class="num">18</td><td class="num">1:23.1</td><td class="num">1:24.6</td><td class="num">1.50s</td><td>silence (1.796s dead air)</td></tr><tr><td class="num">19</td><td class="num">1:25.5</td><td class="num">1:25.8</td><td class="num">0.28s</td><td>filler &#x27;uh&#x27;</td></tr><tr><td class="num">20</td><td class="num">1:28.1</td><td class="num">1:28.7</td><td class="num">0.62s</td><td>silence (0.915s dead air)</td></tr><tr><td class="num">21</td><td class="num">1:33.9</td><td class="num">1:34.0</td><td class="num">0.14s</td><td>filler &#x27;um&#x27;</td></tr><tr><td class="num">22</td><td class="num">1:36.9</td><td class="num">1:37.7</td><td class="num">0.73s</td><td>silence (1.035s dead air)</td></tr><tr><td class="num">23</td><td class="num">1:42.8</td><td class="num">1:43.3</td><td class="num">0.50s</td><td>silence (0.804s dead air)</td></tr><tr><td class="num">24</td><td class="num">1:45.7</td><td class="num">1:46.0</td><td class="num">0.34s</td><td>filler &#x27;ah&#x27;</td></tr><tr><td class="num">25</td><td class="num">1:49.4</td><td class="num">1:50.2</td><td class="num">0.84s</td><td>silence (1.145s dead air)</td></tr><tr><td class="num">26</td><td class="num">1:54.2</td><td class="num">1:55.5</td><td class="num">1.30s</td><td>silence (1.605s dead air)</td></tr><tr><td class="num">27</td><td class="num">1:56.7</td><td class="num">1:57.0</td><td class="num">0.30s</td><td>filler &#x27;um&#x27;</td></tr><tr><td class="num">28</td><td class="num">2:00.2</td><td class="num">2:01.0</td><td class="num">0.83s</td><td>silence (1.132s dead air)</td></tr><tr><td class="num">29</td><td class="num">2:02.9</td><td class="num">2:03.6</td><td class="num">0.71s</td><td>silence (1.013s dead air)</td></tr><tr><td class="num">30</td><td class="num">2:06.7</td><td class="num">2:07.1</td><td class="num">0.32s</td><td>filler &#x27;ah&#x27;</td></tr><tr><td class="num">31</td><td class="num">2:09.0</td><td class="num">2:09.6</td><td class="num">0.61s</td><td>silence (0.913s dead air)</td></tr><tr><td class="num">32</td><td class="num">2:13.4</td><td class="num">2:13.9</td><td class="num">0.52s</td><td>silence (0.82s dead air)</td></tr><tr><td class="num">33</td><td class="num">2:17.1</td><td class="num">2:18.0</td><td class="num">0.84s</td><td>silence (1.142s dead air)</td></tr><tr><td class="num">34</td><td class="num">2:22.9</td><td class="num">2:24.1</td><td class="num">1.22s</td><td>silence (1.518s dead air)</td></tr><tr><td class="num">35</td><td class="num">2:24.9</td><td class="num">2:25.1</td><td class="num">0.16s</td><td>filler &#x27;um&#x27;</td></tr><tr><td class="num">36</td><td class="num">2:30.2</td><td class="num">2:30.7</td><td class="num">0.57s</td><td>silence (0.873s dead air)</td></tr><tr><td class="num">37</td><td class="num">2:34.0</td><td class="num">2:34.3</td><td class="num">0.32s</td><td>filler &#x27;ah&#x27;</td></tr><tr><td class="num">38</td><td class="num">2:38.4</td><td class="num">2:38.8</td><td class="num">0.39s</td><td>silence (0.689s dead air)</td></tr></table></details>
+
+
+<h2>Caption preview <span style="font-weight:400;color:var(--ink-3)">(first 10 of the .srt)</span></h2>
+<div><div class="cap-line"><span class="cap-t">00:00:00 → 00:00:02</span><span class="cap-x">Okay, so, I just hit 30</span></div><div class="cap-line"><span class="cap-t">00:00:02 → 00:00:04</span><span class="cap-x">days of daily vlogging. 30 days,</span></div><div class="cap-line"><span class="cap-t">00:00:05 → 00:00:07</span><span class="cap-x">one video every single day, no</span></div><div class="cap-line"><span class="cap-t">00:00:07 → 00:00:10</span><span class="cap-x">exceptions. And, honestly, I</span></div><div class="cap-line"><span class="cap-t">00:00:10 → 00:00:11</span><span class="cap-x">almost quit three separate times.</span></div><div class="cap-line"><span class="cap-t">00:00:12 → 00:00:13</span><span class="cap-x">But I learned three things that</span></div><div class="cap-line"><span class="cap-t">00:00:13 → 00:00:15</span><span class="cap-x">completely changed how I make</span></div><div class="cap-line"><span class="cap-t">00:00:15 → 00:00:17</span><span class="cap-x">videos. And, I want to walk</span></div><div class="cap-line"><span class="cap-t">00:00:17 → 00:00:18</span><span class="cap-x">you through all three of them</span></div><div class="cap-line"><span class="cap-t">00:00:18 → 00:00:20</span><span class="cap-x">right now. So lesson number one</span></div></div>
+
+<h2>Cost breakdown</h2>
+<table><tr><th>stage</th><th>model</th><th>status</th><th class="num">cost</th></tr>
+<tr><td>plan</td><td>sonnet</td><td>done</td><td class="num">$0.0425</td></tr><tr><td>package</td><td>sonnet</td><td>done</td><td class="num">$0.0608</td></tr><tr><td>optimize</td><td>haiku</td><td>done</td><td class="num">$0.0147</td></tr><tr><td>ingest + edit + caption</td><td>— (local ffmpeg / whisper / OpenCV engine)</td><td>done</td><td class="num">$0.0000</td></tr><tr><th colspan="3">total metered</th><th class="num">$0.1180</th></tr></table>
+
+<h2>Thumbnail frames</h2>
+<div class="thumbs"><figure><img src="thumbnails/frame-01-0008.5s.jpg" alt="frame-01-0008.5s" loading="lazy"><figcaption>thumbnails/frame-01-0008.5s.jpg</figcaption></figure><figure><img src="thumbnails/frame-02-0025.6s.jpg" alt="frame-02-0025.6s" loading="lazy"><figcaption>thumbnails/frame-02-0025.6s.jpg</figcaption></figure><figure><img src="thumbnails/frame-03-0042.6s.jpg" alt="frame-03-0042.6s" loading="lazy"><figcaption>thumbnails/frame-03-0042.6s.jpg</figcaption></figure><figure><img src="thumbnails/frame-04-0059.7s.jpg" alt="frame-04-0059.7s" loading="lazy"><figcaption>thumbnails/frame-04-0059.7s.jpg</figcaption></figure><figure><img src="thumbnails/frame-05-0076.8s.jpg" alt="frame-05-0076.8s" loading="lazy"><figcaption>thumbnails/frame-05-0076.8s.jpg</figcaption></figure><figure><img src="thumbnails/frame-06-0093.8s.jpg" alt="frame-06-0093.8s" loading="lazy"><figcaption>thumbnails/frame-06-0093.8s.jpg</figcaption></figure><figure><img src="thumbnails/frame-07-0110.9s.jpg" alt="frame-07-0110.9s" loading="lazy"><figcaption>thumbnails/frame-07-0110.9s.jpg</figcaption></figure><figure><img src="thumbnails/frame-08-0127.9s.jpg" alt="frame-08-0127.9s" loading="lazy"><figcaption>thumbnails/frame-08-0127.9s.jpg</figcaption></figure><figure><img src="thumbnails/short/frame-01-0006.3s.jpg" alt="frame-01-0006.3s" loading="lazy"><figcaption>short/frame-01-0006.3s.jpg</figcaption></figure><figure><img src="thumbnails/short/frame-02-0019.0s.jpg" alt="frame-02-0019.0s" loading="lazy"><figcaption>short/frame-02-0019.0s.jpg</figcaption></figure><figure><img src="thumbnails/short/frame-03-0031.6s.jpg" alt="frame-03-0031.6s" loading="lazy"><figcaption>short/frame-03-0031.6s.jpg</figcaption></figure><figure><img src="thumbnails/short/frame-04-0044.3s.jpg" alt="frame-04-0044.3s" loading="lazy"><figcaption>short/frame-04-0044.3s.jpg</figcaption></figure></div>
+
+<h2>Review verdict</h2>
+<div class="banner warn">
+  <div class="verdict"><span class="icon">&#9888;</span>SHIP WITH NOTES</div>
+  <div class="review"><h2>Review report</h2>
+<h3>Verdict</h3>
+<p><strong>SHIP WITH NOTES</strong> — the cut delivers the plan&#x27;s three-lesson structure and CTA cleanly, but the actual content diverges from the planned premise (this is a video-editing lesson video, not a &quot;daily vlogging habit&quot; confessional), so the short-form angle needs re-selection.</p>
+<h3>Structure match</h3>
+<p>Hook lands close to spec: &quot;I just hit 30 days of daily vlogging... I almost quit three separate times&quot; mirrors the planned &quot;almost quit on day 12&quot; cold open, delivered with no intro preamble. Body delivers three clearly claim-first lessons: (1) &quot;editing is where videos actually get made,&quot; (2) &quot;nobody watches your intro, nobody,&quot; (3) &quot;consistency beats quality&quot; — each followed by a story/example (4-hour edits, retention graphs, day-1-vs-day-30 embarrassment) and a takeaway. CTA is present and topic-tied: &quot;subscribe so you don&#x27;t miss it... I will see you tomorrow,&quot; matching the planned energy-consistent ask. One gap: the plan called for an explicit &quot;what I&#x27;d do differently&quot; honesty beat and a single unifying takeaway line — the closer (&quot;Cut the dead air, kill your intro, and ship every single day&quot;) serves as the tie-together line but there&#x27;s no distinct &quot;what I&#x27;d change&quot; moment.</p>
+<h3>Runtime &amp; pacing</h3>
+<p>136.24s edited vs. 161.27s original — 15.5% trimmed, in line with a filler/silence tightening pass rather than a heavy restructure. 38 cuts averaging 0.66s each (13 filler words, 25 silences) is dense but appropriate for conversational dead-air removal; the pacing safeguard correctly cancelled 2 cuts that would&#x27;ve left sub-0.6s fragments (33.45–34.32s, 160.46–161.26s), preventing choppy micro-segments. No single cut exceeds 1.55s, so no risk of losing narrative beats. A/V drift is 22ms — negligible, no resync needed. Highlight window (38.7s–89.4s, ~50.7s) sits squarely inside Lesson 1/2 territory, not on a single vulnerability beat.</p>
+<h3>Caption quality</h3>
+<p>Mostly clean conversational transcript, but has several artifacts that will read poorly as burned-in captions: stray comma splices (&quot;So, that&#x27;s the whole month&quot;), a mid-word/phrase gap (&quot;my average view duration doubled by more than half&quot; reads fine, but &quot;80 % of people&quot; needs normalizing to &quot;80%&quot;), and a broken clause — &quot;I looked at my retention graphs and 80% of people were gone before minute one&quot; is fine, but &quot;retention is basically the holy grail, if you didn&#x27;t know&quot; feels like a stray aside that should likely be trimmed for the short-form cut rather than kept verbatim.</p>
+<h3>Risks / notes for the human</h3>
+<ul><li><strong>Short-form mismatch</strong>: plan&#x27;s short-form angle assumed a vulnerability/confession beat; actual content is instructional (editing tips), so pick the retention-doubling story (spilled coffee / flat retention line, ~85–115s per kept-segment timing) as the shareable hook instead of forcing the planned emotional-arc template.</li><li><strong>Missing &quot;what I&#x27;d do differently&quot; beat</strong> — verify this wasn&#x27;t cut; if it was scripted but never delivered, flag to the creator for the next take.</li><li>Confirm caption punctuation cleanup pass runs before burn-in (stray commas, &quot;%&quot; spacing) — currently raw ASR output.</li></ul></div>
+</div>
+
+<div class="footer">Generated by vlog-pipeline · self-contained file — videos are
+referenced relative to this folder, everything else is inline.</div>
+</div></body></html>

@@ -75,13 +75,15 @@
     "package": {
       "status": "done",
       "outputs": [
-        "runs/day30-vlog/review-report.md"
+        "runs/day30-vlog/review-report.md",
+        "runs/day30-vlog/report.html"
       ],
       "validation": [
-        "review written; verdict: **SHIP WITH NOTES** \u2014 the cut delivers the plan's three-lesson structure and CTA"
+        "LLM review skipped \u2014 kept existing review-report.md",
+        "report: runs/day30-vlog/report.html"
       ],
       "cost_usd": 0.0608,
-      "seconds": 17.5
+      "seconds": 0.0
     },
     "optimize": {
       "status": "done",

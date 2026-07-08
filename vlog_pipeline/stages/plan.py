@@ -29,6 +29,9 @@ def run(ctx: dict) -> tuple[list[str], list[str], float]:
     run_dir: Path = ctx["run_dir"]
     out = run_dir / "plan.md"
     if not api_key_present() or ctx.get("skip_llm"):
+        if out.exists() and "_LLM stage skipped" not in out.read_text():
+            return ([str(out)], ["LLM plan skipped — kept existing plan.md"],
+                    ctx.get("prev_cost", 0.0))
         out.write_text(f"# Plan: {ctx['topic']}\n\n"
                        "_LLM stage skipped (no ANTHROPIC_API_KEY or --skip-llm); "
                        "edit proceeds without a generated plan._\n")

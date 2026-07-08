@@ -22,6 +22,7 @@ vlog-pipeline status
 | `edit-decisions.json` | full machine-readable EDL, filler list, highlight-scoring curve |
 | `review-report.md` | LLM review of the final cut against the original plan (structure / runtime / pacing) |
 | `plan.md`, `optimize.md` | production plan; title variants, thumbnail text, description, tags |
+| `report.html` | self-contained offline run report: embedded players, color-coded cut timeline, caption preview, cost table, thumbnails, verdict banner — double-click to open |
 | `thumbnails/` | 8 frames from the long cut + 4 from the short, for eyeball validation |
 
 ## Model routing

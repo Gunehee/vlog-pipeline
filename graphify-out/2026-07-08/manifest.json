@@ -15,8 +15,8 @@
     "semantic_hash": ""
   },
   "runs/day30-vlog/state.json": {
-    "mtime": 1783481775.2825859,
-    "ast_hash": "e74726577954dcd3c7d3e5da610a833b",
+    "mtime": 1783479724.4522607,
+    "ast_hash": "2568ae8ffc76cf0b09e7cb13358e91d9",
     "semantic_hash": ""
   },
   "tools/make_test_clip.py": {
@@ -30,8 +30,8 @@
     "semantic_hash": ""
   },
   "vlog_pipeline/cli.py": {
-    "mtime": 1783481603.1670375,
-    "ast_hash": "d5a78a603c6faf4148b60928a447b31d",
+    "mtime": 1783478003.6748607,
+    "ast_hash": "49c9bdf87bccaa78dc27d7c1f34038a9",
     "semantic_hash": ""
   },
   "vlog_pipeline/config.py": {
@@ -115,18 +115,18 @@
     "semantic_hash": ""
   },
   "vlog_pipeline/stages/optimize.py": {
-    "mtime": 1783481612.3326027,
-    "ast_hash": "dab97c03021f49e9c92435ef244d5b9c",
+    "mtime": 1783477969.3391988,
+    "ast_hash": "0a3787039ff4fc605dd32a55a750950d",
     "semantic_hash": ""
   },
   "vlog_pipeline/stages/package.py": {
-    "mtime": 1783481607.3816674,
-    "ast_hash": "6231ec1bb18c8899c7db98374c6128db",
+    "mtime": 1783479491.1726549,
+    "ast_hash": "9feefe70bfce463594cc4e5329e0cb87",
     "semantic_hash": ""
   },
   "vlog_pipeline/stages/plan.py": {
-    "mtime": 1783481609.7333739,
-    "ast_hash": "701cfd2a31576c4859056b48dba3a57a",
+    "mtime": 1783477884.9095516,
+    "ast_hash": "8ff78ae02e173cd0f2919d9314560e0c",
     "semantic_hash": ""
   },
   "vlog_pipeline/state.py": {
@@ -135,8 +135,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1783481829.4328506,
-    "ast_hash": "97777e59180c2c3ed6cada2b84d9e5ba",
+    "mtime": 1783479797.8620894,
+    "ast_hash": "3c0ae5c3a37bdb7e88ecf2e657d0fb84",
     "semantic_hash": ""
   },
   "review-report.md": {
@@ -227,16 +227,6 @@
   "runs/day30-vlog/thumbnails/short/frame-04-0044.3s.jpg": {
     "mtime": 1783479696.5254636,
     "ast_hash": "a461f3c208a24c132a0b5922b08f3c8a",
-    "semantic_hash": ""
-  },
-  "vlog_pipeline/report.py": {
-    "mtime": 1783481764.0791152,
-    "ast_hash": "e15a187f113956abb77735c048b6b27c",
-    "semantic_hash": ""
-  },
-  "runs/day30-vlog/report.html": {
-    "mtime": 1783481775.2821445,
-    "ast_hash": "85a2136a681b54a1d8278c64d63eec0a",
     "semantic_hash": ""
   }
 }

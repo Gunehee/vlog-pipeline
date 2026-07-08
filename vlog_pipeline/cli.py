@@ -58,10 +58,21 @@ def cmd_run(args) -> int:
     ctx = {"run_dir": run_dir, "footage": footage, "topic": args.topic,
            "cfg": cfg, "skip_llm": args.skip_llm}
 
+    stages_to_run = STAGE_ORDER
+    if args.only:
+        if args.only not in STAGE_ORDER:
+            print(f"error: unknown stage '{args.only}' (choose from "
+                  f"{', '.join(STAGE_ORDER)})", file=sys.stderr)
+            return 1
+        stages_to_run = [args.only]
+        print(f"(--only: running just the '{args.only}' stage against "
+              f"existing run artifacts)\n")
+
     t0 = time.time()
-    for stage_name in STAGE_ORDER:
+    for stage_name in stages_to_run:
         func = STAGE_FUNCS[stage_name]
         print(f"--- {stage_name} " + "-" * (60 - len(stage_name)))
+        ctx["prev_cost"] = state.stage(stage_name).get("cost_usd", 0.0)
         state.start(stage_name)
         try:
             outputs, notes, cost = func(ctx)
@@ -91,7 +102,8 @@ def cmd_run(args) -> int:
                      ("captions", f"runs/{name}/captions.srt"),
                      ("edit report", f"runs/{name}/edit-report.md"),
                      ("review", f"runs/{name}/review-report.md"),
-                     ("upload kit", f"runs/{name}/optimize.md")]:
+                     ("upload kit", f"runs/{name}/optimize.md"),
+                     ("report", f"runs/{name}/report.html")]:
         print(f"  {label:<16} {p}")
     return 0
 
@@ -133,6 +145,8 @@ def main(argv=None) -> int:
     r.add_argument("--name", help="run name (default: derived from footage filename)")
     r.add_argument("--skip-llm", action="store_true",
                    help="skip metered plan/package/optimize stages")
+    r.add_argument("--only", metavar="STAGE",
+                   help="re-run a single stage against existing run artifacts")
     r.add_argument("--whisper-model", default="small.en")
     r.add_argument("--silence-db", type=float, default=-35.0)
     r.add_argument("--min-silence", type=float, default=0.45)
