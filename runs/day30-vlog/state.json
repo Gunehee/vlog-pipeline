@@ -1,7 +1,7 @@
 {
   "footage": "/Users/joshualee/vlog-pipeline/testdata/raw-vlog.mp4",
   "topic": "Three lessons from my first 30 days of daily vlogging",
-  "created": "2026-07-08 11:55:55",
+  "created": "2026-07-08 12:00:22",
   "stages": {
     "plan": {
       "status": "done",
@@ -9,10 +9,10 @@
         "runs/day30-vlog/plan.md"
       ],
       "validation": [
-        "plan.md written (2383 chars, structure present)"
+        "plan.md written (2270 chars, structure present)"
       ],
-      "cost_usd": 0.043,
-      "seconds": 15.4
+      "cost_usd": 0.0425,
+      "seconds": 14.6
     },
     "ingest": {
       "status": "done",
@@ -41,7 +41,7 @@
         "highlight window 38.734-89.389s (50.655s)"
       ],
       "cost_usd": 0.0,
-      "seconds": 42.3
+      "seconds": 39.5
     },
     "caption": {
       "status": "done",
@@ -70,22 +70,29 @@
         "12 thumbnail frames extracted"
       ],
       "cost_usd": 0.0,
-      "seconds": 20.7
+      "seconds": 19.4
     },
     "package": {
-      "status": "failed",
-      "outputs": [],
-      "validation": [],
-      "cost_usd": 0.0,
-      "seconds": 7.3,
-      "error": "review output failed validation (missing Verdict)"
+      "status": "done",
+      "outputs": [
+        "runs/day30-vlog/review-report.md"
+      ],
+      "validation": [
+        "review written; verdict: **SHIP WITH NOTES** \u2014 the cut delivers the plan's three-lesson structure and CTA"
+      ],
+      "cost_usd": 0.0608,
+      "seconds": 17.5
     },
     "optimize": {
-      "status": "pending",
-      "outputs": [],
-      "validation": [],
-      "cost_usd": 0.0,
-      "seconds": 0.0
+      "status": "done",
+      "outputs": [
+        "runs/day30-vlog/optimize.md"
+      ],
+      "validation": [
+        "optimize.md written (1267 chars)"
+      ],
+      "cost_usd": 0.0147,
+      "seconds": 10.4
     }
   }
 }

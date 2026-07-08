@@ -1,4 +1,5 @@
-# Large media: keep reports, srt/ass, thumbnails, state; exclude raw + rendered video/audio
+# Large media: keep reports, srt, thumbnails, state; exclude raw + rendered video/audio
+runs/**/work/
 runs/**/*.mp4
 runs/**/*.mov
 runs/**/*.mkv
