@@ -26,7 +26,9 @@ def run(ctx: dict) -> tuple[list[str], list[str], float]:
     v = vstreams[0]
     duration = float(info["format"]["duration"])
     fps_n, fps_d = v.get("r_frame_rate", "30/1").split("/")
-    silences = silence.detect_silences(footage, cfg.silence_db, cfg.min_silence)
+    threshold_db, threshold_mode = silence.pick_threshold(
+        footage, cfg.silence_db, cfg.adaptive_silence)
+    silences = silence.detect_silences(footage, threshold_db, cfg.min_silence)
     problems = silence.validate(silences, duration)
     if problems:
         raise StageError("silence map failed validation: " + "; ".join(problems))
@@ -45,7 +47,8 @@ def run(ctx: dict) -> tuple[list[str], list[str], float]:
              "sample_rate": a.get("sample_rate")} for a in astreams
         ],
         "silence_map": {
-            "threshold_db": cfg.silence_db,
+            "threshold_db": threshold_db,
+            "threshold_mode": threshold_mode,
             "min_duration_sec": cfg.min_silence,
             "count": len(silences),
             "total_silence_sec": round(sum(s["dur"] or 0 for s in silences), 2),
@@ -57,6 +60,7 @@ def run(ctx: dict) -> tuple[list[str], list[str], float]:
     notes = [
         f"{duration:.1f}s, {v['width']}x{v['height']}@{report['video']['fps']}, "
         f"{len(astreams)} audio track(s)",
-        f"{len(silences)} silences totaling {report['silence_map']['total_silence_sec']}s",
+        f"{len(silences)} silences totaling {report['silence_map']['total_silence_sec']}s "
+        f"at {threshold_db}dB ({threshold_mode})",
     ]
     return [str(out)], notes, 0.0

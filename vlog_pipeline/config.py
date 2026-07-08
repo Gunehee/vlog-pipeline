@@ -13,6 +13,7 @@ CONTEXTUAL_FILLERS = {"like", "so", "basically", "actually", "literally"}
 class Config:
     # silence removal
     silence_db: float = -35.0        # silencedetect noise floor
+    adaptive_silence: bool = True    # floor-relative rescue when floor > silence_db
     min_silence: float = 0.45        # seconds of quiet before we call it dead air
     keep_pad: float = 0.15           # breathing room kept on each side of a cut
     # pacing
