@@ -52,7 +52,7 @@ def track_crop(video: str | Path, window: tuple[float, float],
                 diff = cv2.absdiff(small, prev_small)
                 _, thresh = cv2.threshold(diff, 18, 255, cv2.THRESH_BINARY)
                 m = cv2.moments(thresh)
-                if m["m00"] > 800:  # enough moving mass to trust
+                if m["m00"] > 255 * 150:  # >=150 moving pixels before we trust it
                     cx, method = m["m10"] / m["m00"] / scale, "motion"
             prev_small = small
             t_rel = (frame_idx - start_f) / fps

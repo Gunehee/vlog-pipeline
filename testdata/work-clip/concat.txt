@@ -1,0 +1,6 @@
+file '/Users/joshualee/vlog-pipeline/testdata/work-clip/sec0.wav'
+file '/Users/joshualee/vlog-pipeline/testdata/work-clip/sec1.wav'
+file '/Users/joshualee/vlog-pipeline/testdata/work-clip/sec2.wav'
+file '/Users/joshualee/vlog-pipeline/testdata/work-clip/sec3.wav'
+file '/Users/joshualee/vlog-pipeline/testdata/work-clip/sec4.wav'
+file '/Users/joshualee/vlog-pipeline/testdata/work-clip/sec5.wav'
