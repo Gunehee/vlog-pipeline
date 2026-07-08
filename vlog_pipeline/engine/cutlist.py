@@ -15,9 +15,12 @@ def build_cutlist(total_dur: float, silences: list[dict], fillers: list[dict],
 
     for s in silences:
         start, end = s["start"], s["end"] if s["end"] is not None else total_dur
-        # keep breathing room, except at the very edges of the footage
-        a = start if start < 0.05 else start + cfg.keep_pad
-        b = end if end > total_dur - 0.05 else end - cfg.keep_pad
+        # keep breathing room, except at the very edges of the footage.
+        # Edge cuts snap to the true clip boundary: silencedetect's timestamps
+        # can sit a few ms inside the container duration (codec padding), and
+        # a sub-perceptual leftover fragment must not survive as "footage".
+        a = 0.0 if start < 0.05 else start + cfg.keep_pad
+        b = total_dur if end > total_dur - 0.05 else end - cfg.keep_pad
         if b - a >= cfg.min_cut:
             removals.append({"start": round(a, 3), "end": round(b, 3),
                              "reason": f"silence ({s['dur'] if s['dur'] else 'trailing'}s dead air)",
@@ -55,14 +58,26 @@ def build_cutlist(total_dur: float, silences: list[dict], fillers: list[dict],
                          or abs(r["start"] - seg["end"]) < 0.01]
             if not neighbors:
                 continue
-            # prefer restoring silence over restoring a filler word
-            neighbors.sort(key=lambda r: (r["kind"] == "filler", r["end"] - r["start"]))
-            victim = neighbors[0]
-            merged.remove(victim)
-            victim["restored_because"] = (
-                f"kept segment {seg['start']:.2f}-{seg['end']:.2f}s would be "
-                f"{seg['end']-seg['start']:.2f}s < min {cfg.min_segment}s")
-            restored.append(victim)
+            at_edge = seg["start"] < 0.01 or seg["end"] > total_dur - 0.01
+            if at_edge:
+                # a too-short fragment at the clip boundary is dead-air fringe:
+                # absorb it into the adjacent cut for a clean in/out point
+                # (restoring the cut would resurrect the whole edge silence)
+                victim = neighbors[0]
+                victim["start"] = min(victim["start"], seg["start"])
+                victim["end"] = max(victim["end"], seg["end"])
+                if "absorbed edge fragment" not in victim["reason"]:
+                    victim["reason"] += " + absorbed edge fragment"
+            else:
+                # mid-clip: prefer restoring silence over restoring a filler word
+                neighbors.sort(key=lambda r: (r["kind"] == "filler",
+                                              r["end"] - r["start"]))
+                victim = neighbors[0]
+                merged.remove(victim)
+                victim["restored_because"] = (
+                    f"kept segment {seg['start']:.2f}-{seg['end']:.2f}s would be "
+                    f"{seg['end']-seg['start']:.2f}s < min {cfg.min_segment}s")
+                restored.append(victim)
             changed = True
             break
 
