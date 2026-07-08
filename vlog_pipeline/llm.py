@@ -28,6 +28,10 @@ def run_claude(prompt: str, model: str, timeout: int = 300) -> tuple[str, float]
         "--output-format", "json",
         "--max-turns", "1",
         "--tools", "",  # pure text generation: no tools, single turn
+        "--append-system-prompt",
+        "You are being used as a pure text-generation function inside a build "
+        "pipeline. You have no tools and no filesystem access. Respond with the "
+        "requested document text only — no preamble, no tool-call narration.",
     ]
     # prompt goes via stdin: long prompts as argv make the CLI fail
     proc = subprocess.run(cmd, input=prompt, capture_output=True, text=True,

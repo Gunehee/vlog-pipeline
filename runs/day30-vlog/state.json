@@ -1,7 +1,7 @@
 {
   "footage": "/Users/joshualee/vlog-pipeline/testdata/raw-vlog.mp4",
   "topic": "Three lessons from my first 30 days of daily vlogging",
-  "created": "2026-07-08 11:49:32",
+  "created": "2026-07-08 11:55:55",
   "stages": {
     "plan": {
       "status": "done",
@@ -9,10 +9,10 @@
         "runs/day30-vlog/plan.md"
       ],
       "validation": [
-        "plan.md written (2531 chars, structure present)"
+        "plan.md written (2383 chars, structure present)"
       ],
-      "cost_usd": 0.0601,
-      "seconds": 16.2
+      "cost_usd": 0.043,
+      "seconds": 15.4
     },
     "ingest": {
       "status": "done",
@@ -41,7 +41,7 @@
         "highlight window 38.734-89.389s (50.655s)"
       ],
       "cost_usd": 0.0,
-      "seconds": 40.3
+      "seconds": 42.3
     },
     "caption": {
       "status": "done",
@@ -70,15 +70,15 @@
         "12 thumbnail frames extracted"
       ],
       "cost_usd": 0.0,
-      "seconds": 19.9
+      "seconds": 20.7
     },
     "package": {
       "status": "failed",
       "outputs": [],
       "validation": [],
       "cost_usd": 0.0,
-      "seconds": 27.4,
-      "error": "LLMError: claude -p (sonnet) rc=1: \u26a0 claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login \u00b7 Unset it to load your organization's connectors\n"
+      "seconds": 7.3,
+      "error": "review output failed validation (missing Verdict)"
     },
     "optimize": {
       "status": "pending",

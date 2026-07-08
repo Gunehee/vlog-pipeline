@@ -21,7 +21,7 @@ PROMPT = """You are reviewing an automated vlog edit. Compare the final cut agai
 ## Export facts
 {facts}
 
-Write `review-report.md` content with sections:
+Respond with a markdown review document (text only) with sections:
 # Review report
 ## Verdict  (one line: SHIP / SHIP WITH NOTES / RECUT, plus a sentence)
 ## Structure match  (does the cut deliver the plan's hook/body/CTA? cite caption text)
