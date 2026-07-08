@@ -108,6 +108,11 @@ def cmd_run(args) -> int:
     return 0
 
 
+def cmd_stress(args) -> int:
+    from .stress import run_stress
+    return run_stress(args.scenario, args.regen)
+
+
 def cmd_status(args) -> int:
     runs_root = Path("runs")
     if not runs_root.exists():
@@ -155,6 +160,15 @@ def main(argv=None) -> int:
     s = sub.add_parser("status", help="show state of runs")
     s.add_argument("--name")
     s.set_defaults(func=cmd_status)
+
+    st = sub.add_parser(
+        "stress",
+        help="run engine stress scenarios vs generator ground truth ($0, local only)")
+    st.add_argument("--scenario", action="append",
+                    help="run only this scenario (repeatable)")
+    st.add_argument("--regen", action="store_true",
+                    help="regenerate scenario clips even if cached")
+    st.set_defaults(func=cmd_stress)
 
     args = p.parse_args(argv)
     return args.func(args)
