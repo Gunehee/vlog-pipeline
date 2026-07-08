@@ -23,13 +23,15 @@ def api_key_present() -> bool:
 def run_claude(prompt: str, model: str, timeout: int = 300) -> tuple[str, float]:
     """Run one headless prompt. Returns (text, cost_usd)."""
     cmd = [
-        "claude", "-p", prompt,
+        "claude", "-p",
         "--model", model,
         "--output-format", "json",
         "--max-turns", "1",
+        "--tools", "",  # pure text generation: no tools, single turn
     ]
-    env = dict(os.environ)
-    proc = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout, env=env)
+    # prompt goes via stdin: long prompts as argv make the CLI fail
+    proc = subprocess.run(cmd, input=prompt, capture_output=True, text=True,
+                          timeout=timeout)
     if proc.returncode != 0:
         raise LLMError(f"claude -p ({model}) rc={proc.returncode}: {proc.stderr[-1500:]}")
     try:

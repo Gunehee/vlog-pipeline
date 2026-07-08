@@ -1,4 +1,4 @@
-[0:v]trim=start=38.734:end=89.389,setpts=PTS-STARTPTS,sendcmd=f='/Users/joshualee/vlog-pipeline/runs/stage-test/work/crop-sendcmd.txt',crop=606:1080:892:0,scale=1080:1920:flags=lanczos,setsar=1[scaled];
+[0:v]trim=start=38.734:end=89.389,setpts=PTS-STARTPTS,sendcmd=f='/Users/joshualee/vlog-pipeline/runs/day30-vlog/work/crop-sendcmd.txt',crop=606:1080:892:0,scale=1080:1920:flags=lanczos,setsar=1[scaled];
 [scaled][1:v]overlay=244:1251:enable='between(t,0.000,0.830)'[ov0];
 [ov0][2:v]overlay=213:1250:enable='between(t,0.830,1.650)'[ov1];
 [ov1][3:v]overlay=227:1265:enable='between(t,1.650,2.881)'[ov2];

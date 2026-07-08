@@ -1,0 +1,91 @@
+{
+  "footage": "/Users/joshualee/vlog-pipeline/testdata/raw-vlog.mp4",
+  "topic": "Three lessons from my first 30 days of daily vlogging",
+  "created": "2026-07-08 11:49:32",
+  "stages": {
+    "plan": {
+      "status": "done",
+      "outputs": [
+        "runs/day30-vlog/plan.md"
+      ],
+      "validation": [
+        "plan.md written (2531 chars, structure present)"
+      ],
+      "cost_usd": 0.0601,
+      "seconds": 16.2
+    },
+    "ingest": {
+      "status": "done",
+      "outputs": [
+        "runs/day30-vlog/ingest-report.json"
+      ],
+      "validation": [
+        "161.3s, 1920x1080@30.0, 1 audio track(s)",
+        "27 silences totaling 31.04s"
+      ],
+      "cost_usd": 0.0,
+      "seconds": 0.2
+    },
+    "edit": {
+      "status": "done",
+      "outputs": [
+        "runs/day30-vlog/edited-169.mp4",
+        "runs/day30-vlog/edit-decisions.json",
+        "runs/day30-vlog/edit-report.md"
+      ],
+      "validation": [
+        "transcribed 422 words (small.en, local)",
+        "13 filler-word cuts",
+        "cutlist: 161.267s -> 136.236s (39 segments, 38 cuts, 2 restored for pacing)",
+        "master edit: 136.47s, A/V delta 22ms",
+        "highlight window 38.734-89.389s (50.655s)"
+      ],
+      "cost_usd": 0.0,
+      "seconds": 40.3
+    },
+    "caption": {
+      "status": "done",
+      "outputs": [
+        "runs/day30-vlog/final/long-169.mp4",
+        "runs/day30-vlog/final/short-916.mp4",
+        "runs/day30-vlog/captions.srt",
+        "runs/day30-vlog/thumbnails/frame-01-0008.5s.jpg",
+        "runs/day30-vlog/thumbnails/frame-02-0025.6s.jpg",
+        "runs/day30-vlog/thumbnails/frame-03-0042.6s.jpg",
+        "runs/day30-vlog/thumbnails/frame-04-0059.7s.jpg",
+        "runs/day30-vlog/thumbnails/frame-05-0076.8s.jpg",
+        "runs/day30-vlog/thumbnails/frame-06-0093.8s.jpg",
+        "runs/day30-vlog/thumbnails/frame-07-0110.9s.jpg",
+        "runs/day30-vlog/thumbnails/frame-08-0127.9s.jpg",
+        "runs/day30-vlog/thumbnails/short/frame-01-0006.3s.jpg",
+        "runs/day30-vlog/thumbnails/short/frame-02-0019.0s.jpg",
+        "runs/day30-vlog/thumbnails/short/frame-03-0031.6s.jpg",
+        "runs/day30-vlog/thumbnails/short/frame-04-0044.3s.jpg"
+      ],
+      "validation": [
+        "73 caption lines -> captions.srt + styled overlays",
+        "long-169: 136.47s, A/V delta 22ms, decodes clean",
+        "crop tracking: 304 samples (28.9% face, 71.1% motion, 0.0% hold), x range [190, 1141]",
+        "short-916: 50.63s, A/V delta 22ms, decodes clean",
+        "12 thumbnail frames extracted"
+      ],
+      "cost_usd": 0.0,
+      "seconds": 19.9
+    },
+    "package": {
+      "status": "failed",
+      "outputs": [],
+      "validation": [],
+      "cost_usd": 0.0,
+      "seconds": 27.4,
+      "error": "LLMError: claude -p (sonnet) rc=1: \u26a0 claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login \u00b7 Unset it to load your organization's connectors\n"
+    },
+    "optimize": {
+      "status": "pending",
+      "outputs": [],
+      "validation": [],
+      "cost_usd": 0.0,
+      "seconds": 0.0
+    }
+  }
+}
