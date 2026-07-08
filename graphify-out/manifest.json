@@ -1,0 +1,232 @@
+{
+  "pyproject.toml": {
+    "mtime": 1783448253.9339974,
+    "ast_hash": "e7ef90a091277f18ab4ac533b583bc68",
+    "semantic_hash": ""
+  },
+  "runs/day30-vlog/edit-decisions.json": {
+    "mtime": 1783479677.1232293,
+    "ast_hash": "57c892145520f8fec34cece1b922916f",
+    "semantic_hash": ""
+  },
+  "runs/day30-vlog/ingest-report.json": {
+    "mtime": 1783479637.594145,
+    "ast_hash": "e37244c87a62ab4619d63979ee824aad",
+    "semantic_hash": ""
+  },
+  "runs/day30-vlog/state.json": {
+    "mtime": 1783479724.4522607,
+    "ast_hash": "2568ae8ffc76cf0b09e7cb13358e91d9",
+    "semantic_hash": ""
+  },
+  "tools/make_test_clip.py": {
+    "mtime": 1783478520.8077536,
+    "ast_hash": "deca61d9db22607e549ca8f5f73390e4",
+    "semantic_hash": ""
+  },
+  "vlog_pipeline/__init__.py": {
+    "mtime": 1783448257.2236679,
+    "ast_hash": "4867131295172353fe6c2295851defc7",
+    "semantic_hash": ""
+  },
+  "vlog_pipeline/cli.py": {
+    "mtime": 1783478003.6748607,
+    "ast_hash": "49c9bdf87bccaa78dc27d7c1f34038a9",
+    "semantic_hash": ""
+  },
+  "vlog_pipeline/config.py": {
+    "mtime": 1783448268.195576,
+    "ast_hash": "09c4f05b605b0c8c6afb899aadccf58b",
+    "semantic_hash": ""
+  },
+  "vlog_pipeline/engine/__init__.py": {
+    "mtime": 1783448306.8156443,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "vlog_pipeline/engine/captions.py": {
+    "mtime": 1783478833.1801412,
+    "ast_hash": "dd8821514decb9e60c3564a1cc368524",
+    "semantic_hash": ""
+  },
+  "vlog_pipeline/engine/croptrack.py": {
+    "mtime": 1783478653.0429146,
+    "ast_hash": "8833484b0764d36de9438587be6263b0",
+    "semantic_hash": ""
+  },
+  "vlog_pipeline/engine/cutlist.py": {
+    "mtime": 1783448423.8197234,
+    "ast_hash": "055d734d944c3c16e581dc9a8964b153",
+    "semantic_hash": ""
+  },
+  "vlog_pipeline/engine/fillers.py": {
+    "mtime": 1783448326.558195,
+    "ast_hash": "719755aeb028389153011556d351d414",
+    "semantic_hash": ""
+  },
+  "vlog_pipeline/engine/highlights.py": {
+    "mtime": 1783448459.8424397,
+    "ast_hash": "5426fe79fa0cb09c5f9d2a9ea5b29753",
+    "semantic_hash": ""
+  },
+  "vlog_pipeline/engine/render.py": {
+    "mtime": 1783478863.3920145,
+    "ast_hash": "01151463ad4cb744d7edb94e042cdbbb",
+    "semantic_hash": ""
+  },
+  "vlog_pipeline/engine/silence.py": {
+    "mtime": 1783448313.3041356,
+    "ast_hash": "eac86d07110fa303dd8381eebdea62c5",
+    "semantic_hash": ""
+  },
+  "vlog_pipeline/engine/transcribe.py": {
+    "mtime": 1783448319.3273046,
+    "ast_hash": "f3d29d4733c7b404f8d6e5d3e880ac89",
+    "semantic_hash": ""
+  },
+  "vlog_pipeline/ffmpeg.py": {
+    "mtime": 1783448292.2561035,
+    "ast_hash": "07867ea1d3948bb72b62969b149aa99d",
+    "semantic_hash": ""
+  },
+  "vlog_pipeline/llm.py": {
+    "mtime": 1783479489.6357825,
+    "ast_hash": "63c739f0f4cf0a01e344c3cb311f5de8",
+    "semantic_hash": ""
+  },
+  "vlog_pipeline/stages/__init__.py": {
+    "mtime": 1783477871.2238114,
+    "ast_hash": "ecd986f9b4d4e3bc5a8567f3ef2bbac4",
+    "semantic_hash": ""
+  },
+  "vlog_pipeline/stages/caption.py": {
+    "mtime": 1783478883.1386783,
+    "ast_hash": "0302dcac0ff005e6364e46e595051f8d",
+    "semantic_hash": ""
+  },
+  "vlog_pipeline/stages/edit.py": {
+    "mtime": 1783477921.72005,
+    "ast_hash": "bf07774c508c10b2c1426b5da65b3e40",
+    "semantic_hash": ""
+  },
+  "vlog_pipeline/stages/ingest.py": {
+    "mtime": 1783477892.9711924,
+    "ast_hash": "491a1c0f9c1de0aaa428ed54d6cc8949",
+    "semantic_hash": ""
+  },
+  "vlog_pipeline/stages/optimize.py": {
+    "mtime": 1783477969.3391988,
+    "ast_hash": "0a3787039ff4fc605dd32a55a750950d",
+    "semantic_hash": ""
+  },
+  "vlog_pipeline/stages/package.py": {
+    "mtime": 1783479491.1726549,
+    "ast_hash": "9feefe70bfce463594cc4e5329e0cb87",
+    "semantic_hash": ""
+  },
+  "vlog_pipeline/stages/plan.py": {
+    "mtime": 1783477884.9095516,
+    "ast_hash": "8ff78ae02e173cd0f2919d9314560e0c",
+    "semantic_hash": ""
+  },
+  "vlog_pipeline/state.py": {
+    "mtime": 1783448279.7660491,
+    "ast_hash": "ae15a122355d63c6896d07a68a923fb3",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1783479797.8620894,
+    "ast_hash": "3c0ae5c3a37bdb7e88ecf2e657d0fb84",
+    "semantic_hash": ""
+  },
+  "review-report.md": {
+    "mtime": 1783479260.6674185,
+    "ast_hash": "b206683a43f4f7a21ffed429ee92d017",
+    "semantic_hash": ""
+  },
+  "runs/day30-vlog/edit-report.md": {
+    "mtime": 1783479677.123517,
+    "ast_hash": "dac1877bd758ab4b188cb082fd839171",
+    "semantic_hash": ""
+  },
+  "runs/day30-vlog/optimize.md": {
+    "mtime": 1783479724.451692,
+    "ast_hash": "1280a1661de8056834283671465e3c0b",
+    "semantic_hash": ""
+  },
+  "runs/day30-vlog/plan.md": {
+    "mtime": 1783479637.3821206,
+    "ast_hash": "c45fa3cd21c1869415367ad2c5f580ca",
+    "semantic_hash": ""
+  },
+  "runs/day30-vlog/review-report.md": {
+    "mtime": 1783479714.0271223,
+    "ast_hash": "a4b29b15d5016b7a001d2b9492ac5747",
+    "semantic_hash": ""
+  },
+  "testdata/work-clip/concat.txt": {
+    "mtime": 1783478534.8939242,
+    "ast_hash": "b1db466d010a88e88607c8fc10dd721b",
+    "semantic_hash": ""
+  },
+  "runs/day30-vlog/thumbnails/frame-01-0008.5s.jpg": {
+    "mtime": 1783479695.2040124,
+    "ast_hash": "02240783f8f82eea854ece4d2e36ef92",
+    "semantic_hash": ""
+  },
+  "runs/day30-vlog/thumbnails/frame-02-0025.6s.jpg": {
+    "mtime": 1783479695.3214865,
+    "ast_hash": "b6f61fb367949bc104fc82918e5b1903",
+    "semantic_hash": ""
+  },
+  "runs/day30-vlog/thumbnails/frame-03-0042.6s.jpg": {
+    "mtime": 1783479695.4435892,
+    "ast_hash": "4688f56a1281994d4b829b09c6022133",
+    "semantic_hash": ""
+  },
+  "runs/day30-vlog/thumbnails/frame-04-0059.7s.jpg": {
+    "mtime": 1783479695.5761936,
+    "ast_hash": "5e7ddb19c483bb44f7823f5b8d1e928e",
+    "semantic_hash": ""
+  },
+  "runs/day30-vlog/thumbnails/frame-05-0076.8s.jpg": {
+    "mtime": 1783479695.7021077,
+    "ast_hash": "ee52e86a2dc9713bc8fdea077f093f46",
+    "semantic_hash": ""
+  },
+  "runs/day30-vlog/thumbnails/frame-06-0093.8s.jpg": {
+    "mtime": 1783479695.7901666,
+    "ast_hash": "8d674eb4af07c39a155e3f2a3daf5850",
+    "semantic_hash": ""
+  },
+  "runs/day30-vlog/thumbnails/frame-07-0110.9s.jpg": {
+    "mtime": 1783479695.8825366,
+    "ast_hash": "877af3458e1fc6818110ee7bbeb143db",
+    "semantic_hash": ""
+  },
+  "runs/day30-vlog/thumbnails/frame-08-0127.9s.jpg": {
+    "mtime": 1783479696.0020092,
+    "ast_hash": "4f07f01e9cf5036ce3e7299f9630323a",
+    "semantic_hash": ""
+  },
+  "runs/day30-vlog/thumbnails/short/frame-01-0006.3s.jpg": {
+    "mtime": 1783479696.1866515,
+    "ast_hash": "3e371590a8bc47e5e6fa6e6eed1e1fc3",
+    "semantic_hash": ""
+  },
+  "runs/day30-vlog/thumbnails/short/frame-02-0019.0s.jpg": {
+    "mtime": 1783479696.2871485,
+    "ast_hash": "8f958f5e6a1fc675f04c7334fd2d8cde",
+    "semantic_hash": ""
+  },
+  "runs/day30-vlog/thumbnails/short/frame-03-0031.6s.jpg": {
+    "mtime": 1783479696.4220612,
+    "ast_hash": "0f23cac77d791a0c35928bb27ae33e06",
+    "semantic_hash": ""
+  },
+  "runs/day30-vlog/thumbnails/short/frame-04-0044.3s.jpg": {
+    "mtime": 1783479696.5254636,
+    "ast_hash": "a461f3c208a24c132a0b5922b08f3c8a",
+    "semantic_hash": ""
+  }
+}
