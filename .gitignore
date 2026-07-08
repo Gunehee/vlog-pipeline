@@ -1,0 +1,17 @@
+# Large media: keep reports, srt/ass, thumbnails, state; exclude raw + rendered video/audio
+runs/**/*.mp4
+runs/**/*.mov
+runs/**/*.mkv
+runs/**/*.wav
+runs/**/*.aiff
+runs/**/*.m4a
+testdata/*.mp4
+testdata/*.wav
+testdata/*.aiff
+
+__pycache__/
+*.egg-info/
+build/
+dist/
+.venv/
+.DS_Store

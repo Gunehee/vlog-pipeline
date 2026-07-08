@@ -1,0 +1,20 @@
+[project]
+name = "vlog-pipeline"
+version = "0.1.0"
+description = "Raw vlog footage + topic -> edited, captioned, multi-format, upload-ready video package"
+requires-python = ">=3.11"
+dependencies = [
+    "faster-whisper>=1.0",
+    "opencv-python>=4.8",
+    "numpy>=1.26",
+]
+
+[project.scripts]
+vlog-pipeline = "vlog_pipeline.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["vlog_pipeline*"]
