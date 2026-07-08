@@ -47,55 +47,56 @@ def write_srt(lines: list[dict], path: str | Path):
     Path(path).write_text("\n".join(out), encoding="utf-8")
 
 
-def _ass_ts(t: float) -> str:
-    h, rem = divmod(max(0.0, t), 3600)
-    m, s = divmod(rem, 60)
-    return f"{int(h)}:{int(m):02d}:{s:05.2f}"
+FONT = "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
 
 
-def _esc(text: str) -> str:
-    return text.replace("{", "(").replace("}", ")").replace("\n", " ")
+def render_caption_pngs(lines: list[dict], out_dir: str | Path, *, vertical: bool,
+                        offset: float = 0.0) -> list[dict]:
+    """Render each caption line to a styled transparent PNG for ffmpeg overlay.
 
+    Styling: bold white text, black stroke, semi-transparent rounded box.
+    16:9  -> 1920x1080 canvas, bottom-centered.
+    9:16  -> 1080x1920 canvas, raised above the Shorts UI zone (progress bar /
+             title / engagement buttons live in the bottom ~25%), bigger font.
 
-ASS_HEADER = """[Script Info]
-ScriptType: v4.00+
-PlayResX: {w}
-PlayResY: {h}
-WrapStyle: 2
-ScaledBorderAndShadow: yes
-
-[V4+ Styles]
-Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Cap,{font},{size},&H00FFFFFF,&H00FFFFFF,&H00141414,&H7A000000,-1,0,0,0,100,100,0,0,1,{outline},1,2,{ml},{mr},{mv},1
-
-[Events]
-Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-"""
-
-
-def write_ass(lines: list[dict], path: str | Path, *, vertical: bool,
-              offset: float = 0.0):
-    """Styled burned-in captions.
-
-    16:9  -> 1920x1080 canvas, bottom-centered, size 56.
-    9:16  -> 1080x1920 canvas, raised well above the Shorts UI zone
-             (progress bar / title / engagement buttons live in the bottom
-             ~25%), bigger font for phone readability.
+    Returns [{'file', 'x', 'y', 'start', 'end'}] with times shifted by -offset.
     """
+    from PIL import Image, ImageDraw, ImageFont
+
+    out_dir = Path(out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
     if vertical:
-        header = ASS_HEADER.format(w=1080, h=1920, font="Arial", size=78,
-                                   outline=4, ml=60, mr=60, mv=560)
+        canvas_w, canvas_h, size, stroke, margin_bottom = 1080, 1920, 76, 5, 560
     else:
-        header = ASS_HEADER.format(w=1920, h=1080, font="Arial", size=56,
-                                   outline=3, ml=120, mr=120, mv=72)
-    events = []
-    for ln in lines:
+        canvas_w, canvas_h, size, stroke, margin_bottom = 1920, 1080, 56, 4, 72
+    font = ImageFont.truetype(FONT, size)
+    pad_x, pad_y = 26, 14
+
+    overlays = []
+    for i, ln in enumerate(lines):
         a, b = ln["start"] - offset, ln["end"] - offset
-        if b <= 0:
+        if b <= 0.05:
             continue
-        events.append(
-            f"Dialogue: 0,{_ass_ts(max(0, a))},{_ass_ts(b)},Cap,,0,0,0,,{_esc(ln['text'])}")
-    Path(path).write_text(header + "\n".join(events) + "\n", encoding="utf-8")
+        probe = ImageDraw.Draw(Image.new("RGBA", (8, 8)))
+        bbox = probe.textbbox((0, 0), ln["text"], font=font, stroke_width=stroke)
+        w = bbox[2] - bbox[0] + 2 * pad_x
+        h = bbox[3] - bbox[1] + 2 * pad_y
+        img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+        d = ImageDraw.Draw(img)
+        d.rounded_rectangle((0, 0, w - 1, h - 1), radius=16, fill=(0, 0, 0, 115))
+        d.text((pad_x - bbox[0], pad_y - bbox[1]), ln["text"], font=font,
+               fill=(255, 255, 255, 255), stroke_width=stroke,
+               stroke_fill=(10, 10, 10, 255))
+        f = out_dir / f"cap-{i:03d}.png"
+        img.save(f)
+        overlays.append({
+            "file": str(f),
+            "x": (canvas_w - w) // 2,
+            "y": canvas_h - margin_bottom - h,
+            "start": round(max(0.0, a), 3),
+            "end": round(b, 3),
+        })
+    return overlays
 
 
 def validate(lines: list[dict], edited_dur: float) -> list[str]:

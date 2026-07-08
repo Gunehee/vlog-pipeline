@@ -52,13 +52,13 @@ def run(ctx: dict) -> tuple[list[str], list[str], float]:
     _gate("captions", captions.validate(lines, edited_dur))
     srt = run_dir / "captions.srt"
     captions.write_srt(lines, srt)
-    ass_169 = work / "captions-169.ass"
-    captions.write_ass(lines, ass_169, vertical=False)
-    notes.append(f"{len(lines)} caption lines -> captions.srt + styled ASS")
+    overlays_169 = captions.render_caption_pngs(lines, work / "cap-169",
+                                                vertical=False)
+    notes.append(f"{len(lines)} caption lines -> captions.srt + styled overlays")
 
     # -- burn 16:9 long-form -----------------------------------------------------
     long_out = final / "long-169.mp4"
-    burn_captions(master, ass_169, long_out, cfg)
+    burn_captions(master, overlays_169, long_out, cfg, work / "filter-burn169.txt")
     _check_export(long_out, "long-169", notes)
 
     # -- smart-crop track over the highlight window ------------------------------
@@ -81,13 +81,13 @@ def run(ctx: dict) -> tuple[list[str], list[str], float]:
     short_lines = captions.build_lines(short_words, max_chars=18, max_words=4,
                                        max_dur=2.5)
     _gate("short-captions", captions.validate(short_lines, hl_window[1]))
-    ass_916 = work / "captions-916.ass"
-    captions.write_ass(short_lines, ass_916, vertical=True, offset=hl_window[0])
+    overlays_916 = captions.render_caption_pngs(short_lines, work / "cap-916",
+                                                vertical=True, offset=hl_window[0])
 
     # -- render 9:16 short ---------------------------------------------------------
     short_out = final / "short-916.mp4"
     render_short(master, hl_window, cmds, track["crop_w"], track["height"],
-                 track["keyframes"][0][1], ass_916, short_out, cfg,
+                 track["keyframes"][0][1], overlays_916, short_out, cfg,
                  work / "filter-short.txt")
     vdur = _check_export(short_out, "short-916", notes)
     if abs(vdur - (hl_window[1] - hl_window[0])) > 0.5:

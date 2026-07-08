@@ -53,19 +53,40 @@ def _render_chunk(src, kept, dst, cfg: Config, script_path: Path):
     ], "render cut")
 
 
-def burn_captions(src: str | Path, ass_path: str | Path, dst: str | Path, cfg: Config):
-    ass = str(Path(ass_path).resolve()).replace("'", r"\'")
-    run([
-        "ffmpeg", "-y", "-i", str(src),
-        "-vf", f"subtitles=filename='{ass}'",
+def _overlay_chain(base: str, overlays: list[dict], first_input: int) -> tuple[str, str]:
+    """Chain of timed caption overlays. Returns (filter_lines, out_label)."""
+    lines, cur = [], base
+    for j, ov in enumerate(overlays):
+        nxt = f"ov{j}"
+        lines.append(
+            f"[{cur}][{first_input + j}:v]overlay={ov['x']}:{ov['y']}:"
+            f"enable='between(t,{ov['start']:.3f},{ov['end']:.3f})'[{nxt}];")
+        cur = nxt
+    return "\n".join(lines), cur
+
+
+def burn_captions(src: str | Path, overlays: list[dict], dst: str | Path,
+                  cfg: Config, script_path: str | Path):
+    """Burn PIL-rendered caption PNGs (ffmpeg here has no libass; overlay
+    with enable=between gives the same burned-in result)."""
+    chain, out = _overlay_chain("0:v", overlays, 1)
+    Path(script_path).write_text(chain.rstrip(";") if overlays else "[0:v]null[capped]")
+    out_label = out if overlays else "capped"
+    cmd = ["ffmpeg", "-y", "-i", str(src)]
+    for ov in overlays:
+        cmd += ["-i", ov["file"]]
+    cmd += [
+        "-filter_complex_script", str(script_path),
+        "-map", f"[{out_label}]", "-map", "0:a",
         "-c:v", "libx264", "-crf", str(cfg.crf), "-preset", cfg.preset,
         "-pix_fmt", "yuv420p", "-c:a", "copy",
         "-movflags", "+faststart", str(dst),
-    ], "burn captions")
+    ]
+    run(cmd, "burn captions")
 
 
 def render_short(src: str | Path, window: tuple[float, float], sendcmd_file: str | Path,
-                 crop_w: int, crop_h: int, first_x: int, ass_path: str | Path,
+                 crop_w: int, crop_h: int, first_x: int, overlays: list[dict],
                  dst: str | Path, cfg: Config, script_path: str | Path):
     """One-pass 9:16 export: trim highlight window from the edited master,
     apply the time-varying smart crop, scale to 1080x1920, burn shorts captions."""
@@ -73,22 +94,27 @@ def render_short(src: str | Path, window: tuple[float, float], sendcmd_file: str
     f = cfg.audio_fade
     dur = b - a
     cmds = str(Path(sendcmd_file).resolve()).replace("'", r"\'")
-    ass = str(Path(ass_path).resolve()).replace("'", r"\'")
-    script = (
+    base = (
         f"[0:v]trim=start={a:.3f}:end={b:.3f},setpts=PTS-STARTPTS,"
         f"sendcmd=f='{cmds}',crop={crop_w}:{crop_h}:{first_x}:0,"
-        f"scale=1080:1920:flags=lanczos,setsar=1,"
-        f"subtitles=filename='{ass}'[vout];\n"
-        f"[0:a]atrim=start={a:.3f}:end={b:.3f},asetpts=PTS-STARTPTS,"
+        f"scale=1080:1920:flags=lanczos,setsar=1[scaled];\n"
+    )
+    chain, out = _overlay_chain("scaled", overlays, 1)
+    audio = (
+        f"\n[0:a]atrim=start={a:.3f}:end={b:.3f},asetpts=PTS-STARTPTS,"
         f"afade=t=in:st=0:d={f},afade=t=out:st={max(0.0, dur - f):.3f}:d={f}[aout]"
     )
-    Path(script_path).write_text(script)
-    run([
-        "ffmpeg", "-y", "-i", str(src),
+    out_label = out if overlays else "scaled"
+    Path(script_path).write_text(base + chain + audio)
+    cmd = ["ffmpeg", "-y", "-i", str(src)]
+    for ov in overlays:
+        cmd += ["-i", ov["file"]]
+    cmd += [
         "-filter_complex_script", str(script_path),
-        "-map", "[vout]", "-map", "[aout]",
+        "-map", f"[{out_label}]", "-map", "[aout]",
         "-c:v", "libx264", "-crf", str(cfg.crf), "-preset", cfg.preset,
         "-pix_fmt", "yuv420p",
         "-c:a", "aac", "-b:a", cfg.audio_bitrate, "-ar", "48000",
         "-movflags", "+faststart", str(dst),
-    ], "render short")
+    ]
+    run(cmd, "render short")
