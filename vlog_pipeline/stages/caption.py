@@ -70,7 +70,8 @@ def run(ctx: dict) -> tuple[list[str], list[str], float]:
     st = track["stats"]
     notes.append(
         f"crop tracking: {st['samples']} samples "
-        f"({st['face_pct']}% face, {st['motion_pct']}% motion, {st['hold_pct']}% hold), "
+        f"({st['face_pct']}% face, {st.get('flow_pct', 0)}% flow, "
+        f"{st['motion_pct']}% motion, {st['hold_pct']}% hold), "
         f"x range {st['x_range']}")
     cmds = work / "crop-sendcmd.txt"
     croptrack.write_sendcmd(track, cmds)
