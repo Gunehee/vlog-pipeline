@@ -1,0 +1,52 @@
+{
+  "footage": "/Users/joshualee/vlog-pipeline/testdata/stress/alternation.mp4",
+  "duration_sec": 32.233,
+  "video": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "pix_fmt": "yuv420p"
+  },
+  "audio_tracks": [
+    {
+      "codec": "aac",
+      "channels": 1,
+      "sample_rate": "48000"
+    }
+  ],
+  "silence_map": {
+    "threshold_db": -35.0,
+    "threshold_mode": "fixed (floor -180.0dB below threshold)",
+    "min_duration_sec": 0.45,
+    "count": 5,
+    "total_silence_sec": 4.0,
+    "silences": [
+      {
+        "start": 5.967,
+        "end": 6.769,
+        "dur": 0.802
+      },
+      {
+        "start": 12.467,
+        "end": 13.271,
+        "dur": 0.804
+      },
+      {
+        "start": 18.077,
+        "end": 18.879,
+        "dur": 0.803
+      },
+      {
+        "start": 22.747,
+        "end": 23.542,
+        "dur": 0.796
+      },
+      {
+        "start": 28.254,
+        "end": 29.051,
+        "dur": 0.798
+      }
+    ]
+  }
+}

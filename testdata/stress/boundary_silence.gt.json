@@ -1,0 +1,48 @@
+{
+  "scenario": "boundary_silence",
+  "fps": 30,
+  "duration": 44.470416666666665,
+  "events": [
+    {
+      "kind": "pause",
+      "start": 0.0,
+      "end": 3.0
+    },
+    {
+      "kind": "speech",
+      "start": 3.0,
+      "end": 14.06,
+      "text": "The first thing I check every morning is the retention graph, because it tells me exactly where people got bored. If you only change one thing about your videos this year, make it the first ten seconds.",
+      "voice": "Samantha"
+    },
+    {
+      "kind": "pause",
+      "start": 14.12,
+      "end": 15.02
+    },
+    {
+      "kind": "speech",
+      "start": 15.02,
+      "end": 25.36,
+      "text": "I keep a running list of every hook that worked, and I steal from my own list constantly. Batch recording saved my schedule; I film three videos every Sunday and edit them across the week.",
+      "voice": "Samantha"
+    },
+    {
+      "kind": "pause",
+      "start": 25.42,
+      "end": 33.42
+    },
+    {
+      "kind": "speech",
+      "start": 33.42,
+      "end": 40.41,
+      "text": "Good audio matters more than good video, and you can quote me on that. The camera you already own is good enough, I promise.",
+      "voice": "Samantha"
+    },
+    {
+      "kind": "pause",
+      "start": 40.47,
+      "end": 44.47
+    }
+  ]
+}

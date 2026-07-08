@@ -1,0 +1,381 @@
+{
+  "config": {
+    "silence_db": -35.0,
+    "adaptive_silence": true,
+    "min_silence": 0.45,
+    "keep_pad": 0.15,
+    "min_segment": 0.6,
+    "min_cut": 0.12,
+    "audio_fade": 0.01,
+    "filler_pad": 0.04,
+    "whisper_model": "small.en",
+    "short_target": 50.0,
+    "short_min": 35.0,
+    "short_max": 59.0,
+    "crf": 20,
+    "preset": "veryfast",
+    "audio_bitrate": "192k"
+  },
+  "cutlist": {
+    "original_duration": 27.367,
+    "edited_duration": 24.966,
+    "kept": [
+      {
+        "start": 0.0,
+        "end": 6.117
+      },
+      {
+        "start": 6.72,
+        "end": 12.341
+      },
+      {
+        "start": 13.04,
+        "end": 18.146
+      },
+      {
+        "start": 18.75,
+        "end": 22.692
+      },
+      {
+        "start": 23.187,
+        "end": 27.367
+      }
+    ],
+    "removed": [
+      {
+        "start": 6.117,
+        "end": 6.72,
+        "reason": "silence (0.903s dead air)",
+        "kind": "silence",
+        "dur": 0.603
+      },
+      {
+        "start": 12.341,
+        "end": 13.04,
+        "reason": "silence (0.999s dead air)",
+        "kind": "silence",
+        "dur": 0.699
+      },
+      {
+        "start": 18.146,
+        "end": 18.75,
+        "reason": "silence (0.904s dead air)",
+        "kind": "silence",
+        "dur": 0.604
+      },
+      {
+        "start": 22.692,
+        "end": 23.187,
+        "reason": "silence (0.795s dead air)",
+        "kind": "silence",
+        "dur": 0.495
+      }
+    ],
+    "restored": []
+  },
+  "filler_cuts": [],
+  "highlight": {
+    "window": [
+      0.0,
+      24.981
+    ],
+    "window_duration": 24.981,
+    "edited_duration": 24.981
+  },
+  "highlight_curve": [
+    {
+      "t": 0.0,
+      "energy": 0.135,
+      "speech_rate": 2.25,
+      "score": 0.081
+    },
+    {
+      "t": 0.5,
+      "energy": 0.886,
+      "speech_rate": 2.75,
+      "score": 0.532
+    },
+    {
+      "t": 1.0,
+      "energy": 0.995,
+      "speech_rate": 2.75,
+      "score": 0.597
+    },
+    {
+      "t": 1.5,
+      "energy": 1.0,
+      "speech_rate": 3.0,
+      "score": 0.733
+    },
+    {
+      "t": 2.0,
+      "energy": 0.665,
+      "speech_rate": 3.75,
+      "score": 0.799
+    },
+    {
+      "t": 2.5,
+      "energy": 0.582,
+      "speech_rate": 3.25,
+      "score": 0.616
+    },
+    {
+      "t": 3.0,
+      "energy": 0.024,
+      "speech_rate": 3.25,
+      "score": 0.281
+    },
+    {
+      "t": 3.5,
+      "energy": 0.363,
+      "speech_rate": 3.0,
+      "score": 0.351
+    },
+    {
+      "t": 4.0,
+      "energy": 0.83,
+      "speech_rate": 2.75,
+      "score": 0.498
+    },
+    {
+      "t": 4.5,
+      "energy": 0.574,
+      "speech_rate": 2.75,
+      "score": 0.344
+    },
+    {
+      "t": 5.0,
+      "energy": 0.634,
+      "speech_rate": 3.0,
+      "score": 0.513
+    },
+    {
+      "t": 5.5,
+      "energy": 0.222,
+      "speech_rate": 3.0,
+      "score": 0.266
+    },
+    {
+      "t": 6.0,
+      "energy": 0.0,
+      "speech_rate": 2.5,
+      "score": 0.0
+    },
+    {
+      "t": 6.5,
+      "energy": 0.611,
+      "speech_rate": 2.75,
+      "score": 0.366
+    },
+    {
+      "t": 7.0,
+      "energy": 0.622,
+      "speech_rate": 2.75,
+      "score": 0.373
+    },
+    {
+      "t": 7.5,
+      "energy": 0.399,
+      "speech_rate": 2.75,
+      "score": 0.239
+    },
+    {
+      "t": 8.0,
+      "energy": 0.0,
+      "speech_rate": 3.0,
+      "score": 0.133
+    },
+    {
+      "t": 8.5,
+      "energy": 0.887,
+      "speech_rate": 3.0,
+      "score": 0.666
+    },
+    {
+      "t": 9.0,
+      "energy": 0.799,
+      "speech_rate": 3.25,
+      "score": 0.746
+    },
+    {
+      "t": 9.5,
+      "energy": 0.837,
+      "speech_rate": 3.25,
+      "score": 0.769
+    },
+    {
+      "t": 10.0,
+      "energy": 0.89,
+      "speech_rate": 3.5,
+      "score": 0.934
+    },
+    {
+      "t": 10.5,
+      "energy": 0.699,
+      "speech_rate": 3.5,
+      "score": 0.82
+    },
+    {
+      "t": 11.0,
+      "energy": 0.583,
+      "speech_rate": 3.25,
+      "score": 0.616
+    },
+    {
+      "t": 11.5,
+      "energy": 0.0,
+      "speech_rate": 3.5,
+      "score": 0.4
+    },
+    {
+      "t": 12.0,
+      "energy": 1.0,
+      "speech_rate": 3.5,
+      "score": 1.0
+    },
+    {
+      "t": 12.5,
+      "energy": 0.725,
+      "speech_rate": 3.5,
+      "score": 0.835
+    },
+    {
+      "t": 13.0,
+      "energy": 0.988,
+      "speech_rate": 3.25,
+      "score": 0.86
+    },
+    {
+      "t": 13.5,
+      "energy": 0.61,
+      "speech_rate": 3.5,
+      "score": 0.766
+    },
+    {
+      "t": 14.0,
+      "energy": 0.629,
+      "speech_rate": 3.5,
+      "score": 0.777
+    },
+    {
+      "t": 14.5,
+      "energy": 0.488,
+      "speech_rate": 3.25,
+      "score": 0.56
+    },
+    {
+      "t": 15.0,
+      "energy": 0.453,
+      "speech_rate": 3.25,
+      "score": 0.538
+    },
+    {
+      "t": 15.5,
+      "energy": 0.213,
+      "speech_rate": 3.25,
+      "score": 0.394
+    },
+    {
+      "t": 16.0,
+      "energy": 0.516,
+      "speech_rate": 3.0,
+      "score": 0.443
+    },
+    {
+      "t": 16.5,
+      "energy": 0.0,
+      "speech_rate": 3.25,
+      "score": 0.267
+    },
+    {
+      "t": 17.0,
+      "energy": 0.989,
+      "speech_rate": 3.0,
+      "score": 0.727
+    },
+    {
+      "t": 17.5,
+      "energy": 0.918,
+      "speech_rate": 3.25,
+      "score": 0.818
+    },
+    {
+      "t": 18.0,
+      "energy": 1.0,
+      "speech_rate": 3.25,
+      "score": 0.867
+    },
+    {
+      "t": 18.5,
+      "energy": 0.62,
+      "speech_rate": 3.5,
+      "score": 0.772
+    },
+    {
+      "t": 19.0,
+      "energy": 0.567,
+      "speech_rate": 3.5,
+      "score": 0.74
+    },
+    {
+      "t": 19.5,
+      "energy": 0.475,
+      "speech_rate": 3.25,
+      "score": 0.552
+    },
+    {
+      "t": 20.0,
+      "energy": 1.0,
+      "speech_rate": 3.5,
+      "score": 1.0
+    },
+    {
+      "t": 20.5,
+      "energy": 0.0,
+      "speech_rate": 3.25,
+      "score": 0.267
+    },
+    {
+      "t": 21.0,
+      "energy": 0.869,
+      "speech_rate": 3.75,
+      "score": 0.921
+    },
+    {
+      "t": 21.5,
+      "energy": 0.62,
+      "speech_rate": 3.5,
+      "score": 0.772
+    },
+    {
+      "t": 22.0,
+      "energy": 0.754,
+      "speech_rate": 3.25,
+      "score": 0.719
+    },
+    {
+      "t": 22.5,
+      "energy": 0.997,
+      "speech_rate": 3.25,
+      "score": 0.865
+    },
+    {
+      "t": 23.0,
+      "energy": 0.385,
+      "speech_rate": 3.0,
+      "score": 0.364
+    },
+    {
+      "t": 23.5,
+      "energy": 0.527,
+      "speech_rate": 2.75,
+      "score": 0.316
+    },
+    {
+      "t": 24.0,
+      "energy": 1.0,
+      "speech_rate": 2.25,
+      "score": 0.6
+    }
+  ]
+}

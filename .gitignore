@@ -16,3 +16,6 @@ build/
 dist/
 .venv/
 .DS_Store
+testdata/stress/*.mp4
+testdata/stress/*.wav
+testdata/stress/*.aiff

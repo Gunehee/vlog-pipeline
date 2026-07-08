@@ -1,0 +1,47 @@
+{
+  "footage": "/Users/joshualee/vlog-pipeline/testdata/stress/music_snr18.mp4",
+  "duration_sec": 26.533,
+  "video": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "pix_fmt": "yuv420p"
+  },
+  "audio_tracks": [
+    {
+      "codec": "aac",
+      "channels": 1,
+      "sample_rate": "48000"
+    }
+  ],
+  "silence_map": {
+    "threshold_db": -16.0,
+    "threshold_mode": "adaptive rescue (floor -28.0dB, speech -4.1dB)",
+    "min_duration_sec": 0.45,
+    "count": 4,
+    "total_silence_sec": 4.57,
+    "silences": [
+      {
+        "start": 5.902,
+        "end": 7.069,
+        "dur": 1.166
+      },
+      {
+        "start": 11.803,
+        "end": 12.783,
+        "dur": 0.98
+      },
+      {
+        "start": 15.757,
+        "end": 17.316,
+        "dur": 1.56
+      },
+      {
+        "start": 21.986,
+        "end": 22.847,
+        "dur": 0.861
+      }
+    ]
+  }
+}

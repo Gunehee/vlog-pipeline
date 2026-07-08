@@ -105,21 +105,49 @@ Measured results from that run:
 - highlight window landed exactly on the scripted high-energy section (38.7–89.4 s of the edited cut)
 - review verdict: SHIP WITH NOTES (the review correctly flagged raw-ASR punctuation in captions)
 
-## Current limitations
+## Engine hardening (stress suite)
 
-- **Crop tracking is a heuristic.** Haar frontal-face + motion centroid, sampled at
-  ~6 Hz. It holds one subject near center; it will not handle two people, rapid
-  subject swaps, or faces in profile. (On the synthetic clip most samples came from
-  the motion tracker — Haar is trained on real faces.)
-- **Filler list is English-only and static** (`config.py`); contextual-filler
-  detection ("like", "so") is conservative on purpose, so some fillers survive.
-- **Captions are raw ASR text** — no punctuation cleanup pass yet (the package-stage
-  review flags this too).
-- **Single audio track, single subject** assumed; multi-track (mic + system) footage
-  uses track 0 only.
-- **Homebrew ffmpeg ships without libass**, so caption burn-in uses PIL-rendered PNG
-  overlays with `enable=between(t,…)` — visually equivalent, but style changes mean
-  editing `engine/captions.py`, not an `.ass` template.
+The engine is validated against 7 synthetic stress scenarios with
+generator-known ground truth (planted pauses/fillers with exact intervals,
+per-frame subject positions, speaker-switch times): handheld camera pan,
+music bed at SNR 18/8dB, hard-cut speaker alternation, subject exit/re-enter,
+low-contrast lighting, dense filler speech with acoustic traps, and boundary
+silences. All 28 metrics pass; see **`stress-report.md`** for what failed
+initially, what was fixed, and measured numbers.
+
+```bash
+vlog-pipeline stress                 # full suite, $0, ~10 min (local whisper)
+python3 -m pytest tests/            # fast unit regressions (<1s)
+python3 -m pytest tests/ -m slow    # same scenarios via pytest
+```
+
+## Current limitations (post-hardening, measured)
+
+- **One subject.** The tracker (Haar face → LK optical-flow → compact motion
+  centroid → hold) survives hard-cut speaker switches (re-acquire ≤ 1.07s
+  measured), handheld pan (100% containment), full exit/re-enter (holds last
+  position, 0px drift), and 0.22× lighting — but it will not frame two
+  simultaneously visible speakers, faces in profile, or gradual subject swaps
+  without a cut.
+- **Contextual fillers trade recall for precision.** "like"/"so" are cut only
+  on low ASR confidence or drawn-out duration; a crisp confident hesitation-
+  "like" survives (measured: 10/11 recall, 100% precision — no legit usage cut).
+  Filler list is English-only (`config.py`).
+- **Silence rescue is per-file.** Under a music/noise bed the threshold adapts
+  from whole-file peak statistics (measured: 100% pause recall, 0% false cuts
+  at SNR 18 and 8dB); if the floor comes within 8dB of speech, silence removal
+  disables itself with a note in `ingest-report.json` rather than cutting into
+  words. A bed that starts mid-file still gets one global threshold.
+- **Captions are raw ASR text** — no punctuation cleanup pass yet (the
+  package-stage review flags this too).
+- **Single audio track** assumed; multi-track (mic + system) footage uses
+  track 0 only.
+- **Homebrew ffmpeg ships without libass**, so caption burn-in uses PIL-rendered
+  PNG overlays with `enable=between(t,…)` — visually equivalent, but style
+  changes mean editing `engine/captions.py`, not an `.ass` template.
 - Whisper `small.en` on CPU is the wall-clock bottleneck of the edit stage
-  (~25 s for a 2.7 min clip); `--whisper-model base.en` is ~2× faster and slightly
-  less accurate.
+  (~25 s for a 2.7 min clip); `--whisper-model base.en` is ~2× faster and
+  slightly less accurate.
+- Stress scenarios are synthetic (TTS + drawn presenter): Haar hit rates on
+  real faces should exceed the cartoon-face rates measured here, so the
+  flow/motion fallback shares are conservative estimates.

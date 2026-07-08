@@ -1,0 +1,26 @@
+{
+  "footage": "/Users/joshualee/vlog-pipeline/testdata/stress/dense_filler.mp4",
+  "duration_sec": 40.167,
+  "video": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "pix_fmt": "yuv420p"
+  },
+  "audio_tracks": [
+    {
+      "codec": "aac",
+      "channels": 1,
+      "sample_rate": "48000"
+    }
+  ],
+  "silence_map": {
+    "threshold_db": -35.0,
+    "threshold_mode": "fixed (floor -73.1dB below threshold)",
+    "min_duration_sec": 0.45,
+    "count": 0,
+    "total_silence_sec": 0,
+    "silences": []
+  }
+}

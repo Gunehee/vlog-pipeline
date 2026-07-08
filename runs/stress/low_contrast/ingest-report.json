@@ -1,0 +1,42 @@
+{
+  "footage": "/Users/joshualee/vlog-pipeline/testdata/stress/low_contrast.mp4",
+  "duration_sec": 18.7,
+  "video": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "pix_fmt": "yuv420p"
+  },
+  "audio_tracks": [
+    {
+      "codec": "aac",
+      "channels": 1,
+      "sample_rate": "48000"
+    }
+  ],
+  "silence_map": {
+    "threshold_db": -35.0,
+    "threshold_mode": "fixed (floor -180.0dB below threshold)",
+    "min_duration_sec": 0.45,
+    "count": 3,
+    "total_silence_sec": 3.01,
+    "silences": [
+      {
+        "start": 4.72,
+        "end": 5.713,
+        "dur": 0.993
+      },
+      {
+        "start": 8.76,
+        "end": 9.688,
+        "dur": 0.928
+      },
+      {
+        "start": 13.561,
+        "end": 14.654,
+        "dur": 1.093
+      }
+    ]
+  }
+}

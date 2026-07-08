@@ -1,0 +1,47 @@
+{
+  "footage": "/Users/joshualee/vlog-pipeline/testdata/stress/handheld.mp4",
+  "duration_sec": 28.433,
+  "video": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "pix_fmt": "yuv420p"
+  },
+  "audio_tracks": [
+    {
+      "codec": "aac",
+      "channels": 1,
+      "sample_rate": "48000"
+    }
+  ],
+  "silence_map": {
+    "threshold_db": -35.0,
+    "threshold_mode": "fixed (floor -180.0dB below threshold)",
+    "min_duration_sec": 0.45,
+    "count": 4,
+    "total_silence_sec": 3.9,
+    "silences": [
+      {
+        "start": 5.967,
+        "end": 6.964,
+        "dur": 0.997
+      },
+      {
+        "start": 11.77,
+        "end": 12.672,
+        "dur": 0.903
+      },
+      {
+        "start": 17.384,
+        "end": 18.583,
+        "dur": 1.199
+      },
+      {
+        "start": 23.904,
+        "end": 24.708,
+        "dur": 0.804
+      }
+    ]
+  }
+}

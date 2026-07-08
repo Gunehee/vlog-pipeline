@@ -1,0 +1,47 @@
+{
+  "footage": "/Users/joshualee/vlog-pipeline/testdata/stress/boundary_silence.mp4",
+  "duration_sec": 44.467,
+  "video": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "pix_fmt": "yuv420p"
+  },
+  "audio_tracks": [
+    {
+      "codec": "aac",
+      "channels": 1,
+      "sample_rate": "48000"
+    }
+  ],
+  "silence_map": {
+    "threshold_db": -35.0,
+    "threshold_mode": "fixed (floor -180.0dB below threshold)",
+    "min_duration_sec": 0.45,
+    "count": 4,
+    "total_silence_sec": 16.18,
+    "silences": [
+      {
+        "start": 0.0,
+        "end": 3.004,
+        "dur": 3.004
+      },
+      {
+        "start": 14.026,
+        "end": 15.028,
+        "dur": 1.003
+      },
+      {
+        "start": 25.329,
+        "end": 33.429,
+        "dur": 8.1
+      },
+      {
+        "start": 40.383,
+        "end": 44.459,
+        "dur": 4.076
+      }
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "scenario": "music",
+  "fps": 30,
+  "duration": 26.549625,
+  "snrs": [
+    18,
+    8
+  ],
+  "events": [
+    {
+      "kind": "speech",
+      "start": 0.0,
+      "end": 6.0,
+      "text": "The first thing I check every morning is the retention graph, because it tells me exactly where people got bored.",
+      "voice": "Samantha"
+    },
+    {
+      "kind": "pause",
+      "start": 6.06,
+      "end": 7.06
+    },
+    {
+      "kind": "speech",
+      "start": 7.06,
+      "end": 11.904,
+      "text": "If you only change one thing about your videos this year, make it the first ten seconds.",
+      "voice": "Samantha"
+    },
+    {
+      "kind": "pause",
+      "start": 11.964,
+      "end": 12.764
+    },
+    {
+      "kind": "speech",
+      "start": 12.764,
+      "end": 15.842,
+      "text": "The camera you already own is good enough, I promise.",
+      "voice": "Samantha"
+    },
+    {
+      "kind": "pause",
+      "start": 15.902,
+      "end": 17.302
+    },
+    {
+      "kind": "speech",
+      "start": 17.302,
+      "end": 22.051,
+      "text": "I keep a running list of every hook that worked, and I steal from my own list constantly.",
+      "voice": "Samantha"
+    },
+    {
+      "kind": "pause",
+      "start": 22.111,
+      "end": 22.811
+    },
+    {
+      "kind": "speech",
+      "start": 22.811,
+      "end": 26.49,
+      "text": "Good audio matters more than good video, and you can quote me on that.",
+      "voice": "Samantha"
+    }
+  ]
+}

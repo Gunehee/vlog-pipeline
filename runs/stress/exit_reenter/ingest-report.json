@@ -1,0 +1,47 @@
+{
+  "footage": "/Users/joshualee/vlog-pipeline/testdata/stress/exit_reenter.mp4",
+  "duration_sec": 27.367,
+  "video": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "pix_fmt": "yuv420p"
+  },
+  "audio_tracks": [
+    {
+      "codec": "aac",
+      "channels": 1,
+      "sample_rate": "48000"
+    }
+  ],
+  "silence_map": {
+    "threshold_db": -35.0,
+    "threshold_mode": "fixed (floor -180.0dB below threshold)",
+    "min_duration_sec": 0.45,
+    "count": 4,
+    "total_silence_sec": 3.6,
+    "silences": [
+      {
+        "start": 5.967,
+        "end": 6.87,
+        "dur": 0.903
+      },
+      {
+        "start": 12.191,
+        "end": 13.19,
+        "dur": 0.999
+      },
+      {
+        "start": 17.996,
+        "end": 18.9,
+        "dur": 0.904
+      },
+      {
+        "start": 22.542,
+        "end": 23.337,
+        "dur": 0.795
+      }
+    ]
+  }
+}
