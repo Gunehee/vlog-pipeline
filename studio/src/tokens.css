@@ -1,0 +1,86 @@
+/* Design tokens — single source: docs/DESIGN.md. Components use tokens only. */
+:root {
+  /* surfaces & ink */
+  --bg-0: #101013;
+  --bg-1: #16161a;
+  --bg-2: #1d1d23;
+  --bg-3: #26262e;
+  --border-1: #2c2c35;
+  --border-2: #3d3d49;
+  --ink-1: #f2f2f4;
+  --ink-2: #a6a6b2;
+  --ink-3: #6c6c79;
+
+  /* accent & status */
+  --accent: #9085e9;
+  --accent-hover: #a49af0;
+  --accent-down: #7d72d8;
+  --accent-dim: rgba(144, 133, 233, 0.14);
+  --good: #0ca30c;
+  --warn: #fab219;
+  --crit: #d03b3b;
+
+  /* cut-reason categorical (CVD-validated dark set, same as report.html) */
+  --cut-silence: #3987e5;
+  --cut-filler: #199e70;
+  --cut-mixed: #c98500;
+  --cut-pacing: #008300;
+  --cut-manual: #d55181;
+
+  /* type */
+  --font-ui: -apple-system, "Segoe UI", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+  --fs-xs: 11px;
+  --fs-sm: 12px;
+  --fs-base: 13px;
+  --fs-md: 15px;
+  --fs-lg: 18px;
+  --fs-xl: 24px;
+
+  /* spacing (4px grid) */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+
+  /* radii & elevation */
+  --r-sm: 4px;
+  --r-md: 6px;
+  --r-lg: 8px;
+  --r-pill: 999px;
+  --shadow-float: 0 8px 24px rgba(0, 0, 0, 0.5), 0 0 0 1px var(--border-1);
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root { height: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg-0);
+  color: var(--ink-1);
+  font-family: var(--font-ui);
+  font-size: var(--fs-base);
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+
+button, input, select, textarea { font: inherit; color: inherit; }
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+
+::selection { background: var(--accent-dim); }
+
+/* scrollbars that match the instrument-panel look */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: var(--bg-3); border-radius: 5px; border: 2px solid var(--bg-1); }
+::-webkit-scrollbar-track { background: transparent; }
