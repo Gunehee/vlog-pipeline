@@ -1,15 +1,59 @@
 # vlog-pipeline
 
 Raw vlog footage + a topic → an edited, captioned, multi-format, upload-ready video
-package. A CLI build-pipeline, not a chatbot: every stage writes its output to
-`runs/<name>/` as files (JSON state, markdown reports, media), each stage must pass a
-validation gate before the next one runs, and the expensive editing engine is fully
-local and deterministic — LLM calls are reserved for cheap, low-frequency text stages.
+package. A CLI build-pipeline plus a local review studio: every stage writes its
+output to `runs/<name>/` as files (JSON state, markdown reports, media), each stage
+must pass a validation gate before the next one runs, and the expensive editing
+engine is fully local and deterministic — LLM calls are reserved for cheap,
+low-frequency text stages.
 
 ```
 vlog-pipeline run --footage clip.mp4 --topic "Three lessons from my first 30 days of daily vlogging"
+vlog-pipeline ui          # review the cuts in the studio, then export — local, $0
 vlog-pipeline status
 ```
+
+## The review studio
+
+`vlog-pipeline ui` opens a local, fully offline editing studio (no CDN, no external
+requests, zero LLM calls — repeat editing costs $0):
+
+![studio](docs/screenshots/studio.png)
+
+- **Timeline** — waveform of the original footage with every proposed cut
+  color-coded by reason (silence / filler / mixed / manual, the same
+  colorblind-safe set as report.html); zoom around the cursor, pan, click-to-seek,
+  drag the accent handles to nudge boundaries, drag a range to add a manual cut.
+- **Render-free preview** — plays the ORIGINAL file and skips removed segments live
+  from the current decision state (measured boundary accuracy: 2ms entry overshoot
+  against a 50ms target). Toggle "preview edited" ↔ "play original" any time.
+- **Cut review** — keep/reject per cut (`x`), batch ops ("reject all filler"),
+  50ms nudges, full undo/redo, autosave. The engine's EDL is never mutated: your
+  decisions live in `review-state.json` layered on top, so "reset to engine
+  suggestions" always works.
+- **Caption editor** — synced line list, double-click to fix ASR mistakes,
+  split/join lines, style presets for the 9:16 UI-safe zone. Lines are anchored to
+  original-footage time, so changing cuts can never desync them.
+- **Re-analyze** — change thresholds/filler list and re-run the local engine;
+  decisions carry over by time-overlap matching, changed suggestions are flagged
+  NEW, and nothing is ever silently overridden (measured: 38/38 carried, 1 flagged).
+- **Export** — renders both formats from your decisions via the engine, with
+  two-pass loudness normalization to −14 LUFS (default on) and an optional
+  punch-in zoom alternation that masks jump cuts (default off). Everything is
+  keyboard-first — press `?` for the overlay.
+
+| | |
+|---|---|
+| ![inspector](docs/screenshots/cut-inspector.png) | ![captions](docs/screenshots/captions.png) |
+| ![settings](docs/screenshots/settings.png) | ![export](docs/screenshots/export.png) |
+
+**Measured end-to-end** (Playwright suite, `pytest tests/e2e -m e2e`): reject cuts +
+nudge + manual cut → exported 16:9 equals the frame-quantized prediction within
+67ms (±0.1s target); a rejected filler's audio is verifiably present at its mapped
+timestamp (RMS above the −35dBFS speech-presence gate); editing a caption changes both the .srt and the
+burned pixels at that caption's midpoint; loudness lands at −14.2/−14.1 LUFS.
+The production web build is committed (`vlog_pipeline/webdist`), so a fresh clone
+serves the studio with no node toolchain — verified by a clean-machine smoke test.
 
 ## What it produces
 
@@ -73,10 +117,13 @@ runs the whole media path for free.
 
 ```bash
 brew install ffmpeg            # needs ffmpeg/ffprobe on PATH
-pip3 install -e .              # installs faster-whisper, opencv-python, numpy, pillow dep chain
+pip3 install -e .              # faster-whisper, opencv, numpy, fastapi/uvicorn dep chain
 # optional, for the LLM stages:
 export ANTHROPIC_API_KEY=...   # plan/package/optimize use headless `claude -p`
 ```
+
+The studio frontend ships prebuilt (`vlog_pipeline/webdist`) — node/npm are only
+needed to hack on `studio/` (then `npm run build` regenerates the committed build).
 
 First run downloads the whisper `small.en` model (~460 MB) to the local HF cache.
 
@@ -151,3 +198,12 @@ python3 -m pytest tests/ -m slow    # same scenarios via pytest
 - Stress scenarios are synthetic (TTS + drawn presenter): Haar hit rates on
   real faces should exceed the cartoon-face rates measured here, so the
   flow/motion fallback shares are conservative estimates.
+- **Studio**: single-user, single machine by design (localhost server, no
+  auth); preview skips are frame-exact but a brief decoder stutter at each
+  jump is inherent to seeking the original file; caption split times are
+  interpolated by word count (exact word timings would need per-word
+  re-alignment); the 9:16 highlight window is re-scored at export rather than
+  hand-pickable on the timeline; punch-in preview shows as timeline badges,
+  not in the video preview itself (it's applied in the ffmpeg render chain).
+- Studio E2E requires the original footage on disk (media files are
+  gitignored) — regenerate with `python3 tools/make_test_clip.py testdata/raw-vlog.mp4`.

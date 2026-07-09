@@ -221,9 +221,14 @@ def test_caption_edit_changes_srt_and_burned_frame(studio):
     page.dblclick('[data-testid="cap-6"] .cap-text')
     page.fill('[data-testid="cap-input-6"]', marker)
     page.keyboard.press("Enter")
-    page.wait_for_timeout(1100)
-
-    review = rv.load_review(RUN)
+    # wait for the autosave to actually land on disk (debounce + write)
+    for _ in range(40):
+        review = rv.load_review(RUN)
+        if review["captions"] and any(l["text"] == marker for l in review["captions"]):
+            break
+        time.sleep(0.25)
+    else:
+        pytest.fail("caption edit never persisted to review-state.json")
     line = next(l for l in review["captions"] if l["text"] == marker)
     dec = json.loads((RUN / "edit-decisions.json").read_text())
     ing = json.loads((RUN / "ingest-report.json").read_text())
