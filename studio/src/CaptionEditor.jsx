@@ -83,13 +83,13 @@ export default function CaptionEditor({ state, dispatch, playhead, kept, onSeek 
               )}
               {editing !== l.id && (
                 <span className="cap-actions" onClick={(e) => e.stopPropagation()}>
-                  <button className="btn quiet" title="split line in half"
+                  <button className="btn quiet" title="split this line in half"
                           data-testid={`cap-split-${i}`}
-                          onClick={() => dispatch({ type: "SPLIT_CAPTION", id: l.id })}>⤸</button>
+                          onClick={() => dispatch({ type: "SPLIT_CAPTION", id: l.id })}>split</button>
                   {i + 1 < lines.length && (
-                    <button className="btn quiet" title="merge with next line"
+                    <button className="btn quiet" title="merge with the next line"
                             data-testid={`cap-merge-${i}`}
-                            onClick={() => dispatch({ type: "MERGE_CAPTION", id: l.id })}>⤵</button>
+                            onClick={() => dispatch({ type: "MERGE_CAPTION", id: l.id })}>join</button>
                   )}
                 </span>
               )}
