@@ -325,6 +325,9 @@ def create_app() -> FastAPI:
 
         return StreamingResponse(stream(), media_type="text/event-stream")
 
+    if RUNS_ROOT.exists():
+        # report.html + its relative thumbnails/exports, straight from disk
+        app.mount("/runs-static", StaticFiles(directory=RUNS_ROOT), name="runs")
     if WEBDIST.exists():
         app.mount("/", StaticFiles(directory=WEBDIST, html=True), name="web")
     return app
