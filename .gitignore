@@ -1,5 +1,7 @@
 # Large media: keep reports, srt, thumbnails, state; exclude raw + rendered video/audio
-runs/**/work/
+# (work/ is scratch, EXCEPT the word-level transcript the studio needs for captions)
+runs/**/work/*
+!runs/**/work/words-original.json
 runs/**/*.mp4
 runs/**/*.mov
 runs/**/*.mkv

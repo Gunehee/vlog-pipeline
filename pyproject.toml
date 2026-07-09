@@ -7,6 +7,8 @@ dependencies = [
     "faster-whisper>=1.0",
     "opencv-python>=4.8",
     "numpy>=1.26",
+    "fastapi>=0.110",
+    "uvicorn>=0.29",
 ]
 
 [project.scripts]
@@ -18,3 +20,6 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 include = ["vlog_pipeline*"]
+
+[tool.setuptools.package-data]
+vlog_pipeline = ["webdist/**/*"]

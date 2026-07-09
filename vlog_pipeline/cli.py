@@ -108,6 +108,12 @@ def cmd_run(args) -> int:
     return 0
 
 
+def cmd_ui(args) -> int:
+    from .studio_server import serve
+    serve(port=args.port, open_browser=not args.no_browser, run=args.run)
+    return 0
+
+
 def cmd_stress(args) -> int:
     from .stress import run_stress
     return run_stress(args.scenario, args.regen)
@@ -160,6 +166,13 @@ def main(argv=None) -> int:
     s = sub.add_parser("status", help="show state of runs")
     s.add_argument("--name")
     s.set_defaults(func=cmd_status)
+
+    u = sub.add_parser(
+        "ui", help="launch the local review studio (offline, $0, no LLM calls)")
+    u.add_argument("--run", help="open this run directly")
+    u.add_argument("--port", type=int, default=5175)
+    u.add_argument("--no-browser", action="store_true")
+    u.set_defaults(func=cmd_ui)
 
     st = sub.add_parser(
         "stress",

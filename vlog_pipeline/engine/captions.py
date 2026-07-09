@@ -49,9 +49,18 @@ def write_srt(lines: list[dict], path: str | Path):
 
 FONT = "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
 
+# Export style presets. 9:16 margins keep captions above the Shorts UI zone
+# (progress bar / title / engagement buttons live in the bottom ~25%).
+PRESETS = {
+    "clean":  {"size_scale": 1.0,  "box_alpha": 115, "mv_v": 560, "mv_h": 72},
+    "boxed":  {"size_scale": 1.0,  "box_alpha": 200, "mv_v": 560, "mv_h": 72},
+    "large":  {"size_scale": 1.22, "box_alpha": 115, "mv_v": 560, "mv_h": 80},
+    "high":   {"size_scale": 1.0,  "box_alpha": 115, "mv_v": 760, "mv_h": 72},
+}
+
 
 def render_caption_pngs(lines: list[dict], out_dir: str | Path, *, vertical: bool,
-                        offset: float = 0.0) -> list[dict]:
+                        offset: float = 0.0, preset: str = "clean") -> list[dict]:
     """Render each caption line to a styled transparent PNG for ffmpeg overlay.
 
     Styling: bold white text, black stroke, semi-transparent rounded box.
@@ -65,10 +74,15 @@ def render_caption_pngs(lines: list[dict], out_dir: str | Path, *, vertical: boo
 
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
+    st = PRESETS.get(preset, PRESETS["clean"])
     if vertical:
-        canvas_w, canvas_h, size, stroke, margin_bottom = 1080, 1920, 76, 5, 560
+        canvas_w, canvas_h, size, stroke = 1080, 1920, 76, 5
+        margin_bottom = st["mv_v"]
     else:
-        canvas_w, canvas_h, size, stroke, margin_bottom = 1920, 1080, 56, 4, 72
+        canvas_w, canvas_h, size, stroke = 1920, 1080, 56, 4
+        margin_bottom = st["mv_h"]
+    size = int(size * st["size_scale"])
+    box_alpha = st["box_alpha"]
     font = ImageFont.truetype(FONT, size)
     pad_x, pad_y = 26, 14
 
@@ -83,7 +97,7 @@ def render_caption_pngs(lines: list[dict], out_dir: str | Path, *, vertical: boo
         h = bbox[3] - bbox[1] + 2 * pad_y
         img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
         d = ImageDraw.Draw(img)
-        d.rounded_rectangle((0, 0, w - 1, h - 1), radius=16, fill=(0, 0, 0, 115))
+        d.rounded_rectangle((0, 0, w - 1, h - 1), radius=16, fill=(0, 0, 0, box_alpha))
         d.text((pad_x - bbox[0], pad_y - bbox[1]), ln["text"], font=font,
                fill=(255, 255, 255, 255), stroke_width=stroke,
                stroke_fill=(10, 10, 10, 255))

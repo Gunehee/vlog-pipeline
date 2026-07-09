@@ -1,0 +1,326 @@
+[
+  {
+    "word": "I",
+    "start": 0.0,
+    "end": 0.16,
+    "prob": 0.959
+  },
+  {
+    "word": "keep",
+    "start": 0.16,
+    "end": 0.34,
+    "prob": 0.996
+  },
+  {
+    "word": "a",
+    "start": 0.34,
+    "end": 0.5,
+    "prob": 0.998
+  },
+  {
+    "word": "running",
+    "start": 0.5,
+    "end": 0.72,
+    "prob": 0.995
+  },
+  {
+    "word": "list",
+    "start": 0.72,
+    "end": 0.98,
+    "prob": 0.997
+  },
+  {
+    "word": "of",
+    "start": 0.98,
+    "end": 1.18,
+    "prob": 0.998
+  },
+  {
+    "word": "every",
+    "start": 1.18,
+    "end": 1.44,
+    "prob": 0.996
+  },
+  {
+    "word": "hook",
+    "start": 1.44,
+    "end": 1.6,
+    "prob": 0.99
+  },
+  {
+    "word": "that",
+    "start": 1.6,
+    "end": 1.82,
+    "prob": 0.999
+  },
+  {
+    "word": "worked,",
+    "start": 1.82,
+    "end": 2.14,
+    "prob": 0.997
+  },
+  {
+    "word": "and",
+    "start": 2.44,
+    "end": 2.62,
+    "prob": 0.99
+  },
+  {
+    "word": "I",
+    "start": 2.62,
+    "end": 2.82,
+    "prob": 0.993
+  },
+  {
+    "word": "steal",
+    "start": 2.82,
+    "end": 3.04,
+    "prob": 0.998
+  },
+  {
+    "word": "from",
+    "start": 3.04,
+    "end": 3.32,
+    "prob": 0.999
+  },
+  {
+    "word": "my",
+    "start": 3.32,
+    "end": 3.5,
+    "prob": 0.998
+  },
+  {
+    "word": "own",
+    "start": 3.5,
+    "end": 3.68,
+    "prob": 0.987
+  },
+  {
+    "word": "list",
+    "start": 3.68,
+    "end": 3.96,
+    "prob": 0.998
+  },
+  {
+    "word": "constantly.",
+    "start": 3.96,
+    "end": 4.56,
+    "prob": 0.994
+  },
+  {
+    "word": "The",
+    "start": 5.72,
+    "end": 5.8,
+    "prob": 0.958
+  },
+  {
+    "word": "camera",
+    "start": 5.8,
+    "end": 6.1,
+    "prob": 0.993
+  },
+  {
+    "word": "you",
+    "start": 6.1,
+    "end": 6.34,
+    "prob": 0.998
+  },
+  {
+    "word": "already",
+    "start": 6.34,
+    "end": 6.66,
+    "prob": 0.999
+  },
+  {
+    "word": "own",
+    "start": 6.66,
+    "end": 7.02,
+    "prob": 0.999
+  },
+  {
+    "word": "is",
+    "start": 7.02,
+    "end": 7.18,
+    "prob": 0.999
+  },
+  {
+    "word": "good",
+    "start": 7.18,
+    "end": 7.34,
+    "prob": 0.996
+  },
+  {
+    "word": "enough,",
+    "start": 7.34,
+    "end": 7.66,
+    "prob": 1.0
+  },
+  {
+    "word": "I",
+    "start": 8.0,
+    "end": 8.2,
+    "prob": 0.983
+  },
+  {
+    "word": "promise.",
+    "start": 8.2,
+    "end": 8.62,
+    "prob": 0.999
+  },
+  {
+    "word": "Thumbnails",
+    "start": 9.75,
+    "end": 10.05,
+    "prob": 0.711
+  },
+  {
+    "word": "take",
+    "start": 10.05,
+    "end": 10.39,
+    "prob": 0.997
+  },
+  {
+    "word": "me",
+    "start": 10.39,
+    "end": 10.65,
+    "prob": 0.999
+  },
+  {
+    "word": "20",
+    "start": 10.65,
+    "end": 10.97,
+    "prob": 0.784
+  },
+  {
+    "word": "minutes",
+    "start": 10.97,
+    "end": 11.23,
+    "prob": 0.964
+  },
+  {
+    "word": "now,",
+    "start": 11.23,
+    "end": 11.63,
+    "prob": 0.998
+  },
+  {
+    "word": "and",
+    "start": 11.91,
+    "end": 12.05,
+    "prob": 0.998
+  },
+  {
+    "word": "they",
+    "start": 12.05,
+    "end": 12.19,
+    "prob": 0.999
+  },
+  {
+    "word": "used",
+    "start": 12.19,
+    "end": 12.45,
+    "prob": 0.98
+  },
+  {
+    "word": "to",
+    "start": 12.45,
+    "end": 12.63,
+    "prob": 0.999
+  },
+  {
+    "word": "take",
+    "start": 12.63,
+    "end": 12.85,
+    "prob": 0.999
+  },
+  {
+    "word": "2",
+    "start": 12.85,
+    "end": 13.09,
+    "prob": 0.572
+  },
+  {
+    "word": "hours.",
+    "start": 13.09,
+    "end": 13.45,
+    "prob": 0.994
+  },
+  {
+    "word": "Publishing",
+    "start": 14.68,
+    "end": 15.04,
+    "prob": 0.985
+  },
+  {
+    "word": "on",
+    "start": 15.04,
+    "end": 15.3,
+    "prob": 0.998
+  },
+  {
+    "word": "a",
+    "start": 15.3,
+    "end": 15.44,
+    "prob": 0.996
+  },
+  {
+    "word": "schedule",
+    "start": 15.44,
+    "end": 15.72,
+    "prob": 0.994
+  },
+  {
+    "word": "trains",
+    "start": 15.72,
+    "end": 16.14,
+    "prob": 0.996
+  },
+  {
+    "word": "your",
+    "start": 16.14,
+    "end": 16.38,
+    "prob": 0.999
+  },
+  {
+    "word": "audience",
+    "start": 16.38,
+    "end": 16.72,
+    "prob": 1.0
+  },
+  {
+    "word": "to",
+    "start": 16.72,
+    "end": 17.02,
+    "prob": 0.999
+  },
+  {
+    "word": "come",
+    "start": 17.02,
+    "end": 17.2,
+    "prob": 0.921
+  },
+  {
+    "word": "back",
+    "start": 17.2,
+    "end": 17.44,
+    "prob": 0.999
+  },
+  {
+    "word": "without",
+    "start": 17.44,
+    "end": 17.8,
+    "prob": 0.999
+  },
+  {
+    "word": "being",
+    "start": 17.8,
+    "end": 18.12,
+    "prob": 0.999
+  },
+  {
+    "word": "asked.",
+    "start": 18.12,
+    "end": 18.48,
+    "prob": 0.994
+  }
+]

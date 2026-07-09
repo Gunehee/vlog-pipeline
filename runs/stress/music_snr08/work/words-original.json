@@ -1,0 +1,476 @@
+[
+  {
+    "word": "The",
+    "start": 0.0,
+    "end": 0.12,
+    "prob": 0.845
+  },
+  {
+    "word": "first",
+    "start": 0.12,
+    "end": 0.34,
+    "prob": 0.989
+  },
+  {
+    "word": "thing",
+    "start": 0.34,
+    "end": 0.6,
+    "prob": 0.997
+  },
+  {
+    "word": "I",
+    "start": 0.6,
+    "end": 0.82,
+    "prob": 0.958
+  },
+  {
+    "word": "check",
+    "start": 0.82,
+    "end": 1.04,
+    "prob": 0.944
+  },
+  {
+    "word": "every",
+    "start": 1.04,
+    "end": 1.34,
+    "prob": 0.994
+  },
+  {
+    "word": "morning",
+    "start": 1.34,
+    "end": 1.62,
+    "prob": 0.997
+  },
+  {
+    "word": "is",
+    "start": 1.62,
+    "end": 1.86,
+    "prob": 0.995
+  },
+  {
+    "word": "the",
+    "start": 1.86,
+    "end": 2.02,
+    "prob": 0.997
+  },
+  {
+    "word": "retention",
+    "start": 2.02,
+    "end": 2.46,
+    "prob": 0.945
+  },
+  {
+    "word": "graph,",
+    "start": 2.46,
+    "end": 2.9,
+    "prob": 0.977
+  },
+  {
+    "word": "because",
+    "start": 3.18,
+    "end": 3.52,
+    "prob": 0.976
+  },
+  {
+    "word": "it",
+    "start": 3.52,
+    "end": 3.72,
+    "prob": 0.996
+  },
+  {
+    "word": "tells",
+    "start": 3.72,
+    "end": 3.92,
+    "prob": 0.997
+  },
+  {
+    "word": "me",
+    "start": 3.92,
+    "end": 4.18,
+    "prob": 0.999
+  },
+  {
+    "word": "exactly",
+    "start": 4.18,
+    "end": 4.52,
+    "prob": 0.988
+  },
+  {
+    "word": "where",
+    "start": 4.52,
+    "end": 4.92,
+    "prob": 0.996
+  },
+  {
+    "word": "people",
+    "start": 4.92,
+    "end": 5.22,
+    "prob": 0.998
+  },
+  {
+    "word": "got",
+    "start": 5.22,
+    "end": 5.54,
+    "prob": 0.999
+  },
+  {
+    "word": "bored.",
+    "start": 5.54,
+    "end": 5.86,
+    "prob": 0.998
+  },
+  {
+    "word": "If",
+    "start": 7.07,
+    "end": 7.19,
+    "prob": 0.982
+  },
+  {
+    "word": "you",
+    "start": 7.19,
+    "end": 7.33,
+    "prob": 0.999
+  },
+  {
+    "word": "only",
+    "start": 7.33,
+    "end": 7.63,
+    "prob": 0.997
+  },
+  {
+    "word": "change",
+    "start": 7.63,
+    "end": 7.93,
+    "prob": 0.948
+  },
+  {
+    "word": "one",
+    "start": 7.93,
+    "end": 8.27,
+    "prob": 0.952
+  },
+  {
+    "word": "thing",
+    "start": 8.27,
+    "end": 8.45,
+    "prob": 0.999
+  },
+  {
+    "word": "about",
+    "start": 8.45,
+    "end": 8.73,
+    "prob": 0.999
+  },
+  {
+    "word": "your",
+    "start": 8.73,
+    "end": 8.97,
+    "prob": 0.998
+  },
+  {
+    "word": "videos",
+    "start": 8.97,
+    "end": 9.29,
+    "prob": 0.997
+  },
+  {
+    "word": "this",
+    "start": 9.29,
+    "end": 9.57,
+    "prob": 0.998
+  },
+  {
+    "word": "year,",
+    "start": 9.57,
+    "end": 9.93,
+    "prob": 0.999
+  },
+  {
+    "word": "make",
+    "start": 10.21,
+    "end": 10.41,
+    "prob": 0.989
+  },
+  {
+    "word": "it",
+    "start": 10.41,
+    "end": 10.59,
+    "prob": 0.999
+  },
+  {
+    "word": "the",
+    "start": 10.59,
+    "end": 10.71,
+    "prob": 0.998
+  },
+  {
+    "word": "first",
+    "start": 10.71,
+    "end": 10.95,
+    "prob": 0.986
+  },
+  {
+    "word": "10",
+    "start": 10.95,
+    "end": 11.25,
+    "prob": 0.855
+  },
+  {
+    "word": "seconds.",
+    "start": 11.25,
+    "end": 11.69,
+    "prob": 0.995
+  },
+  {
+    "word": "The",
+    "start": 12.71,
+    "end": 12.87,
+    "prob": 0.99
+  },
+  {
+    "word": "camera",
+    "start": 12.87,
+    "end": 13.15,
+    "prob": 0.994
+  },
+  {
+    "word": "you",
+    "start": 13.15,
+    "end": 13.39,
+    "prob": 0.999
+  },
+  {
+    "word": "already",
+    "start": 13.39,
+    "end": 13.73,
+    "prob": 0.998
+  },
+  {
+    "word": "own",
+    "start": 13.73,
+    "end": 14.07,
+    "prob": 0.999
+  },
+  {
+    "word": "is",
+    "start": 14.07,
+    "end": 14.25,
+    "prob": 0.999
+  },
+  {
+    "word": "good",
+    "start": 14.25,
+    "end": 14.39,
+    "prob": 0.997
+  },
+  {
+    "word": "enough,",
+    "start": 14.39,
+    "end": 14.71,
+    "prob": 1.0
+  },
+  {
+    "word": "I",
+    "start": 15.05,
+    "end": 15.27,
+    "prob": 0.975
+  },
+  {
+    "word": "promise.",
+    "start": 15.27,
+    "end": 15.57,
+    "prob": 0.999
+  },
+  {
+    "word": "I",
+    "start": 17.24,
+    "end": 17.42,
+    "prob": 0.997
+  },
+  {
+    "word": "keep",
+    "start": 17.42,
+    "end": 17.64,
+    "prob": 0.999
+  },
+  {
+    "word": "a",
+    "start": 17.64,
+    "end": 17.82,
+    "prob": 0.979
+  },
+  {
+    "word": "running",
+    "start": 17.82,
+    "end": 18.04,
+    "prob": 0.997
+  },
+  {
+    "word": "list",
+    "start": 18.04,
+    "end": 18.3,
+    "prob": 0.998
+  },
+  {
+    "word": "of",
+    "start": 18.3,
+    "end": 18.48,
+    "prob": 0.998
+  },
+  {
+    "word": "every",
+    "start": 18.48,
+    "end": 18.74,
+    "prob": 0.998
+  },
+  {
+    "word": "hook",
+    "start": 18.74,
+    "end": 18.92,
+    "prob": 0.985
+  },
+  {
+    "word": "that",
+    "start": 18.92,
+    "end": 19.12,
+    "prob": 0.999
+  },
+  {
+    "word": "worked,",
+    "start": 19.12,
+    "end": 19.4,
+    "prob": 0.948
+  },
+  {
+    "word": "and",
+    "start": 19.72,
+    "end": 19.92,
+    "prob": 0.996
+  },
+  {
+    "word": "I",
+    "start": 19.92,
+    "end": 20.12,
+    "prob": 0.998
+  },
+  {
+    "word": "steal",
+    "start": 20.12,
+    "end": 20.36,
+    "prob": 0.998
+  },
+  {
+    "word": "from",
+    "start": 20.36,
+    "end": 20.6,
+    "prob": 0.999
+  },
+  {
+    "word": "my",
+    "start": 20.6,
+    "end": 20.82,
+    "prob": 0.999
+  },
+  {
+    "word": "own",
+    "start": 20.82,
+    "end": 21.0,
+    "prob": 0.998
+  },
+  {
+    "word": "list",
+    "start": 21.0,
+    "end": 21.26,
+    "prob": 0.997
+  },
+  {
+    "word": "constantly.",
+    "start": 21.26,
+    "end": 21.78,
+    "prob": 0.994
+  },
+  {
+    "word": "Good",
+    "start": 22.82,
+    "end": 22.94,
+    "prob": 0.93
+  },
+  {
+    "word": "audio",
+    "start": 22.94,
+    "end": 23.28,
+    "prob": 0.978
+  },
+  {
+    "word": "matters",
+    "start": 23.28,
+    "end": 23.68,
+    "prob": 0.996
+  },
+  {
+    "word": "more",
+    "start": 23.68,
+    "end": 23.96,
+    "prob": 0.999
+  },
+  {
+    "word": "than",
+    "start": 23.96,
+    "end": 24.16,
+    "prob": 0.998
+  },
+  {
+    "word": "good",
+    "start": 24.16,
+    "end": 24.32,
+    "prob": 0.992
+  },
+  {
+    "word": "video,",
+    "start": 24.32,
+    "end": 24.7,
+    "prob": 0.999
+  },
+  {
+    "word": "and",
+    "start": 24.98,
+    "end": 25.16,
+    "prob": 0.998
+  },
+  {
+    "word": "you",
+    "start": 25.16,
+    "end": 25.3,
+    "prob": 0.999
+  },
+  {
+    "word": "can",
+    "start": 25.3,
+    "end": 25.48,
+    "prob": 1.0
+  },
+  {
+    "word": "quote",
+    "start": 25.48,
+    "end": 25.72,
+    "prob": 0.997
+  },
+  {
+    "word": "me",
+    "start": 25.72,
+    "end": 25.92,
+    "prob": 0.999
+  },
+  {
+    "word": "on",
+    "start": 25.92,
+    "end": 26.1,
+    "prob": 1.0
+  },
+  {
+    "word": "that.",
+    "start": 26.1,
+    "end": 26.38,
+    "prob": 0.999
+  }
+]

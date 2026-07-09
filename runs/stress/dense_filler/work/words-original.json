@@ -1,0 +1,806 @@
+[
+  {
+    "word": "So",
+    "start": 0.0,
+    "end": 0.2,
+    "prob": 0.595
+  },
+  {
+    "word": "here",
+    "start": 0.2,
+    "end": 0.42,
+    "prob": 0.951
+  },
+  {
+    "word": "is",
+    "start": 0.42,
+    "end": 0.58,
+    "prob": 0.979
+  },
+  {
+    "word": "my",
+    "start": 0.58,
+    "end": 0.8,
+    "prob": 0.986
+  },
+  {
+    "word": "honest",
+    "start": 0.8,
+    "end": 1.1,
+    "prob": 0.991
+  },
+  {
+    "word": "take",
+    "start": 1.1,
+    "end": 1.4,
+    "prob": 0.989
+  },
+  {
+    "word": "on",
+    "start": 1.4,
+    "end": 1.64,
+    "prob": 0.984
+  },
+  {
+    "word": "gear.",
+    "start": 1.64,
+    "end": 1.92,
+    "prob": 0.888
+  },
+  {
+    "word": "Um,",
+    "start": 2.22,
+    "end": 2.22,
+    "prob": 0.329
+  },
+  {
+    "word": "my",
+    "start": 2.42,
+    "end": 2.6,
+    "prob": 0.845
+  },
+  {
+    "word": "umbrella",
+    "start": 2.6,
+    "end": 2.96,
+    "prob": 0.992
+  },
+  {
+    "word": "is",
+    "start": 2.96,
+    "end": 3.28,
+    "prob": 0.996
+  },
+  {
+    "word": "under",
+    "start": 3.28,
+    "end": 3.5,
+    "prob": 0.997
+  },
+  {
+    "word": "the",
+    "start": 3.5,
+    "end": 3.7,
+    "prob": 0.994
+  },
+  {
+    "word": "summer",
+    "start": 3.7,
+    "end": 3.96,
+    "prob": 0.964
+  },
+  {
+    "word": "sun",
+    "start": 3.96,
+    "end": 4.24,
+    "prob": 0.991
+  },
+  {
+    "word": "and",
+    "start": 4.24,
+    "end": 4.38,
+    "prob": 0.904
+  },
+  {
+    "word": "the",
+    "start": 4.38,
+    "end": 4.52,
+    "prob": 0.994
+  },
+  {
+    "word": "drum",
+    "start": 4.52,
+    "end": 4.7,
+    "prob": 0.992
+  },
+  {
+    "word": "kit",
+    "start": 4.7,
+    "end": 4.9,
+    "prob": 0.855
+  },
+  {
+    "word": "hums.",
+    "start": 4.9,
+    "end": 5.46,
+    "prob": 0.868
+  },
+  {
+    "word": "Uh,",
+    "start": 5.62,
+    "end": 5.8,
+    "prob": 0.341
+  },
+  {
+    "word": "I",
+    "start": 5.92,
+    "end": 6.04,
+    "prob": 0.992
+  },
+  {
+    "word": "like",
+    "start": 6.04,
+    "end": 6.24,
+    "prob": 0.956
+  },
+  {
+    "word": "this",
+    "start": 6.24,
+    "end": 6.46,
+    "prob": 0.999
+  },
+  {
+    "word": "camera",
+    "start": 6.46,
+    "end": 6.82,
+    "prob": 0.996
+  },
+  {
+    "word": "a",
+    "start": 6.82,
+    "end": 6.96,
+    "prob": 0.97
+  },
+  {
+    "word": "lot,",
+    "start": 6.96,
+    "end": 7.2,
+    "prob": 1.0
+  },
+  {
+    "word": "and",
+    "start": 7.46,
+    "end": 7.6,
+    "prob": 0.991
+  },
+  {
+    "word": "it",
+    "start": 7.6,
+    "end": 7.74,
+    "prob": 0.998
+  },
+  {
+    "word": "looks",
+    "start": 7.74,
+    "end": 7.92,
+    "prob": 0.999
+  },
+  {
+    "word": "like",
+    "start": 7.92,
+    "end": 8.2,
+    "prob": 0.999
+  },
+  {
+    "word": "rain",
+    "start": 8.2,
+    "end": 8.44,
+    "prob": 0.996
+  },
+  {
+    "word": "outside.",
+    "start": 8.44,
+    "end": 8.92,
+    "prob": 0.999
+  },
+  {
+    "word": "Um,",
+    "start": 9.28,
+    "end": 9.38,
+    "prob": 0.985
+  },
+  {
+    "word": "good",
+    "start": 9.58,
+    "end": 9.68,
+    "prob": 0.978
+  },
+  {
+    "word": "audio",
+    "start": 9.68,
+    "end": 10.02,
+    "prob": 0.998
+  },
+  {
+    "word": "matters",
+    "start": 10.02,
+    "end": 10.44,
+    "prob": 0.996
+  },
+  {
+    "word": "more",
+    "start": 10.44,
+    "end": 10.68,
+    "prob": 0.984
+  },
+  {
+    "word": "than",
+    "start": 10.68,
+    "end": 10.9,
+    "prob": 0.999
+  },
+  {
+    "word": "good",
+    "start": 10.9,
+    "end": 11.06,
+    "prob": 0.998
+  },
+  {
+    "word": "video,",
+    "start": 11.06,
+    "end": 11.48,
+    "prob": 0.997
+  },
+  {
+    "word": "and",
+    "start": 11.76,
+    "end": 11.9,
+    "prob": 0.992
+  },
+  {
+    "word": "you",
+    "start": 11.9,
+    "end": 12.04,
+    "prob": 0.999
+  },
+  {
+    "word": "can",
+    "start": 12.04,
+    "end": 12.24,
+    "prob": 1.0
+  },
+  {
+    "word": "quote",
+    "start": 12.24,
+    "end": 12.48,
+    "prob": 0.999
+  },
+  {
+    "word": "me",
+    "start": 12.48,
+    "end": 12.66,
+    "prob": 0.999
+  },
+  {
+    "word": "on",
+    "start": 12.66,
+    "end": 12.84,
+    "prob": 0.999
+  },
+  {
+    "word": "that.",
+    "start": 12.84,
+    "end": 13.16,
+    "prob": 0.999
+  },
+  {
+    "word": "Um,",
+    "start": 13.34,
+    "end": 13.52,
+    "prob": 0.679
+  },
+  {
+    "word": "the",
+    "start": 13.66,
+    "end": 13.76,
+    "prob": 0.953
+  },
+  {
+    "word": "drummer",
+    "start": 13.76,
+    "end": 14.02,
+    "prob": 0.994
+  },
+  {
+    "word": "was",
+    "start": 14.02,
+    "end": 14.26,
+    "prob": 0.998
+  },
+  {
+    "word": "unlikely",
+    "start": 14.26,
+    "end": 14.64,
+    "prob": 0.998
+  },
+  {
+    "word": "to",
+    "start": 14.64,
+    "end": 15.02,
+    "prob": 0.999
+  },
+  {
+    "word": "hum",
+    "start": 15.02,
+    "end": 15.18,
+    "prob": 0.996
+  },
+  {
+    "word": "along,",
+    "start": 15.18,
+    "end": 15.56,
+    "prob": 0.976
+  },
+  {
+    "word": "unlike",
+    "start": 15.84,
+    "end": 16.12,
+    "prob": 0.989
+  },
+  {
+    "word": "last",
+    "start": 16.12,
+    "end": 16.5,
+    "prob": 0.999
+  },
+  {
+    "word": "summer.",
+    "start": 16.5,
+    "end": 16.88,
+    "prob": 0.994
+  },
+  {
+    "word": "Uh,",
+    "start": 17.22,
+    "end": 17.28,
+    "prob": 0.727
+  },
+  {
+    "word": "thumbnails",
+    "start": 17.46,
+    "end": 17.84,
+    "prob": 0.991
+  },
+  {
+    "word": "take",
+    "start": 17.84,
+    "end": 18.16,
+    "prob": 0.97
+  },
+  {
+    "word": "me",
+    "start": 18.16,
+    "end": 18.4,
+    "prob": 0.999
+  },
+  {
+    "word": "20",
+    "start": 18.4,
+    "end": 18.72,
+    "prob": 0.956
+  },
+  {
+    "word": "minutes",
+    "start": 18.72,
+    "end": 19.02,
+    "prob": 0.996
+  },
+  {
+    "word": "now,",
+    "start": 19.02,
+    "end": 19.42,
+    "prob": 0.996
+  },
+  {
+    "word": "and",
+    "start": 19.64,
+    "end": 19.82,
+    "prob": 0.997
+  },
+  {
+    "word": "they",
+    "start": 19.82,
+    "end": 19.96,
+    "prob": 0.999
+  },
+  {
+    "word": "used",
+    "start": 19.96,
+    "end": 20.22,
+    "prob": 0.991
+  },
+  {
+    "word": "to",
+    "start": 20.22,
+    "end": 20.38,
+    "prob": 0.997
+  },
+  {
+    "word": "take",
+    "start": 20.38,
+    "end": 20.62,
+    "prob": 0.999
+  },
+  {
+    "word": "two",
+    "start": 20.62,
+    "end": 20.86,
+    "prob": 0.832
+  },
+  {
+    "word": "hours.",
+    "start": 20.86,
+    "end": 21.22,
+    "prob": 0.999
+  },
+  {
+    "word": "Like,",
+    "start": 21.42,
+    "end": 21.76,
+    "prob": 0.991
+  },
+  {
+    "word": "publishing",
+    "start": 21.94,
+    "end": 22.32,
+    "prob": 0.977
+  },
+  {
+    "word": "on",
+    "start": 22.32,
+    "end": 22.56,
+    "prob": 0.997
+  },
+  {
+    "word": "a",
+    "start": 22.56,
+    "end": 22.68,
+    "prob": 0.987
+  },
+  {
+    "word": "schedule",
+    "start": 22.68,
+    "end": 23.02,
+    "prob": 0.994
+  },
+  {
+    "word": "trains",
+    "start": 23.02,
+    "end": 23.4,
+    "prob": 0.982
+  },
+  {
+    "word": "your",
+    "start": 23.4,
+    "end": 23.62,
+    "prob": 0.995
+  },
+  {
+    "word": "audience",
+    "start": 23.62,
+    "end": 23.98,
+    "prob": 0.999
+  },
+  {
+    "word": "to",
+    "start": 23.98,
+    "end": 24.26,
+    "prob": 0.998
+  },
+  {
+    "word": "come",
+    "start": 24.26,
+    "end": 24.46,
+    "prob": 0.982
+  },
+  {
+    "word": "back",
+    "start": 24.46,
+    "end": 24.7,
+    "prob": 1.0
+  },
+  {
+    "word": "without",
+    "start": 24.7,
+    "end": 25.06,
+    "prob": 0.997
+  },
+  {
+    "word": "being",
+    "start": 25.06,
+    "end": 25.36,
+    "prob": 0.999
+  },
+  {
+    "word": "asked.",
+    "start": 25.36,
+    "end": 25.76,
+    "prob": 0.998
+  },
+  {
+    "word": "Um,",
+    "start": 26.1,
+    "end": 26.2,
+    "prob": 0.984
+  },
+  {
+    "word": "uh,",
+    "start": 26.44,
+    "end": 26.62,
+    "prob": 0.791
+  },
+  {
+    "word": "if",
+    "start": 26.7,
+    "end": 26.88,
+    "prob": 0.956
+  },
+  {
+    "word": "you",
+    "start": 26.88,
+    "end": 27.02,
+    "prob": 0.999
+  },
+  {
+    "word": "only",
+    "start": 27.02,
+    "end": 27.3,
+    "prob": 0.998
+  },
+  {
+    "word": "change",
+    "start": 27.3,
+    "end": 27.64,
+    "prob": 0.941
+  },
+  {
+    "word": "one",
+    "start": 27.64,
+    "end": 27.96,
+    "prob": 0.997
+  },
+  {
+    "word": "thing",
+    "start": 27.96,
+    "end": 28.14,
+    "prob": 0.999
+  },
+  {
+    "word": "about",
+    "start": 28.14,
+    "end": 28.44,
+    "prob": 0.999
+  },
+  {
+    "word": "your",
+    "start": 28.44,
+    "end": 28.64,
+    "prob": 0.999
+  },
+  {
+    "word": "videos",
+    "start": 28.64,
+    "end": 28.98,
+    "prob": 0.997
+  },
+  {
+    "word": "this",
+    "start": 28.98,
+    "end": 29.26,
+    "prob": 0.992
+  },
+  {
+    "word": "year,",
+    "start": 29.26,
+    "end": 29.64,
+    "prob": 0.999
+  },
+  {
+    "word": "make",
+    "start": 29.64,
+    "end": 30.08,
+    "prob": 0.237
+  },
+  {
+    "word": "it",
+    "start": 30.08,
+    "end": 30.28,
+    "prob": 0.993
+  },
+  {
+    "word": "the",
+    "start": 30.28,
+    "end": 30.42,
+    "prob": 0.992
+  },
+  {
+    "word": "first",
+    "start": 30.42,
+    "end": 30.64,
+    "prob": 0.987
+  },
+  {
+    "word": "10",
+    "start": 30.64,
+    "end": 30.96,
+    "prob": 0.746
+  },
+  {
+    "word": "seconds.",
+    "start": 30.96,
+    "end": 31.52,
+    "prob": 0.99
+  },
+  {
+    "word": "Hum,",
+    "start": 31.74,
+    "end": 31.8,
+    "prob": 0.001
+  },
+  {
+    "word": "ah,",
+    "start": 32.0,
+    "end": 32.14,
+    "prob": 0.724
+  },
+  {
+    "word": "batch",
+    "start": 32.36,
+    "end": 32.54,
+    "prob": 0.897
+  },
+  {
+    "word": "recording",
+    "start": 32.54,
+    "end": 33.02,
+    "prob": 0.984
+  },
+  {
+    "word": "saved",
+    "start": 33.02,
+    "end": 33.38,
+    "prob": 0.991
+  },
+  {
+    "word": "my",
+    "start": 33.38,
+    "end": 33.66,
+    "prob": 0.998
+  },
+  {
+    "word": "schedule.",
+    "start": 33.66,
+    "end": 34.06,
+    "prob": 0.998
+  },
+  {
+    "word": "I",
+    "start": 34.4,
+    "end": 34.5,
+    "prob": 0.994
+  },
+  {
+    "word": "film",
+    "start": 34.5,
+    "end": 34.74,
+    "prob": 0.891
+  },
+  {
+    "word": "three",
+    "start": 34.74,
+    "end": 35.02,
+    "prob": 0.658
+  },
+  {
+    "word": "videos",
+    "start": 35.02,
+    "end": 35.4,
+    "prob": 0.997
+  },
+  {
+    "word": "every",
+    "start": 35.4,
+    "end": 35.74,
+    "prob": 0.997
+  },
+  {
+    "word": "Sunday",
+    "start": 35.74,
+    "end": 36.02,
+    "prob": 0.978
+  },
+  {
+    "word": "and",
+    "start": 36.02,
+    "end": 36.28,
+    "prob": 0.925
+  },
+  {
+    "word": "edit",
+    "start": 36.28,
+    "end": 36.5,
+    "prob": 0.999
+  },
+  {
+    "word": "them",
+    "start": 36.5,
+    "end": 36.72,
+    "prob": 0.998
+  },
+  {
+    "word": "across",
+    "start": 36.72,
+    "end": 37.02,
+    "prob": 0.998
+  },
+  {
+    "word": "the",
+    "start": 37.02,
+    "end": 37.28,
+    "prob": 0.999
+  },
+  {
+    "word": "week.",
+    "start": 37.28,
+    "end": 37.58,
+    "prob": 0.991
+  },
+  {
+    "word": "Um,",
+    "start": 37.9,
+    "end": 37.92,
+    "prob": 0.552
+  },
+  {
+    "word": "and",
+    "start": 38.14,
+    "end": 38.26,
+    "prob": 0.991
+  },
+  {
+    "word": "that",
+    "start": 38.26,
+    "end": 38.38,
+    "prob": 0.998
+  },
+  {
+    "word": "is",
+    "start": 38.38,
+    "end": 38.52,
+    "prob": 0.998
+  },
+  {
+    "word": "genuinely",
+    "start": 38.52,
+    "end": 38.92,
+    "prob": 0.995
+  },
+  {
+    "word": "everything",
+    "start": 38.92,
+    "end": 39.42,
+    "prob": 0.996
+  },
+  {
+    "word": "I",
+    "start": 39.42,
+    "end": 39.74,
+    "prob": 0.985
+  },
+  {
+    "word": "know.",
+    "start": 39.74,
+    "end": 39.98,
+    "prob": 1.0
+  }
+]
