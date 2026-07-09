@@ -23,7 +23,8 @@ function derive(state) {
   const total = state.run.duration;
   const cuts = deriveCuts(state.run.cutlist, state.review);
   const kept = keptSegments(cuts, total);
-  return { ...state, cuts, kept, predicted: predictedDuration(cuts, total) };
+  return { ...state, cuts, kept,
+           predicted: predictedDuration(cuts, total, state.run.video?.fps) };
 }
 
 // caption lines: copy-on-write — first edit copies derived defaults into the overlay

@@ -45,7 +45,8 @@ def export_run(run_dir: Path, on_progress=lambda msg: None) -> dict:
     kept = rv.effective_kept(decisions["cutlist"], review, total)
     if not kept:
         raise ExportError("decision state removes everything — nothing to export")
-    predicted = rv.predicted_duration(decisions["cutlist"], review, total)
+    fps = ingest.get("video", {}).get("fps")
+    predicted = rv.predicted_duration(decisions["cutlist"], review, total, fps)
     on_progress(f"decision state: {len(kept)} kept segments, "
                 f"predicted duration {predicted:.2f}s")
 

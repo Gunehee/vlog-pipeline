@@ -57,8 +57,15 @@ export function keptSegments(cuts, total) {
   return kept;
 }
 
-export function predictedDuration(cuts, total) {
-  return keptSegments(cuts, total).reduce((s, k) => s + (k.end - k.start), 0);
+export function predictedDuration(cuts, total, fps) {
+  const kept = keptSegments(cuts, total);
+  if (fps) {
+    // mirror ffmpeg trim's frame slicing (start <= pts < end) — matches render.py
+    const frames = kept.reduce(
+      (s, k) => s + (Math.ceil(k.end * fps - 1e-9) - Math.ceil(k.start * fps - 1e-9)), 0);
+    return frames / fps;
+  }
+  return kept.reduce((s, k) => s + (k.end - k.start), 0);
 }
 
 export function mapOrigToEdit(t, kept) {

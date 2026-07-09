@@ -95,7 +95,8 @@ def _run_payload(name: str) -> dict:
         "review": review,
         "captions": lines,
         "captions_customized": review.get("captions") is not None,
-        "predicted_duration": rv.predicted_duration(cutlist, review, total),
+        "predicted_duration": rv.predicted_duration(
+            cutlist, review, total, ingest.get("video", {}).get("fps")),
         "engine_duration": cutlist["edited_duration"],
         "highlight": decisions.get("highlight", {}),
         "media": {
@@ -237,7 +238,8 @@ def create_app() -> FastAPI:
         return {
             "saved": True,
             "predicted_duration": rv.predicted_duration(
-                decisions["cutlist"], base, total),
+                decisions["cutlist"], base, total,
+                ingest.get("video", {}).get("fps")),
             "cuts": rv.decisions_view(decisions["cutlist"], base),
         }
 

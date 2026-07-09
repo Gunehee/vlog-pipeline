@@ -110,9 +110,19 @@ def effective_kept(cutlist: dict, review: dict, total: float) -> list[dict]:
     return kept
 
 
-def predicted_duration(cutlist: dict, review: dict, total: float) -> float:
-    return round(sum(s["end"] - s["start"]
-                     for s in effective_kept(cutlist, review, total)), 3)
+def predicted_duration(cutlist: dict, review: dict, total: float,
+                       fps: float | None = None) -> float:
+    """Predicted duration of the RENDER. With fps given, each kept segment is
+    quantized to the frame grid the way ffmpeg's trim slices it (frames with
+    start <= pts < end), which is what the exported file actually measures —
+    the raw EDL sum runs ~2 frames/minute short of reality."""
+    kept = effective_kept(cutlist, review, total)
+    if fps:
+        import math
+        frames = sum(math.ceil(s["end"] * fps - 1e-9)
+                     - math.ceil(s["start"] * fps - 1e-9) for s in kept)
+        return round(frames / fps, 3)
+    return round(sum(s["end"] - s["start"] for s in kept), 3)
 
 
 def map_orig_to_edit(t: float, kept: list[dict]) -> float | None:
