@@ -1,16 +1,16 @@
-# Graph Report - vlog-pipeline  (2026-07-08)
+# Graph Report - vlog-pipeline  (2026-07-10)
 
 ## Corpus Check
-- 73 files · ~55,449 words
+- 105 files · ~146,773 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 350 nodes · 632 edges · 31 communities (28 shown, 3 thin omitted)
-- Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 20 edges (avg confidence: 0.52)
+- 810 nodes · 1772 edges · 56 communities (49 shown, 7 thin omitted)
+- Extraction: 94% EXTRACTED · 6% INFERRED · 0% AMBIGUOUS · INFERRED: 110 edges (avg confidence: 0.51)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `67e86673`
+- Built from commit: `9297161c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -45,18 +45,42 @@
 - [[_COMMUNITY_Edit report|Edit report]]
 - [[_COMMUNITY_stress-results|stress-results.md]]
 - [[_COMMUNITY_stress-results-v1-prefix|stress-results-v1-prefix.md]]
+- [[_COMMUNITY_r|r]]
+- [[_COMMUNITY_index-C5MCGBv5.js|index-C5MCGBv5.js]]
+- [[_COMMUNITY_hf|hf]]
+- [[_COMMUNITY_gs|gs]]
+- [[_COMMUNITY_lr|lr]]
+- [[_COMMUNITY_zo|zo]]
+- [[_COMMUNITY_Jl|Jl]]
+- [[_COMMUNITY_studio_server.py|studio_server.py]]
+- [[_COMMUNITY_t|t]]
+- [[_COMMUNITY_ve|ve]]
+- [[_COMMUNITY_package.json|package.json]]
+- [[_COMMUNITY_test_studio.py|test_studio.py]]
+- [[_COMMUNITY_Tokens|Tokens]]
+- [[_COMMUNITY_$e|$e]]
+- [[_COMMUNITY_Na|Na]]
+- [[_COMMUNITY_Nl|Nl]]
+- [[_COMMUNITY_be|be]]
+- [[_COMMUNITY_op|op]]
+- [[_COMMUNITY_ll|ll]]
+- [[_COMMUNITY_Xt|Xt]]
+- [[_COMMUNITY_Qo|Qo]]
+- [[_COMMUNITY_Bl|Bl]]
+- [[_COMMUNITY_Dp|Dp]]
+- [[_COMMUNITY_pp|pp]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `Config` - 33 edges
-2. `StageError` - 21 edges
-3. `render_clip()` - 14 edges
-4. `assemble()` - 12 edges
-5. `run()` - 12 edges
-6. `run_engine()` - 12 edges
-7. `RunState` - 11 edges
-8. `ScenarioResult` - 11 edges
-9. `scen_music()` - 10 edges
-10. `smooth_centers()` - 10 edges
+1. `Config` - 39 edges
+2. `hf()` - 30 edges
+3. `t()` - 25 edges
+4. `r()` - 23 edges
+5. `StageError` - 22 edges
+6. `Jl()` - 22 edges
+7. `mc()` - 22 edges
+8. `n()` - 21 edges
+9. `l()` - 17 edges
+10. `b()` - 17 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `test_speaker_switch_reacquires_within_bound()` --calls--> `smooth_centers()`  [EXTRACTED]
@@ -73,35 +97,35 @@
 ## Import Cycles
 - None detected.
 
-## Communities (31 total, 3 thin omitted)
+## Communities (56 total, 7 thin omitted)
 
 ### Community 0 - "Config"
-Cohesion: 0.33
-Nodes (8): _norm(), ndarray, Path, Highlight scoring: audio energy + speech rate on the edited timeline., Score the edited cut and choose the best short-form window., _rms_curve(), score_highlights(), validate()
+Cohesion: 0.07
+Nodes (53): At(), b(), bf(), Bn(), Cc(), Cn(), ct(), dc() (+45 more)
 
 ### Community 1 - "cli.py"
-Cohesion: 0.12
-Nodes (19): _billing_table(), cmd_run(), cmd_status(), cmd_stress(), main(), vlog-pipeline CLI: run / status., api_key_present(), Headless `claude -p` subprocess calls for the Sonnet/Haiku text stages.  IMPORTA (+11 more)
+Cohesion: 0.11
+Nodes (22): _billing_table(), cmd_run(), cmd_status(), cmd_stress(), cmd_ui(), main(), vlog-pipeline CLI: run / status., api_key_present() (+14 more)
 
 ### Community 2 - "edit.py"
-Cohesion: 0.10
-Nodes (41): CompletedProcess, RuntimeError, burn_captions(), _overlay_chain(), Path, ffmpeg rendering: jump-cut assembly with click-free audio joins., Re-assemble kept segments. Frame-accurate trim + 10 ms audio fades at     every, Chain of timed caption overlays. Returns (filter_lines, out_label). (+33 more)
+Cohesion: 0.05
+Nodes (87): CompletedProcess, RuntimeError, Full-suite regression: every stress scenario must pass its metric gates.  Slow (, test_scenario(), Config, Pipeline configuration with editing thresholds and model routing., build_cutlist(), _complement() (+79 more)
 
 ### Community 3 - "captions.py"
-Cohesion: 0.24
-Nodes (9): build_lines(), _flush(), Path, Caption line building + SRT/ASS emission with platform-aware styling., Render each caption line to a styled transparent PNG for ffmpeg overlay.      St, Group word timestamps into readable caption lines., render_caption_pngs(), _srt_ts() (+1 more)
+Cohesion: 0.06
+Nodes (32): Unit tests for the studio review-decision overlay (pure logic, no media)., build_lines(), _flush(), Path, Caption line building + SRT/ASS emission with platform-aware styling., Render each caption line to a styled transparent PNG for ffmpeg overlay.      St, Group word timestamps into readable caption lines., render_caption_pngs() (+24 more)
 
 ### Community 4 - "RunState"
-Cohesion: 0.20
-Nodes (23): Full-suite regression: every stress scenario must pass its metric gates.  Slow (, test_scenario(), Config, Pipeline configuration with editing thresholds and model routing., check_alternation(), check_boundary_silence(), check_dense_filler(), check_exit_reenter() (+15 more)
+Cohesion: 0.09
+Nodes (31): api, watchJob(), App(), parseHash(), CaptionEditor(), CutList(), ExportModal(), Library() (+23 more)
 
 ### Community 5 - "highlights.py"
-Cohesion: 0.09
-Nodes (18): Unit regression tests for cutlist assembly + pacing guard (no media needed)., Regression: silencedetect's end sits a few ms short of the container     duratio, Mirror case: silence starts a few ms after 0 (decoder priming)., Two silences separated by a 0.25s sound burst: the kept island is     0.25 + 2*k, silencedetect start without end (file ends inside silence)., test_leading_silence_with_container_padding_at_start(), test_open_ended_trailing_silence(), test_pacing_guard_restores_midclip_cut_for_short_segment() (+10 more)
+Cohesion: 0.14
+Nodes (9): Unit regression tests for cutlist assembly + pacing guard (no media needed)., Regression: silencedetect's end sits a few ms short of the container     duratio, Mirror case: silence starts a few ms after 0 (decoder priming)., Two silences separated by a 0.25s sound burst: the kept island is     0.25 + 2*k, silencedetect start without end (file ends inside silence)., test_leading_silence_with_container_padding_at_start(), test_open_ended_trailing_silence(), test_pacing_guard_restores_midclip_cut_for_short_segment() (+1 more)
 
 ### Community 6 - "vlog-pipeline"
-Cohesion: 0.22
-Nodes (8): Current limitations (post-hardening, measured), Engine hardening (stress suite), Install, Model routing, Proof: real end-to-end run, The edit engine (stage 3–4, all local signal analysis), vlog-pipeline, What it produces
+Cohesion: 0.20
+Nodes (9): Current limitations (post-hardening, measured), Engine hardening (stress suite), Install, Model routing, Proof: real end-to-end run, The edit engine (stage 3–4, all local signal analysis), The review studio, vlog-pipeline (+1 more)
 
 ### Community 7 - "make_test_clip.py"
 Cohesion: 0.14
@@ -183,25 +207,105 @@ Nodes (3): Edit report, Kept segments, What was cut and why
 Cohesion: 0.50
 Nodes (3): Edit report, Kept segments, What was cut and why
 
+### Community 31 - "r"
+Cohesion: 0.12
+Nodes (33): ad(), Au(), Bu(), C(), cs(), er(), Eu(), f() (+25 more)
+
+### Community 32 - "index-C5MCGBv5.js"
+Cohesion: 0.06
+Nodes (3): bc, mp, Un
+
+### Community 33 - "hf"
+Cohesion: 0.12
+Nodes (24): ao(), Dn(), fl(), fp(), Fu(), hf(), ic(), ii() (+16 more)
+
+### Community 34 - "gs"
+Cohesion: 0.11
+Nodes (22): Ar(), cd(), dd(), ec(), fo(), gs(), Gu(), ho() (+14 more)
+
+### Community 35 - "lr"
+Cohesion: 0.14
+Nodes (21): _a(), Bt(), Et(), Fi(), Go(), Gr(), I(), Ie() (+13 more)
+
+### Community 36 - "zo"
+Cohesion: 0.15
+Nodes (21): Ba(), Bi(), dl(), Fe(), ha(), He(), La(), Ne() (+13 more)
+
+### Community 37 - "Jl"
+Cohesion: 0.15
+Nodes (20): aa(), af(), ca(), cf(), da(), Eo(), ff(), Fs() (+12 more)
+
+### Community 38 - "studio_server.py"
+Cohesion: 0.22
+Nodes (12): FastAPI, create_app(), _export_job(), Job, _load_json(), Path, Local review-studio server: FastAPI + the committed web build. Fully offline at, 2400-bin peak envelope of the original footage, cached in work/. (+4 more)
+
+### Community 39 - "t"
+Cohesion: 0.15
+Nodes (16): Cl(), co(), hc(), Hu(), Jc(), ku(), lu(), nu() (+8 more)
+
+### Community 40 - "ve"
+Cohesion: 0.17
+Nodes (15): Do(), Dt(), ea(), Es(), hi(), Is(), ja(), lc() (+7 more)
+
+### Community 41 - "package.json"
+Cohesion: 0.14
+Nodes (13): dependencies, react, react-dom, devDependencies, vite, @vitejs/plugin-react, name, private (+5 more)
+
+### Community 42 - "test_studio.py"
+Cohesion: 0.20
+Nodes (12): _export_via_ui(), _ffprobe_duration(), _grab_gray(), Studio E2E against the committed day30-vlog run. Zero LLM calls.  Run:  python3, Segment-skip preview: entry overshoot and landing within 50ms., Toggle cuts off + nudge + manual cut -> export == prediction ±0.1s,     and a re, Edit one caption line -> new .srt contains it AND the burned pixels at     that, Mean RMS (dBFS) of a small audio window of the file. (+4 more)
+
+### Community 43 - "Tokens"
+Cohesion: 0.15
+Nodes (12): Color — accent & status, Color — cut-reason categorical (reused from report.html, CVD-validated dark set), Color — surfaces & ink, Component conventions, Direction, Interaction states (uniform everywhere), Layout architecture, Quality bar checklist (applied before every phase gate) (+4 more)
+
+### Community 44 - "$e"
+Cohesion: 0.33
+Nodes (7): Ds(), $e(), Ga(), Ka(), ni(), ri(), Xa()
+
+### Community 45 - "Na"
+Cohesion: 0.29
+Nodes (7): K(), Na(), or(), Po(), sa(), wd(), Zl()
+
+### Community 46 - "Nl"
+Cohesion: 0.33
+Nodes (6): Du(), md(), Nl(), Nr(), Ou(), yf()
+
+### Community 47 - "be"
+Cohesion: 0.50
+Nodes (4): be(), Bo(), Qr(), vo()
+
+### Community 48 - "op"
+Cohesion: 0.50
+Nodes (4): gp(), jp(), op(), zp()
+
+### Community 49 - "ll"
+Cohesion: 0.50
+Nodes (4): ll(), Qa(), vs(), Wr()
+
+### Community 50 - "Xt"
+Cohesion: 0.67
+Nodes (3): gn(), Lt(), Xt()
+
 ## Knowledge Gaps
-- **56 isolated node(s):** `vlog-pipeline`, `What it produces`, `Model routing`, `The edit engine (stage 3–4, all local signal analysis)`, `Install` (+51 more)
+- **82 isolated node(s):** `vlog-pipeline`, `name`, `private`, `version`, `type` (+77 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Config` connect `RunState` to `Config`, `cli.py`, `edit.py`, `highlights.py`?**
-  _High betweenness centrality (0.100) - this node is a cross-community bridge._
-- **Why does `StageError` connect `edit.py` to `cli.py`, `RunState`?**
-  _High betweenness centrality (0.039) - this node is a cross-community bridge._
-- **Are the 2 inferred relationships involving `Config` (e.g. with `Metric` and `ScenarioResult`) actually correct?**
-  _`Config` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `vlog-pipeline`, `Regression tests for croptrack smoothing (Fix C) — pure, no video needed.`, `Target jumps 540px (speaker switch, no scene-cut flag because Haar     missed th` to the rest of the system?**
-  _129 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `cli.py` be split into smaller, more focused modules?**
-  _Cohesion score 0.12121212121212122 - nodes in this community are weakly interconnected._
-- **Should `edit.py` be split into smaller, more focused modules?**
-  _Cohesion score 0.09898242368177614 - nodes in this community are weakly interconnected._
-- **Should `highlights.py` be split into smaller, more focused modules?**
-  _Cohesion score 0.09057971014492754 - nodes in this community are weakly interconnected._
+- **Why does `Config` connect `edit.py` to `cli.py`, `highlights.py`, `studio_server.py`?**
+  _High betweenness centrality (0.030) - this node is a cross-community bridge._
+- **Why does `StageError` connect `edit.py` to `cli.py`, `studio_server.py`?**
+  _High betweenness centrality (0.011) - this node is a cross-community bridge._
+- **Are the 4 inferred relationships involving `Config` (e.g. with `ExportError` and `Metric`) actually correct?**
+  _`Config` has 4 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 13 inferred relationships involving `t()` (e.g. with `co()` and `cs()`) actually correct?**
+  _`t()` has 13 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 15 inferred relationships involving `r()` (e.g. with `Bu()` and `Cn()`) actually correct?**
+  _`r()` has 15 INFERRED edges - model-reasoned connections that need verification._
+- **What connects `vlog-pipeline`, `name`, `private` to the rest of the system?**
+  _172 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Config` be split into smaller, more focused modules?**
+  _Cohesion score 0.06734006734006734 - nodes in this community are weakly interconnected._
